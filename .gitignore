@@ -1,0 +1,8 @@
+*debug/*
+*Release/*
+*bin/*
+*.db
+*.aps
+*.ncb
+*.plg
+*.opt
