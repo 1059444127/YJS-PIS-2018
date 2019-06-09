@@ -1,0 +1,596 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (68cba6c8).
+//
+// dsu2.tlh
+//
+// C++ source equivalent of Win32 type library C:\Program Files\Nikon\Shared\Bin\dsu2.exe
+// compiler-generated file created 11/29/10 at 21:13:39 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace DSCONTROLLERLib {
+
+//
+// Forward references and typedefs
+//
+
+struct TDSAppendixInformation;
+typedef unsigned char BYTE;
+struct __declspec(uuid("c5f42975-2e1e-4670-92c0-be2dcffc32c3"))
+/* dispinterface */ _ILockEvents;
+struct __declspec(uuid("1113327c-ed2a-4ed7-8e5b-1dabea602cf0"))
+/* dispinterface */ _IDeviceEvents;
+struct __declspec(uuid("daa2b700-84dd-404c-80f0-97760fdfdb9f"))
+/* dispinterface */ _IDevicesEvents;
+struct /* coclass */ ControllerDevice;
+struct __declspec(uuid("5646f72f-fea6-491f-946c-bbb549d0b00a"))
+/* dual interface */ IControllerDevice;
+struct __declspec(uuid("75f8ec4b-7e49-4293-9213-d40c423afa15"))
+/* dual interface */ IDsDevice;
+struct __declspec(uuid("a64b3cc9-1b73-41a8-93db-15c18559d6dd"))
+/* dual interface */ IDevice;
+struct __declspec(uuid("195b15d4-d233-4287-8956-d3368b7706d1"))
+/* dual interface */ IPort;
+struct __declspec(uuid("6f9891ba-0e80-4368-b589-09673f6530b5"))
+/* dual interface */ IDeviceClient;
+struct __declspec(uuid("13d7ddcc-764f-4fe8-9e86-fd7ecd1b7b05"))
+/* dual interface */ _IDeviceLink;
+struct /* coclass */ ControllerDevices;
+struct __declspec(uuid("c5e65922-aa6e-42b5-b2cb-cc7f891d6a4e"))
+/* dual interface */ IControllerDevices;
+struct /* coclass */ NetCameraDevices;
+struct __declspec(uuid("7bdcabb3-1671-4300-8620-66853f60a3d2"))
+/* dual interface */ INetCameraDevices;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_ILockEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(_IDeviceEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(_IDevicesEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IPort, __uuidof(IPort));
+_COM_SMARTPTR_TYPEDEF(IDevice, __uuidof(IDevice));
+_COM_SMARTPTR_TYPEDEF(IDsDevice, __uuidof(IDsDevice));
+_COM_SMARTPTR_TYPEDEF(IControllerDevice, __uuidof(IControllerDevice));
+_COM_SMARTPTR_TYPEDEF(_IDeviceLink, __uuidof(_IDeviceLink));
+_COM_SMARTPTR_TYPEDEF(IDeviceClient, __uuidof(IDeviceClient));
+_COM_SMARTPTR_TYPEDEF(IControllerDevices, __uuidof(IControllerDevices));
+_COM_SMARTPTR_TYPEDEF(INetCameraDevices, __uuidof(INetCameraDevices));
+
+//
+// Type library items
+//
+
+enum EnumDsCameraError
+{
+    DSC_DEVICE_ERROR_BASE = -536607568,
+    DSC_ERROR_DRIVER = -536607567,
+    DSC_ERROR_TRANSFER = -536607566,
+    DSC_ERROR_BUSY = -536607565,
+    DSC_ERROR_OVERFLOW = -536607564,
+    DSC_ERROR_BADRESPONSE = -536607563,
+    DSC_ERROR_DEVICE = -536607562,
+    DSC_ERROR_PORTTIMEOUT = -536607561,
+    DSC_ERROR_NOTCONNECTED = -536607560,
+    DSC_ERROR_NODEVICE = -536607559,
+    DSC_ERROR_INVALIDCMD = -536607558,
+    DSC_ERROR_INVALIDARG = -536607557,
+    DSC_ERROR_NOACCESSORY = -536607556,
+    DSC_ERROR_SENDOVERFLOW = -536607555,
+    DSC_ERROR_UNSAFE = -536607554,
+    DSC_ERROR_TRANSMITFAIL = -536607553,
+    DSC_ERROR_NODEVICES = -536607552,
+    DSC_DATABASE_ERROR_BASE = -536607468,
+    DSC_ERROR_NOTCUSTOM = -536607467,
+    DSC_ERROR_DATABASEFULL = -536607466,
+    DSC_ERROR_CONSTANT = -536607465,
+    DSC_ERROR_BADPOSITION = -536607464,
+    DSC_ERROR_BADCODE = -536607463,
+    DSC_ERROR_NOTMOUNTED = -536607462,
+    DSC_ERROR_DIRECTSHOW = -536607368,
+    DSC_ERROR_INVALID_FORMAT = -536607367,
+    DSC_ERROR_GET_IMAGESIZE = -536607366,
+    DSC_ERROR_GET_IMAGE = -536607365,
+    DSC_ERROR_GRAPH_RUNNING = -536607364,
+    DSC_ERROR_INVALID_HANDLE = -536607268,
+    DSC_ERROR_CREATE_FILE = -536607267
+};
+
+struct TDSAppendixInformation
+{
+    BYTE EnableFrame;
+    unsigned char CameraModel;
+    unsigned char ColorMode;
+    unsigned char ScanMode;
+    unsigned char CCUModel;
+    unsigned char ExposeTime;
+    unsigned char Bias;
+    unsigned short ImageWidth;
+    unsigned short ImageHeight;
+    unsigned char AnalogGain;
+    unsigned char AEMode;
+    unsigned char AELock;
+    unsigned char ToneType;
+    unsigned char NRMode;
+    unsigned char TriggerMode;
+    unsigned char Shading;
+    unsigned char Preset;
+    unsigned short DigitalGain;
+    char Sharpness;
+    unsigned char ImageEffect;
+    unsigned char IsSuspended;
+    unsigned char DigitalRchGain;
+    unsigned char DigitalGchGain;
+    unsigned char DigitalBchGain;
+    char Contrast;
+    char Hue;
+    unsigned char PresetEx;
+    unsigned short DetailedGain;
+    unsigned short ROIPosition;
+    char Saturation;
+    unsigned short EnableFrameNo;
+    unsigned short USBFrameNo;
+    unsigned long AF;
+    unsigned char MeteringMode;
+    unsigned char MeteringArea;
+    unsigned char CameraTemp;
+    unsigned long Avg_GRG;
+    unsigned long Avg_GGB;
+    unsigned long Avg_R;
+    unsigned long Avg_B;
+    unsigned short PH_GRG;
+    unsigned short PH_GGB;
+    unsigned short PH_R;
+    unsigned short PH_B;
+    unsigned short XField;
+    unsigned short YField;
+    unsigned char Format;
+    unsigned char Field;
+    unsigned char RedSaturation;
+    unsigned char GreenSaturation;
+    unsigned char BlueSaturation;
+    unsigned short RedBalance;
+    unsigned short GreenBalance;
+    unsigned short BlueBalance;
+    unsigned long DetailedTime;
+    unsigned short TiggerCounter;
+    long Time;
+    unsigned short MilliTime;
+    short TimeZone;
+    short DstFlag;
+    unsigned char D9FlameNo;
+    unsigned char Reserve1;
+    unsigned long Reserve2;
+};
+
+struct __declspec(uuid("c5f42975-2e1e-4670-92c0-be2dcffc32c3"))
+_ILockEvents : IDispatch
+{};
+
+struct __declspec(uuid("1113327c-ed2a-4ed7-8e5b-1dabea602cf0"))
+_IDeviceEvents : IDispatch
+{};
+
+struct __declspec(uuid("daa2b700-84dd-404c-80f0-97760fdfdb9f"))
+_IDevicesEvents : IDispatch
+{};
+
+struct __declspec(uuid("c6610bac-dc36-430f-b3c7-8cbd2ad31f6d"))
+ControllerDevice;
+    // [ default ] interface IControllerDevice
+    // [ default, source ] dispinterface _IDeviceEvents
+
+struct __declspec(uuid("195b15d4-d233-4287-8956-d3368b7706d1"))
+IPort : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Address (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Connect ( ) = 0;
+    virtual HRESULT __stdcall Disconnect ( ) = 0;
+    virtual HRESULT __stdcall get_Connected (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Connected (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall _LockPort ( ) = 0;
+    virtual HRESULT __stdcall _UnlockPort ( ) = 0;
+    virtual HRESULT __stdcall get_LastResponse (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("a64b3cc9-1b73-41a8-93db-15c18559d6dd"))
+IDevice : IPort
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall GetStringData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall GetStatusData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall GetLongData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall SendStringData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        BSTR strArgument ) = 0;
+    virtual HRESULT __stdcall SendStatusData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        enum EnumStatus statusArgument ) = 0;
+    virtual HRESULT __stdcall SendLongData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        long lArgument ) = 0;
+    virtual HRESULT __stdcall _OnRefreshLock (
+        BSTR LockCookie ) = 0;
+    virtual HRESULT __stdcall _LockDevice (
+        BSTR LockCookie,
+        struct IDeviceClient * pDeviceClient ) = 0;
+    virtual HRESULT __stdcall _UnlockDevice (
+        BSTR LockCookie ) = 0;
+    virtual HRESULT __stdcall _OnTimer ( ) = 0;
+    virtual HRESULT __stdcall get__LockCookie (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall SendAsyncStringData (
+        BSTR LockCookie,
+        BSTR strData,
+        long lLength ) = 0;
+    virtual HRESULT __stdcall _GetSupportedFormat (
+        long * plSupport ) = 0;
+};
+
+struct __declspec(uuid("75f8ec4b-7e49-4293-9213-d40c423afa15"))
+IDsDevice : IDevice
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Start (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall Stop ( ) = 0;
+    virtual HRESULT __stdcall Snapshot (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall get_Path (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Path (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall ReadBuffer (
+        long * pSize,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Window (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Window (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall PrepareSnapshotExBuffer (
+        long BufferCount ) = 0;
+    virtual HRESULT __stdcall SnapshotEx (
+        long BufferNumber,
+        long Time ) = 0;
+    virtual HRESULT __stdcall ReadBufferEx (
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("5646f72f-fea6-491f-946c-bbb549d0b00a"))
+IControllerDevice : IDsDevice
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall _OnFireStreamStop (
+        long lReason ) = 0;
+    virtual HRESULT __stdcall _OnFireNewImage (
+        long FrameNumber ) = 0;
+    virtual HRESULT __stdcall _RedrawImage ( ) = 0;
+    virtual HRESULT __stdcall _OnCameraEvent (
+        long ObjectNo ) = 0;
+    virtual HRESULT __stdcall _OnPollingTimer ( ) = 0;
+    virtual HRESULT __stdcall UpdateDeviceData ( ) = 0;
+    virtual HRESULT __stdcall get_IsAvailable (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall ReadySnapshot (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall GoSnapshot ( ) = 0;
+    virtual HRESULT __stdcall _ReadySnapshot ( ) = 0;
+    virtual HRESULT __stdcall get_IsReadySnapshot (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall get_DeviceModel (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Transform (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Transform (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Transform (
+        enum EnumTransform * pVal ) = 0;
+    virtual HRESULT __stdcall put__Transform (
+        enum EnumTransform pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformMaximum (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformMaximum (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformMaximum (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformMaximum (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWindowCenter (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWindowCenter (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWindowCenter (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWindowCenter (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWindowWidth (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWindowWidth (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWindowWidth (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWindowWidth (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformGamma (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformGamma (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformGamma (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformGamma (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformDarkLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformDarkLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformDarkLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformDarkLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformSaturation (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformSaturation (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformSaturation (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformSaturation (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformBlackLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformBlackLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformBlackLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformBlackLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWhiteLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWhiteLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWhiteLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWhiteLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall _AdjustTransformParameters ( ) = 0;
+    virtual HRESULT __stdcall ReadTriggerBuffer (
+        enum EnumRender RenderMode,
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall GetTriggerImageInfo (
+        long BufferNumber,
+        long * pDate,
+        long * pWidth,
+        long * pHeight,
+        long * pBitPerPixel ) = 0;
+    virtual HRESULT __stdcall PrepareTriggerBuffer (
+        long BufferCount ) = 0;
+    virtual HRESULT __stdcall get_IsStreamStatus (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall _Restart ( ) = 0;
+    virtual HRESULT __stdcall _GetAppendixData (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall _AppendixCutMode (
+        long newVal ) = 0;
+    virtual HRESULT __stdcall _SetFrameRate (
+        long newVal ) = 0;
+    virtual HRESULT __stdcall ShiftSnap (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution ) = 0;
+    virtual HRESULT __stdcall put__DeviceKind (
+        enum EnumDeviceKind _arg1 ) = 0;
+    virtual HRESULT __stdcall get_UserName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_UserName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Password (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Password (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall put__LiveInterval (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall put_FileFormat (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall RawSnapshot (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution ) = 0;
+    virtual HRESULT __stdcall AbortShiftSnap ( ) = 0;
+    virtual HRESULT __stdcall get__ScanModeIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__ScanModeIndex (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall _WaitShiftSnapEnd ( ) = 0;
+    virtual HRESULT __stdcall get__ToneIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__ToneIndex (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get__SnapStatus (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall ReadTempBuffer (
+        long nImageNo,
+        long * pImageSize,
+        struct tagSIZE * pResolution,
+        BSTR * pVal ) = 0;
+};
+
+enum EnumStatus
+{
+    StatusUnknown = -1,
+    StatusFalse = 0,
+    StatusTrue = 1
+};
+
+struct __declspec(uuid("13d7ddcc-764f-4fe8-9e86-fd7ecd1b7b05"))
+_IDeviceLink : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__LockCookie (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put__LockCookie (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall _OnStatusChanged (
+        BSTR strStatus ) = 0;
+    virtual HRESULT __stdcall get__Device (
+        struct IDevice * * pVal ) = 0;
+    virtual HRESULT __stdcall put__Device (
+        struct IDevice * pVal ) = 0;
+};
+
+struct __declspec(uuid("6f9891ba-0e80-4368-b589-09673f6530b5"))
+IDeviceClient : _IDeviceLink
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall LockDevice (
+        double dWaitTimeout ) = 0;
+    virtual HRESULT __stdcall UnlockDevice ( ) = 0;
+    virtual HRESULT __stdcall _OnTimer ( ) = 0;
+};
+
+enum EnumRender
+{
+    RenderUnknown = 0,
+    RenderFile = 1,
+    RenderBuffer = 2,
+    RenderFileAndBuffer = 3,
+    RenderWindow = 4,
+    RenderFileAndWindow = 5,
+    RenderBufferAndWindow = 6,
+    RenderAll = 7
+};
+
+enum EnumTransform
+{
+    TransformUnknown = -1,
+    TransformType0 = 0,
+    TransformType1 = 1,
+    TransformType2 = 2
+};
+
+enum EnumCropMode
+{
+    CropModeUnknown = -1,
+    CropModeFullFrame = 0,
+    CropModeView = 1,
+    CropModeRect = 2
+};
+
+enum EnumQualityMode
+{
+    QualityModeUnknown = -1,
+    QualityModeImage = 0,
+    QualityModeSpeed = 1
+};
+
+enum EnumDeviceKind
+{
+    DeviceUnknown = -1,
+    DeviceUSB = 0,
+    DeviceNet = 1
+};
+
+struct __declspec(uuid("a112b7b4-968b-417e-9446-e5bc87de69d3"))
+ControllerDevices;
+    // [ default ] interface IControllerDevices
+    // [ default, source ] dispinterface _IDevicesEvents
+
+struct __declspec(uuid("c5e65922-aa6e-42b5-b2cb-cc7f891d6a4e"))
+IControllerDevices : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long index,
+        struct IControllerDevice * * pVal ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        struct IEnumVARIANT * * pVal ) = 0;
+    virtual HRESULT __stdcall _UpdateDevices ( ) = 0;
+    virtual HRESULT __stdcall Refresh ( ) = 0;
+    virtual HRESULT __stdcall AddDevice (
+        BSTR IPAddress,
+        BSTR UserName,
+        BSTR Password,
+        struct IControllerDevice * * ppDevice ) = 0;
+};
+
+struct __declspec(uuid("c2af2d0a-989e-4e75-90dc-7d0798d671ff"))
+NetCameraDevices;
+    // [ default ] interface INetCameraDevices
+
+struct __declspec(uuid("7bdcabb3-1671-4300-8620-66853f60a3d2"))
+INetCameraDevices : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long lIndex,
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall AddDevice (
+        BSTR IPAddress,
+        BSTR UserName,
+        BSTR Password,
+        IUnknown * * piUnk ) = 0;
+};
+
+} // namespace DSCONTROLLERLib
+
+#pragma pack(pop)

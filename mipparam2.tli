@@ -1,0 +1,893 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (2402e62a).
+//
+// mipparam2.tli
+//
+// Wrapper implementations for Win32 type library C:\Program Files\Nikon\Shared\Bin\mipparam2.dll
+// compiler-generated file created 11/29/10 at 21:13:39 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IMipParamEventSink wrapper method implementations
+//
+
+inline HRESULT IMipParamEventSink::OnValueChanged ( ) {
+    HRESULT _hr = raw_OnValueChanged();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMipParamEventSink::OnInfoChanged ( ) {
+    HRESULT _hr = raw_OnInfoChanged();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMipParamEventSink::Disconnect ( ) {
+    HRESULT _hr = raw_Disconnect();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMipParamEventSink::Advise ( IUnknown * piuSource, long hWnd, long uMsg, long wParam ) {
+    HRESULT _hr = raw_Advise(piuSource, hWnd, uMsg, wParam);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMipParamEventSink::UnAdvise ( ) {
+    HRESULT _hr = raw_UnAdvise();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMipParamEventSink::ResetValueChangedFlag ( ) {
+    HRESULT _hr = raw_ResetValueChangedFlag();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMipParamEventSink::ResetInfoChangedFlag ( ) {
+    HRESULT _hr = raw_ResetInfoChangedFlag();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IMipParamEventSink::GetSource ( IUnknown * * pVal ) {
+    HRESULT _hr = get_Source(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IVariantCollection wrapper method implementations
+//
+
+inline _variant_t IVariantCollection::GetItem ( long index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline IUnknownPtr IVariantCollection::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline long IVariantCollection::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IVariantCollection::Add ( const _variant_t & varItem ) {
+    HRESULT _hr = raw_Add(varItem);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface IMipParameterEvents wrapper method implementations
+//
+
+inline HRESULT IMipParameterEvents::OnValueChanged ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT IMipParameterEvents::OnInfoChanged ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+inline HRESULT IMipParameterEvents::Disconnect ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+//
+// interface IEnumDisplayRawPair wrapper method implementations
+//
+
+inline HRESULT IEnumDisplayRawPair::Next ( unsigned long celt, struct DisplayRawPair * rgVar, ULONG * pCeltFetched ) {
+    HRESULT _hr = raw_Next(celt, rgVar, pCeltFetched);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEnumDisplayRawPair::Skip ( unsigned long celt ) {
+    HRESULT _hr = raw_Skip(celt);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEnumDisplayRawPair::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IEnumDisplayRawPairPtr IEnumDisplayRawPair::Clone ( ) {
+    struct IEnumDisplayRawPair * _result;
+    HRESULT _hr = raw_Clone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEnumDisplayRawPairPtr(_result, false);
+}
+
+//
+// interface IDisplayRawPairCollection wrapper method implementations
+//
+
+inline struct DisplayRawPair IDisplayRawPairCollection::GetItem ( long index ) {
+    struct DisplayRawPair _result;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr IDisplayRawPairCollection::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline long IDisplayRawPairCollection::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IDisplayRawPairCollection::Add ( const _variant_t & varRawValue, _bstr_t bstrDisplayString ) {
+    HRESULT _hr = raw_Add(varRawValue, bstrDisplayString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDisplayRawPairCollectionPtr IDisplayRawPairCollection::Clone ( ) {
+    struct IDisplayRawPairCollection * _result;
+    HRESULT _hr = raw_Clone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDisplayRawPairCollectionPtr(_result, false);
+}
+
+inline _variant_t IDisplayRawPairCollection::ConvertDisplayStringToRawValue ( _bstr_t bstrDisplay ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ConvertDisplayStringToRawValue(bstrDisplay, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t IDisplayRawPairCollection::ConvertRawValueToDisplayString ( VARIANT * pvarValue ) {
+    BSTR _result;
+    HRESULT _hr = raw_ConvertRawValueToDisplayString(pvarValue, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum EMIPPAR_VARENUM IDisplayRawPairCollection::GetDataType ( ) {
+    enum EMIPPAR_VARENUM _result;
+    HRESULT _hr = get_DataType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IDisplayRawPairCollection::LookupRawValue ( const _variant_t & varRawValue ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_LookupRawValue(varRawValue, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IDisplayRawPairCollection::ConvertRawValueToIndex ( VARIANT * pvarValue ) {
+    long _result;
+    HRESULT _hr = raw_ConvertRawValueToIndex(pvarValue, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IMipParameter wrapper method implementations
+//
+
+inline _variant_t IMipParameter::GetRawValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RawValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IMipParameter::PutRawValue ( const _variant_t & pVal ) {
+    HRESULT _hr = put_RawValue(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IMipParameter::ClearParam ( ) {
+    HRESULT _hr = raw_ClearParam();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum EMIPPAR_VARENUM IMipParameter::GetDataType ( ) {
+    enum EMIPPAR_VARENUM _result;
+    HRESULT _hr = get_DataType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutDataType ( enum EMIPPAR_VARENUM pVal ) {
+    HRESULT _hr = put_DataType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EMIPPAR_LIMITATION IMipParameter::GetLimitationType ( ) {
+    enum EMIPPAR_LIMITATION _result;
+    HRESULT _hr = get_LimitationType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutLimitationType ( enum EMIPPAR_LIMITATION pVal ) {
+    HRESULT _hr = put_LimitationType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMipParameter::GetHasFixedDataType ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_HasFixedDataType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutHasFixedDataType ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_HasFixedDataType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMipParameter::GetIsReadOnly ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_IsReadOnly(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutIsReadOnly ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsReadOnly(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipParameter::GetDisplayString ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DisplayString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipParameter::PutDisplayString ( _bstr_t pVal ) {
+    HRESULT _hr = put_DisplayString(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IMipParameter::ConvertDisplayStringToRawValue ( _bstr_t bstrDisplay ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ConvertDisplayStringToRawValue(bstrDisplay, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t IMipParameter::ConvertRawValueToDisplayString ( const _variant_t & varValue ) {
+    BSTR _result;
+    HRESULT _hr = raw_ConvertRawValueToDisplayString(varValue, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IMipParameter::GetUnit ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Unit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipParameter::PutUnit ( _bstr_t pVal ) {
+    HRESULT _hr = put_Unit(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMipParameter::GetIsSIUnit ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_IsSIUnit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutIsSIUnit ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_IsSIUnit(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IMipParameter::GetDisplayScale ( ) {
+    double _result;
+    HRESULT _hr = get_DisplayScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutDisplayScale ( double pVal ) {
+    HRESULT _hr = put_DisplayScale(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IMipParameter::GetDisplayOffset ( ) {
+    double _result;
+    HRESULT _hr = get_DisplayOffset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutDisplayOffset ( double pVal ) {
+    HRESULT _hr = put_DisplayOffset(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipParameter::GetDisplayCFormat ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DisplayCFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipParameter::PutDisplayCFormat ( _bstr_t pVal ) {
+    HRESULT _hr = put_DisplayCFormat(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IMipParameter::GetRangeLowerLimit ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RangeLowerLimit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IMipParameter::PutRangeLowerLimit ( const _variant_t & pVal ) {
+    HRESULT _hr = put_RangeLowerLimit(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IMipParameter::GetRangeHigherLimit ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RangeHigherLimit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IMipParameter::PutRangeHigherLimit ( const _variant_t & pVal ) {
+    HRESULT _hr = put_RangeHigherLimit(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IMipParameter::GetRangeIncrement ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RangeIncrement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IMipParameter::PutRangeIncrement ( const _variant_t & pVal ) {
+    HRESULT _hr = put_RangeIncrement(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDisplayRawPairCollectionPtr IMipParameter::GetEnumSet ( ) {
+    struct IDisplayRawPairCollection * _result;
+    HRESULT _hr = get_EnumSet(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDisplayRawPairCollectionPtr(_result, false);
+}
+
+inline void IMipParameter::PutEnumSet ( struct IDisplayRawPairCollection * pVal ) {
+    HRESULT _hr = put_EnumSet(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IMipParameter::EnumAdd ( const _variant_t & varRawValue, _bstr_t bstrDisplayString ) {
+    HRESULT _hr = raw_EnumAdd(varRawValue, bstrDisplayString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IUnknownPtr IMipParameter::GetParent ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_Parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline void IMipParameter::PutRefParent ( IUnknown * ppiuParent ) {
+    HRESULT _hr = putref_Parent(ppiuParent);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipParameter::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipParameter::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IMipParameter::AdviseAsync ( long hWnd, long uMsg, long wParam, struct IMipParamEventSink * * pLink ) {
+    HRESULT _hr = raw_AdviseAsync(hWnd, uMsg, wParam, pLink);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IMipParameter::GetDispId ( ) {
+    long _result;
+    HRESULT _hr = get_DispId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipParameter::PutDispId ( long pVal ) {
+    HRESULT _hr = put_DispId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IMipParameter::GetTitle ( BSTR * pVal ) {
+    HRESULT _hr = get_Title(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipParameter::ConvertRawValueToIndex ( const _variant_t & varValue ) {
+    long _result;
+    HRESULT _hr = raw_ConvertRawValueToIndex(varValue, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IMipParameter::ConvertIndexToRawValue ( long iIndex ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_ConvertIndexToRawValue(iIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IEnumMipParameter wrapper method implementations
+//
+
+inline HRESULT IEnumMipParameter::Next ( unsigned long celt, struct IMipParameter * * rgVar, unsigned long * pCeltFetched ) {
+    HRESULT _hr = raw_Next(celt, rgVar, pCeltFetched);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IEnumMipParameter::Skip ( unsigned long celt ) {
+    HRESULT _hr = raw_Skip(celt);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMipParameterCollection wrapper method implementations
+//
+
+inline IMipParameterPtr IMipParameterCollection::GetItem ( long index ) {
+    struct IMipParameter * _result;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMipParameterPtr(_result, false);
+}
+
+inline IUnknownPtr IMipParameterCollection::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline long IMipParameterCollection::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IMipParameterCollection::Add ( struct IMipParameter * varItem ) {
+    HRESULT _hr = raw_Add(varItem);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IMipParameterCollection::Sort ( long bAscending ) {
+    HRESULT _hr = raw_Sort(bAscending);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMipPropListCtrl wrapper method implementations
+//
+
+inline void IMipPropListCtrl::PutBackColor ( OLE_COLOR pclr ) {
+    HRESULT _hr = put_BackColor(pclr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR IMipPropListCtrl::GetBackColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropListCtrl::PutRefFont ( IFontDisp * ppFont ) {
+    HRESULT _hr = putref_Font(ppFont);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IMipPropListCtrl::PutFont ( IFontDisp * ppFont ) {
+    HRESULT _hr = put_Font(ppFont);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IFontDisp * IMipPropListCtrl::GetFont ( ) {
+    IFontDisp * _result;
+    HRESULT _hr = get_Font(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropListCtrl::PutRefPropColl ( IDispatch * _arg1 ) {
+    HRESULT _hr = putref_PropColl(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipPropListCtrl::GetSourcePath ( ) {
+    BSTR _result;
+    HRESULT _hr = get_SourcePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipPropListCtrl::PutSourcePath ( _bstr_t pVal ) {
+    HRESULT _hr = put_SourcePath(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IMipPropListCtrl::PutRefSourceObject ( IDispatch * pVal ) {
+    HRESULT _hr = putref_SourceObject(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IMipPropListCtrl::GetSourceObject ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_SourceObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+//
+// interface IMipPropEditCtrl wrapper method implementations
+//
+
+inline void IMipPropEditCtrl::PutCaption ( _bstr_t pcaption ) {
+    HRESULT _hr = put_Caption(pcaption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipPropEditCtrl::GetCaption ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum Orientation IMipPropEditCtrl::GetOrientation ( ) {
+    enum Orientation _result;
+    HRESULT _hr = get_Orientation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutOrientation ( enum Orientation pVal ) {
+    HRESULT _hr = put_Orientation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropEditCtrl::GetHasEditBox ( ) {
+    long _result;
+    HRESULT _hr = get_HasEditBox(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutHasEditBox ( long pVal ) {
+    HRESULT _hr = put_HasEditBox(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropEditCtrl::GetHasScrollBar ( ) {
+    long _result;
+    HRESULT _hr = get_HasScrollBar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutHasScrollBar ( long pVal ) {
+    HRESULT _hr = put_HasScrollBar(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropEditCtrl::GetHasCaption ( ) {
+    long _result;
+    HRESULT _hr = get_HasCaption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutHasCaption ( long pVal ) {
+    HRESULT _hr = put_HasCaption(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropEditCtrl::GetHasSpin ( ) {
+    long _result;
+    HRESULT _hr = get_HasSpin(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutHasSpin ( long pVal ) {
+    HRESULT _hr = put_HasSpin(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RelativePosition IMipPropEditCtrl::GetCaptionPosition ( ) {
+    enum RelativePosition _result;
+    HRESULT _hr = get_CaptionPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutCaptionPosition ( enum RelativePosition pVal ) {
+    HRESULT _hr = put_CaptionPosition(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RelativePosition IMipPropEditCtrl::GetScrollBarPosition ( ) {
+    enum RelativePosition _result;
+    HRESULT _hr = get_ScrollBarPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutScrollBarPosition ( enum RelativePosition pVal ) {
+    HRESULT _hr = put_ScrollBarPosition(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum AutoManual IMipPropEditCtrl::GetLayoutMode ( ) {
+    enum AutoManual _result;
+    HRESULT _hr = get_LayoutMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutLayoutMode ( enum AutoManual pVal ) {
+    HRESULT _hr = put_LayoutMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropEditCtrl::GetEditLines ( ) {
+    long _result;
+    HRESULT _hr = get_EditLines(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutEditLines ( long pVal ) {
+    HRESULT _hr = put_EditLines(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropEditCtrl::GetCaptionWidth ( ) {
+    long _result;
+    HRESULT _hr = get_CaptionWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutCaptionWidth ( long pVal ) {
+    HRESULT _hr = put_CaptionWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropEditCtrl::GetEditWidth ( ) {
+    long _result;
+    HRESULT _hr = get_EditWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropEditCtrl::PutEditWidth ( long pVal ) {
+    HRESULT _hr = put_EditWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IMipPropEditCtrl::GetSourceObject ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_SourceObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void IMipPropEditCtrl::PutRefSourceObject ( IDispatch * pVal ) {
+    HRESULT _hr = putref_SourceObject(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipPropEditCtrl::GetSourcePath ( ) {
+    BSTR _result;
+    HRESULT _hr = get_SourcePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipPropEditCtrl::PutSourcePath ( _bstr_t pVal ) {
+    HRESULT _hr = put_SourcePath(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipPropEditCtrl::GetSourceProperty ( ) {
+    BSTR _result;
+    HRESULT _hr = get_SourceProperty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipPropEditCtrl::PutSourceProperty ( _bstr_t pVal ) {
+    HRESULT _hr = put_SourceProperty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IMipPropBtnCtrl wrapper method implementations
+//
+
+inline void IMipPropBtnCtrl::PutCaption ( _bstr_t pstrCaption ) {
+    HRESULT _hr = put_Caption(pstrCaption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipPropBtnCtrl::GetCaption ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long IMipPropBtnCtrl::GetHasCaption ( ) {
+    long _result;
+    HRESULT _hr = get_HasCaption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropBtnCtrl::PutHasCaption ( long pVal ) {
+    HRESULT _hr = put_HasCaption(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMipPropBtnCtrl::GetCaptionLines ( ) {
+    long _result;
+    HRESULT _hr = get_CaptionLines(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropBtnCtrl::PutCaptionLines ( long pVal ) {
+    HRESULT _hr = put_CaptionLines(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum Orientation IMipPropBtnCtrl::GetOrientation ( ) {
+    enum Orientation _result;
+    HRESULT _hr = get_Orientation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropBtnCtrl::PutOrientation ( enum Orientation pVal ) {
+    HRESULT _hr = put_Orientation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IMipPropBtnCtrl::GetSourceObject ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_SourceObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void IMipPropBtnCtrl::PutRefSourceObject ( IDispatch * pVal ) {
+    HRESULT _hr = putref_SourceObject(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipPropBtnCtrl::GetSourcePath ( ) {
+    BSTR _result;
+    HRESULT _hr = get_SourcePath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipPropBtnCtrl::PutSourcePath ( _bstr_t pVal ) {
+    HRESULT _hr = put_SourcePath(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMipPropBtnCtrl::GetSourceProperty ( ) {
+    BSTR _result;
+    HRESULT _hr = get_SourceProperty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMipPropBtnCtrl::PutSourceProperty ( _bstr_t pVal ) {
+    HRESULT _hr = put_SourceProperty(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum CheckButtonType IMipPropBtnCtrl::GetButtonType ( ) {
+    enum CheckButtonType _result;
+    HRESULT _hr = get_ButtonType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMipPropBtnCtrl::PutButtonType ( enum CheckButtonType pVal ) {
+    HRESULT _hr = put_ButtonType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}

@@ -1,0 +1,2854 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (577e5e89).
+//
+// dscamera2.tlh
+//
+// C++ source equivalent of Win32 type library C:\Program Files\Nikon\Shared\Bin\dscamera2.dll
+// compiler-generated file created 11/29/10 at 21:13:39 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ CameraController;
+struct __declspec(uuid("39cd5b6d-ddc6-451f-b1b2-a43ddddd8cd9"))
+/* dual interface */ ICameraController;
+struct __declspec(uuid("670383fa-03f1-4be5-adf0-ce4593feca36"))
+/* dual interface */ IDsCamera;
+struct __declspec(uuid("6f9891ba-0e80-4368-b589-09673f6530b5"))
+/* dual interface */ IDeviceClient;
+struct __declspec(uuid("13d7ddcc-764f-4fe8-9e86-fd7ecd1b7b05"))
+/* dual interface */ _IDeviceLink;
+struct __declspec(uuid("a64b3cc9-1b73-41a8-93db-15c18559d6dd"))
+/* dual interface */ IDevice;
+struct __declspec(uuid("195b15d4-d233-4287-8956-d3368b7706d1"))
+/* dual interface */ IPort;
+struct __declspec(uuid("8fd05fd3-88be-4637-b462-8cdaf7792e68"))
+/* dual interface */ IExposure;
+struct __declspec(uuid("f7ed557d-212d-4269-a970-91ef4eabc7fc"))
+/* dual interface */ ILevels;
+struct __declspec(uuid("360ed938-e82b-4642-bca1-b92fe87a747a"))
+/* dual interface */ IEffects;
+struct __declspec(uuid("bce2e0f5-01f0-48d2-b87a-665b855e5cf4"))
+/* dual interface */ IImageStream;
+struct __declspec(uuid("5646f72f-fea6-491f-946c-bbb549d0b00a"))
+/* dual interface */ IControllerDevice;
+struct __declspec(uuid("75f8ec4b-7e49-4293-9213-d40c423afa15"))
+/* dual interface */ IDsDevice;
+struct __declspec(uuid("c5e65922-aa6e-42b5-b2cb-cc7f891d6a4e"))
+/* dual interface */ IControllerDevices;
+struct __declspec(uuid("c5f42975-2e1e-4670-92c0-be2dcffc32c3"))
+/* dispinterface */ _ILockEvents;
+struct /* coclass */ Exposure;
+struct /* coclass */ Levels;
+struct /* coclass */ Effects;
+struct __declspec(uuid("b49f302e-af72-4296-8c27-3c59987ac322"))
+/* dispinterface */ IPreviewEvents;
+struct __declspec(uuid("eb337e30-3910-4aeb-a45e-1d0ffb39d664"))
+/* interface */ IDSPropertyBag;
+struct /* coclass */ Preview;
+struct __declspec(uuid("1ce12041-dd23-4e9b-8673-dd3c9c4293cb"))
+/* dual interface */ IPreview;
+struct /* coclass */ Image;
+struct __declspec(uuid("e9cd4f02-4343-4173-85a8-8a580a79a679"))
+/* dual interface */ IImage;
+struct /* coclass */ ImageStream;
+struct /* coclass */ DSPropertyBag;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IDeviceLink, __uuidof(_IDeviceLink));
+_COM_SMARTPTR_TYPEDEF(IDeviceClient, __uuidof(IDeviceClient));
+_COM_SMARTPTR_TYPEDEF(IDsCamera, __uuidof(IDsCamera));
+_COM_SMARTPTR_TYPEDEF(ICameraController, __uuidof(ICameraController));
+_COM_SMARTPTR_TYPEDEF(IPort, __uuidof(IPort));
+_COM_SMARTPTR_TYPEDEF(IDevice, __uuidof(IDevice));
+_COM_SMARTPTR_TYPEDEF(IExposure, __uuidof(IExposure));
+_COM_SMARTPTR_TYPEDEF(ILevels, __uuidof(ILevels));
+_COM_SMARTPTR_TYPEDEF(IEffects, __uuidof(IEffects));
+_COM_SMARTPTR_TYPEDEF(IImageStream, __uuidof(IImageStream));
+_COM_SMARTPTR_TYPEDEF(IDsDevice, __uuidof(IDsDevice));
+_COM_SMARTPTR_TYPEDEF(IControllerDevice, __uuidof(IControllerDevice));
+_COM_SMARTPTR_TYPEDEF(IControllerDevices, __uuidof(IControllerDevices));
+_COM_SMARTPTR_TYPEDEF(_ILockEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IPreviewEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IDSPropertyBag, __uuidof(IDSPropertyBag));
+_COM_SMARTPTR_TYPEDEF(IPreview, __uuidof(IPreview));
+_COM_SMARTPTR_TYPEDEF(IImage, __uuidof(IImage));
+
+//
+// Type library items
+//
+
+enum EnumCameraControllerError
+{
+    DSCAMERA_DEVICE_ERROR_BASE = -536673104,
+    DSCAMERA_ERROR_DRIVER = -536673103,
+    DSCAMERA_ERROR_TRANSFER = -536673102,
+    DSCAMERA_ERROR_BUSY = -536673101,
+    DSCAMERA_ERROR_OVERFLOW = -536673100,
+    DSCAMERA_ERROR_BADRESPONSE = -536673099,
+    DSCAMERA_ERROR_DEVICE = -536673098,
+    DSCAMERA_ERROR_PORTTIMEOUT = -536673097,
+    DSCAMERA_ERROR_NOTCONNECTED = -536673096,
+    DSCAMERA_ERROR_NODEVICE = -536673095,
+    DSCAMERA_ERROR_INVALIDCMD = -536673094,
+    DSCAMERA_ERROR_INVALIDARG = -536673093,
+    DSCAMERA_ERROR_NOACCESSORY = -536673092,
+    DSCAMERA_ERROR_SENDOVERFLOW = -536673091,
+    DSCAMERA_ERROR_UNSAFE = -536673090,
+    DSCAMERA_ERROR_TRANSMITFAIL = -536673089,
+    DSCAMERA_ERROR_NODEVICES = -536673088,
+    DSCAMERA_DATABASE_ERROR_BASE = -536673004,
+    DSCAMERA_ERROR_NOTCUSTOM = -536673003,
+    DSCAMERA_ERROR_DATABASEFULL = -536673002,
+    DSCAMERA_ERROR_CONSTANT = -536673001,
+    DSCAMERA_ERROR_BADPOSITION = -536673000,
+    DSCAMERA_ERROR_BADCODE = -536672999,
+    DSCAMERA_ERROR_NOTMOUNTED = -536672998,
+    DSCAMERA_ERROR_DIRECTSHOW = -536672904,
+    DSCAMERA_ERROR_INVALID_FORMAT = -536672903,
+    DSCAMERA_ERROR_GET_IMAGESIZE = -536672902,
+    DSCAMERA_ERROR_GET_IMAGE = -536672901,
+    DSCAMERA_ERROR_GRAPH_RUNNING = -536672900,
+    DSCAMERA_ERROR_INVALID_HANDLE = -536672804,
+    DSCAMERA_ERROR_CREATE_FILE = -536672803
+};
+
+struct __declspec(uuid("f10fd1b0-574e-45ae-bacb-c2ebca00d285"))
+CameraController;
+    // [ default ] interface ICameraController
+    // [ default, source ] dispinterface _ILockEvents
+
+struct __declspec(uuid("13d7ddcc-764f-4fe8-9e86-fd7ecd1b7b05"))
+_IDeviceLink : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=Get_LockCookie,put=Put_LockCookie))
+    _bstr_t _LockCookie;
+    __declspec(property(get=Get_Device,put=Put_Device))
+    IDevicePtr _Device;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t Get_LockCookie ( );
+    void Put_LockCookie (
+        _bstr_t pVal );
+    HRESULT _OnStatusChanged (
+        _bstr_t strStatus );
+    IDevicePtr Get_Device ( );
+    void Put_Device (
+        struct IDevice * pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__LockCookie (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put__LockCookie (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw__OnStatusChanged (
+        BSTR strStatus ) = 0;
+    virtual HRESULT __stdcall get__Device (
+        struct IDevice * * pVal ) = 0;
+    virtual HRESULT __stdcall put__Device (
+        struct IDevice * pVal ) = 0;
+};
+
+struct __declspec(uuid("6f9891ba-0e80-4368-b589-09673f6530b5"))
+IDeviceClient : _IDeviceLink
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT LockDevice (
+        double dWaitTimeout );
+    HRESULT UnlockDevice ( );
+    HRESULT _OnTimer ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_LockDevice (
+        double dWaitTimeout ) = 0;
+    virtual HRESULT __stdcall raw_UnlockDevice ( ) = 0;
+    virtual HRESULT __stdcall raw__OnTimer ( ) = 0;
+};
+
+struct __declspec(uuid("670383fa-03f1-4be5-adf0-ce4593feca36"))
+IDsCamera : IDeviceClient
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetExposure,put=PutExposure))
+    IExposurePtr Exposure;
+    __declspec(property(get=GetLevels,put=PutLevels))
+    ILevelsPtr Levels;
+    __declspec(property(get=GetEffects,put=PutEffects))
+    IEffectsPtr Effects;
+    __declspec(property(get=GetImageStream,put=PutImageStream))
+    IImageStreamPtr ImageStream;
+    __declspec(property(get=GetCameraName))
+    _bstr_t CameraName;
+    __declspec(property(get=GetModel))
+    _variant_t Model;
+    __declspec(property(get=Get_Model,put=Put_Model))
+    enum EnumModel _Model;
+    __declspec(property(get=GetControllerName,put=PutControllerName))
+    _bstr_t ControllerName;
+    __declspec(property(get=GetVersion))
+    _bstr_t Version;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetControllerName ( );
+    void PutControllerName (
+        _bstr_t pVal );
+    _bstr_t GetVersion ( );
+    IExposurePtr GetExposure ( );
+    void PutExposure (
+        struct IExposure * pVal );
+    ILevelsPtr GetLevels ( );
+    void PutLevels (
+        struct ILevels * pVal );
+    IEffectsPtr GetEffects ( );
+    void PutEffects (
+        struct IEffects * pVal );
+    IImageStreamPtr GetImageStream ( );
+    void PutImageStream (
+        struct IImageStream * pVal );
+    _variant_t GetModel ( );
+    enum EnumModel Get_Model ( );
+    void Put_Model (
+        enum EnumModel pVal );
+    HRESULT SendData (
+        _bstr_t strCommand );
+    HRESULT GetData (
+        _bstr_t strCommand,
+        BSTR * pVal );
+    _bstr_t GetCameraName ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ControllerName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ControllerName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Version (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Exposure (
+        struct IExposure * * pVal ) = 0;
+    virtual HRESULT __stdcall put_Exposure (
+        struct IExposure * pVal ) = 0;
+    virtual HRESULT __stdcall get_Levels (
+        struct ILevels * * pVal ) = 0;
+    virtual HRESULT __stdcall put_Levels (
+        struct ILevels * pVal ) = 0;
+    virtual HRESULT __stdcall get_Effects (
+        struct IEffects * * pVal ) = 0;
+    virtual HRESULT __stdcall put_Effects (
+        struct IEffects * pVal ) = 0;
+    virtual HRESULT __stdcall get_ImageStream (
+        struct IImageStream * * pVal ) = 0;
+    virtual HRESULT __stdcall put_ImageStream (
+        struct IImageStream * pVal ) = 0;
+    virtual HRESULT __stdcall get_Model (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__Model (
+        enum EnumModel * pVal ) = 0;
+    virtual HRESULT __stdcall put__Model (
+        enum EnumModel pVal ) = 0;
+    virtual HRESULT __stdcall raw_SendData (
+        BSTR strCommand ) = 0;
+    virtual HRESULT __stdcall raw_GetData (
+        BSTR strCommand,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_CameraName (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("39cd5b6d-ddc6-451f-b1b2-a43ddddd8cd9"))
+ICameraController : IDsCamera
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetScanMode,put=PutScanMode))
+    _variant_t ScanMode;
+    __declspec(property(get=Get_ScanMode,put=Put_ScanMode))
+    enum EnumScan _ScanMode;
+    __declspec(property(get=GetDevice,put=PutDevice))
+    IControllerDevicePtr Device;
+    __declspec(property(get=GetDevices))
+    IControllerDevicesPtr Devices;
+    __declspec(property(get=GetROIPosition,put=PutROIPosition))
+    _variant_t ROIPosition;
+    __declspec(property(get=Get_ROIPosition,put=Put_ROIPosition))
+    long _ROIPosition;
+    __declspec(property(get=GetFocus))
+    _variant_t Focus;
+    __declspec(property(get=Get_Focus,put=Put_Focus))
+    long _Focus;
+    __declspec(property(get=GetCoolingMode,put=PutCoolingMode))
+    _variant_t CoolingMode;
+    __declspec(property(get=Get_CoolingMode,put=Put_CoolingMode))
+    enum EnumQi1TargetTemperature _CoolingMode;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetScanMode ( );
+    void PutScanMode (
+        const _variant_t & pVal );
+    enum EnumScan Get_ScanMode ( );
+    void Put_ScanMode (
+        enum EnumScan pVal );
+    IControllerDevicePtr GetDevice ( );
+    void PutDevice (
+        struct IControllerDevice * pVal );
+    IControllerDevicesPtr GetDevices ( );
+    _bstr_t GetData2 (
+        _bstr_t strCommand );
+    _variant_t GetROIPosition ( );
+    void PutROIPosition (
+        const _variant_t & pVal );
+    long Get_ROIPosition ( );
+    void Put_ROIPosition (
+        long pVal );
+    _variant_t GetFocus ( );
+    long Get_Focus ( );
+    void Put_Focus (
+        long pVal );
+    HRESULT PresetFocusArea (
+        long X,
+        long Y,
+        long Width,
+        long Height );
+    HRESULT SaveCameraSettings (
+        _bstr_t FileName );
+    HRESULT LoadCameraSettings (
+        _bstr_t FileName );
+    _variant_t GetCoolingMode ( );
+    void PutCoolingMode (
+        const _variant_t & pVal );
+    enum EnumQi1TargetTemperature Get_CoolingMode ( );
+    void Put_CoolingMode (
+        enum EnumQi1TargetTemperature pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ScanMode (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ScanMode (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__ScanMode (
+        enum EnumScan * pVal ) = 0;
+    virtual HRESULT __stdcall put__ScanMode (
+        enum EnumScan pVal ) = 0;
+    virtual HRESULT __stdcall get_Device (
+        struct IControllerDevice * * pVal ) = 0;
+    virtual HRESULT __stdcall put_Device (
+        struct IControllerDevice * pVal ) = 0;
+    virtual HRESULT __stdcall get_Devices (
+        struct IControllerDevices * * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetData2 (
+        BSTR strCommand,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_ROIPosition (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ROIPosition (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__ROIPosition (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__ROIPosition (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Focus (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__Focus (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Focus (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_PresetFocusArea (
+        long X,
+        long Y,
+        long Width,
+        long Height ) = 0;
+    virtual HRESULT __stdcall raw_SaveCameraSettings (
+        BSTR FileName ) = 0;
+    virtual HRESULT __stdcall raw_LoadCameraSettings (
+        BSTR FileName ) = 0;
+    virtual HRESULT __stdcall get_CoolingMode (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_CoolingMode (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__CoolingMode (
+        enum EnumQi1TargetTemperature * pVal ) = 0;
+    virtual HRESULT __stdcall put__CoolingMode (
+        enum EnumQi1TargetTemperature pVal ) = 0;
+};
+
+struct __declspec(uuid("195b15d4-d233-4287-8956-d3368b7706d1"))
+IPort : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAddress))
+    _bstr_t Address;
+    __declspec(property(get=GetConnected,put=PutConnected))
+    long Connected;
+    __declspec(property(get=GetLastResponse))
+    _bstr_t LastResponse;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAddress ( );
+    HRESULT Connect ( );
+    HRESULT Disconnect ( );
+    long GetConnected ( );
+    void PutConnected (
+        long pVal );
+    HRESULT _LockPort ( );
+    HRESULT _UnlockPort ( );
+    _bstr_t GetLastResponse ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Address (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Connect ( ) = 0;
+    virtual HRESULT __stdcall raw_Disconnect ( ) = 0;
+    virtual HRESULT __stdcall get_Connected (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Connected (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw__LockPort ( ) = 0;
+    virtual HRESULT __stdcall raw__UnlockPort ( ) = 0;
+    virtual HRESULT __stdcall get_LastResponse (
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("a64b3cc9-1b73-41a8-93db-15c18559d6dd"))
+IDevice : IPort
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=Get_LockCookie))
+    _bstr_t _LockCookie;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT GetStringData (
+        _bstr_t LockCookie,
+        _bstr_t strCommand,
+        BSTR * pVal );
+    HRESULT GetStatusData (
+        _bstr_t LockCookie,
+        _bstr_t strCommand,
+        enum EnumStatus * pVal );
+    HRESULT GetLongData (
+        _bstr_t LockCookie,
+        _bstr_t strCommand,
+        long * pVal );
+    HRESULT SendStringData (
+        _bstr_t LockCookie,
+        _bstr_t strCommand,
+        _bstr_t strArgument );
+    HRESULT SendStatusData (
+        _bstr_t LockCookie,
+        _bstr_t strCommand,
+        enum EnumStatus statusArgument );
+    HRESULT SendLongData (
+        _bstr_t LockCookie,
+        _bstr_t strCommand,
+        long lArgument );
+    HRESULT _OnRefreshLock (
+        _bstr_t LockCookie );
+    HRESULT _LockDevice (
+        _bstr_t LockCookie,
+        struct IDeviceClient * pDeviceClient );
+    HRESULT _UnlockDevice (
+        _bstr_t LockCookie );
+    HRESULT _OnTimer ( );
+    _bstr_t Get_LockCookie ( );
+    HRESULT SendAsyncStringData (
+        _bstr_t LockCookie,
+        _bstr_t strData,
+        long lLength );
+    long _GetSupportedFormat ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_GetStringData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetStatusData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetLongData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SendStringData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        BSTR strArgument ) = 0;
+    virtual HRESULT __stdcall raw_SendStatusData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        enum EnumStatus statusArgument ) = 0;
+    virtual HRESULT __stdcall raw_SendLongData (
+        BSTR LockCookie,
+        BSTR strCommand,
+        long lArgument ) = 0;
+    virtual HRESULT __stdcall raw__OnRefreshLock (
+        BSTR LockCookie ) = 0;
+    virtual HRESULT __stdcall raw__LockDevice (
+        BSTR LockCookie,
+        struct IDeviceClient * pDeviceClient ) = 0;
+    virtual HRESULT __stdcall raw__UnlockDevice (
+        BSTR LockCookie ) = 0;
+    virtual HRESULT __stdcall raw__OnTimer ( ) = 0;
+    virtual HRESULT __stdcall get__LockCookie (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SendAsyncStringData (
+        BSTR LockCookie,
+        BSTR strData,
+        long lLength ) = 0;
+    virtual HRESULT __stdcall raw__GetSupportedFormat (
+        long * plSupport ) = 0;
+};
+
+enum EnumStatus
+{
+    StatusUnknown = -1,
+    StatusFalse = 0,
+    StatusTrue = 1
+};
+
+struct __declspec(uuid("8fd05fd3-88be-4637-b462-8cdaf7792e68"))
+IExposure : _IDeviceLink
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetMode,put=PutMode))
+    _variant_t Mode;
+    __declspec(property(get=Get_Mode,put=Put_Mode))
+    enum EnumExposure _Mode;
+    __declspec(property(get=GetMeteringMode,put=PutMeteringMode))
+    _variant_t MeteringMode;
+    __declspec(property(get=Get_MeteringMode,put=Put_MeteringMode))
+    enum EnumMeteringMode _MeteringMode;
+    __declspec(property(get=GetBias,put=PutBias))
+    _variant_t Bias;
+    __declspec(property(get=Get_Bias,put=Put_Bias))
+    long _Bias;
+    __declspec(property(get=GetTime,put=PutTime))
+    _variant_t Time;
+    __declspec(property(get=Get_Time,put=Put_Time))
+    long _Time;
+    __declspec(property(get=GetGain,put=PutGain))
+    _variant_t Gain;
+    __declspec(property(get=Get_Gain,put=Put_Gain))
+    long _Gain;
+    __declspec(property(get=GetIsLocked,put=PutIsLocked))
+    _variant_t IsLocked;
+    __declspec(property(get=Get_IsLocked,put=Put_IsLocked))
+    enum EnumStatus _IsLocked;
+    __declspec(property(get=GetPreset,put=PutPreset))
+    _variant_t Preset;
+    __declspec(property(get=Get_Preset,put=Put_Preset))
+    long _Preset;
+    __declspec(property(get=GetMeteringArea,put=PutMeteringArea))
+    _variant_t MeteringArea;
+    __declspec(property(get=Get_MeteringArea,put=Put_MeteringArea))
+    enum EnumMeteringArea _MeteringArea;
+    __declspec(property(get=GetIsSuspended,put=PutIsSuspended))
+    _variant_t IsSuspended;
+    __declspec(property(get=Get_IsSuspended,put=Put_IsSuspended))
+    enum EnumStatus _IsSuspended;
+    __declspec(property(get=GetLapseOfTime))
+    _variant_t LapseOfTime;
+    __declspec(property(get=Get_LapseOfTime,put=Put_LapseOfTime))
+    long _LapseOfTime;
+    __declspec(property(get=GetStatus))
+    _variant_t Status;
+    __declspec(property(get=Get_Status,put=Put_Status))
+    enum EnumExposureStatus _Status;
+    __declspec(property(get=GetDetailedGain,put=PutDetailedGain))
+    _variant_t DetailedGain;
+    __declspec(property(get=Get_DetailedGain,put=Put_DetailedGain))
+    double _DetailedGain;
+    __declspec(property(get=GetPresetEx,put=PutPresetEx))
+    _variant_t PresetEx;
+    __declspec(property(get=Get_PresetEx,put=Put_PresetEx))
+    long _PresetEx;
+    __declspec(property(get=GetDetailedTime,put=PutDetailedTime))
+    _variant_t DetailedTime;
+    __declspec(property(get=Get_DetailedTime,put=Put_DetailedTime))
+    long _DetailedTime;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetMode ( );
+    void PutMode (
+        const _variant_t & pVal );
+    enum EnumExposure Get_Mode ( );
+    void Put_Mode (
+        enum EnumExposure pVal );
+    _variant_t GetMeteringMode ( );
+    void PutMeteringMode (
+        const _variant_t & pVal );
+    enum EnumMeteringMode Get_MeteringMode ( );
+    void Put_MeteringMode (
+        enum EnumMeteringMode pVal );
+    _variant_t GetBias ( );
+    void PutBias (
+        const _variant_t & pVal );
+    long Get_Bias ( );
+    void Put_Bias (
+        long pVal );
+    _variant_t GetTime ( );
+    void PutTime (
+        const _variant_t & pVal );
+    long Get_Time ( );
+    void Put_Time (
+        long pVal );
+    _variant_t GetGain ( );
+    void PutGain (
+        const _variant_t & pVal );
+    long Get_Gain ( );
+    void Put_Gain (
+        long pVal );
+    _variant_t GetIsLocked ( );
+    void PutIsLocked (
+        const _variant_t & pVal );
+    enum EnumStatus Get_IsLocked ( );
+    void Put_IsLocked (
+        enum EnumStatus pVal );
+    _variant_t GetPreset ( );
+    void PutPreset (
+        const _variant_t & pVal );
+    long Get_Preset ( );
+    void Put_Preset (
+        long pVal );
+    _variant_t GetMeteringArea ( );
+    void PutMeteringArea (
+        const _variant_t & pVal );
+    enum EnumMeteringArea Get_MeteringArea ( );
+    void Put_MeteringArea (
+        enum EnumMeteringArea pVal );
+    _variant_t GetIsSuspended ( );
+    void PutIsSuspended (
+        const _variant_t & pVal );
+    enum EnumStatus Get_IsSuspended ( );
+    void Put_IsSuspended (
+        enum EnumStatus pVal );
+    _bstr_t _TimeAsString ( );
+    _variant_t GetLapseOfTime ( );
+    long Get_LapseOfTime ( );
+    void Put_LapseOfTime (
+        long pVal );
+    _variant_t GetStatus ( );
+    enum EnumExposureStatus Get_Status ( );
+    void Put_Status (
+        enum EnumExposureStatus pVal );
+    HRESULT OnePushAutoExposure ( );
+    _variant_t GetDetailedGain ( );
+    void PutDetailedGain (
+        const _variant_t & pVal );
+    double Get_DetailedGain ( );
+    void Put_DetailedGain (
+        double pVal );
+    HRESULT PresetMeteringArea (
+        long X,
+        long Y,
+        long Width,
+        long Height );
+    _variant_t GetPresetEx ( );
+    void PutPresetEx (
+        const _variant_t & pVal );
+    long Get_PresetEx ( );
+    void Put_PresetEx (
+        long pVal );
+    HRESULT ExpCalculation (
+        enum EnumScan TargetScan,
+        long * Gain,
+        long * Time );
+    HRESULT ExpCalculationEx (
+        enum EnumScan TargetScan,
+        double TargetGain,
+        long * Time );
+    _variant_t GetDetailedTime ( );
+    void PutDetailedTime (
+        const _variant_t & pVal );
+    long Get_DetailedTime ( );
+    void Put_DetailedTime (
+        long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Mode (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Mode (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Mode (
+        enum EnumExposure * pVal ) = 0;
+    virtual HRESULT __stdcall put__Mode (
+        enum EnumExposure pVal ) = 0;
+    virtual HRESULT __stdcall get_MeteringMode (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_MeteringMode (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__MeteringMode (
+        enum EnumMeteringMode * pVal ) = 0;
+    virtual HRESULT __stdcall put__MeteringMode (
+        enum EnumMeteringMode pVal ) = 0;
+    virtual HRESULT __stdcall get_Bias (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Bias (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Bias (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Bias (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Time (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Time (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Time (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Time (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Gain (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Gain (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Gain (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Gain (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_IsLocked (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_IsLocked (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__IsLocked (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__IsLocked (
+        enum EnumStatus pVal ) = 0;
+    virtual HRESULT __stdcall get_Preset (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Preset (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Preset (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Preset (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_MeteringArea (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_MeteringArea (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__MeteringArea (
+        enum EnumMeteringArea * pVal ) = 0;
+    virtual HRESULT __stdcall put__MeteringArea (
+        enum EnumMeteringArea pVal ) = 0;
+    virtual HRESULT __stdcall get_IsSuspended (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_IsSuspended (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__IsSuspended (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__IsSuspended (
+        enum EnumStatus pVal ) = 0;
+    virtual HRESULT __stdcall raw__TimeAsString (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_LapseOfTime (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__LapseOfTime (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__LapseOfTime (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Status (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__Status (
+        enum EnumExposureStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__Status (
+        enum EnumExposureStatus pVal ) = 0;
+    virtual HRESULT __stdcall raw_OnePushAutoExposure ( ) = 0;
+    virtual HRESULT __stdcall get_DetailedGain (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_DetailedGain (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__DetailedGain (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put__DetailedGain (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall raw_PresetMeteringArea (
+        long X,
+        long Y,
+        long Width,
+        long Height ) = 0;
+    virtual HRESULT __stdcall get_PresetEx (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_PresetEx (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__PresetEx (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__PresetEx (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_ExpCalculation (
+        enum EnumScan TargetScan,
+        long * Gain,
+        long * Time ) = 0;
+    virtual HRESULT __stdcall raw_ExpCalculationEx (
+        enum EnumScan TargetScan,
+        double TargetGain,
+        long * Time ) = 0;
+    virtual HRESULT __stdcall get_DetailedTime (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_DetailedTime (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__DetailedTime (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__DetailedTime (
+        long pVal ) = 0;
+};
+
+enum EnumExposure
+{
+    ExposureUnknown = -1,
+    ExposureAuto = 0,
+    ExposureShutterAuto = 1,
+    ExposureManual = 2,
+    ExposureFocusAuto = 3
+};
+
+enum EnumMeteringMode
+{
+    MeteringModeUnknown = -1,
+    MeteringModeAverage = 0,
+    MeteringModePeak = 1
+};
+
+enum EnumMeteringArea
+{
+    MeteringAreaUnknown = -1,
+    MeteringAreaSmallArea = 0,
+    MeteringAreaMediumArea = 1,
+    MeteringAreaLargeArea = 2,
+    MeteringArea1 = 3
+};
+
+enum EnumExposureStatus
+{
+    ExposureStatusUnknown = -1,
+    ExposureStatusCorrect = 0,
+    ExposureStatusOver = 1,
+    ExposureStatusUnder = 2
+};
+
+enum EnumScan
+{
+    ScanUnknown = -1,
+    ScanInterlacedFine = 0,
+    ScanProgressiveMedium = 1,
+    ScanInterlacedMedium = 2,
+    ScanCenter = 3,
+    ScanProgressiveFine = 4,
+    ScanProgressiveNormal = 5,
+    ScanInterlacedNormal = 6,
+    ScanROIMedium = 7,
+    ScanROINormal = 8,
+    ScanProgressiveBinning2 = 9,
+    ScanProgressiveBinning4 = 10,
+    ScanColorBinning2 = 11,
+    ScanColorBinning4 = 12,
+    ScanGainUp4 = 13,
+    ScanGainUp16 = 14
+};
+
+struct __declspec(uuid("f7ed557d-212d-4269-a970-91ef4eabc7fc"))
+ILevels : _IDeviceLink
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetGain,put=PutGain))
+    _variant_t Gain;
+    __declspec(property(get=Get_Gain,put=Put_Gain))
+    long _Gain;
+    __declspec(property(get=GetRedGain,put=PutRedGain))
+    _variant_t RedGain;
+    __declspec(property(get=Get_RedGain,put=Put_RedGain))
+    long _RedGain;
+    __declspec(property(get=GetGreenGain,put=PutGreenGain))
+    _variant_t GreenGain;
+    __declspec(property(get=Get_GreenGain,put=Put_GreenGain))
+    long _GreenGain;
+    __declspec(property(get=GetBlueGain,put=PutBlueGain))
+    _variant_t BlueGain;
+    __declspec(property(get=Get_BlueGain,put=Put_BlueGain))
+    long _BlueGain;
+    __declspec(property(get=GetRedSaturation,put=PutRedSaturation))
+    _variant_t RedSaturation;
+    __declspec(property(get=Get_RedSaturation,put=Put_RedSaturation))
+    long _RedSaturation;
+    __declspec(property(get=GetBlueSaturation,put=PutBlueSaturation))
+    _variant_t BlueSaturation;
+    __declspec(property(get=Get_BlueSaturation,put=Put_BlueSaturation))
+    long _BlueSaturation;
+    __declspec(property(get=GetGreenSaturation,put=PutGreenSaturation))
+    _variant_t GreenSaturation;
+    __declspec(property(get=Get_GreenSaturation,put=Put_GreenSaturation))
+    long _GreenSaturation;
+    __declspec(property(get=GetHue,put=PutHue))
+    _variant_t Hue;
+    __declspec(property(get=Get_Hue,put=Put_Hue))
+    long _Hue;
+    __declspec(property(get=GetSaturation,put=PutSaturation))
+    _variant_t Saturation;
+    __declspec(property(get=Get_Saturation,put=Put_Saturation))
+    long _Saturation;
+    __declspec(property(get=GetContrast,put=PutContrast))
+    _variant_t Contrast;
+    __declspec(property(get=Get_Contrast,put=Put_Contrast))
+    long _Contrast;
+    __declspec(property(get=GetTone,put=PutTone))
+    _variant_t Tone;
+    __declspec(property(get=Get_Tone,put=Put_Tone))
+    long _Tone;
+    __declspec(property(get=GetRedBalance,put=PutRedBalance))
+    _variant_t RedBalance;
+    __declspec(property(get=Get_RedBalance,put=Put_RedBalance))
+    long _RedBalance;
+    __declspec(property(get=GetGreenBalance,put=PutGreenBalance))
+    _variant_t GreenBalance;
+    __declspec(property(get=Get_GreenBalance,put=Put_GreenBalance))
+    long _GreenBalance;
+    __declspec(property(get=GetBlueBalance,put=PutBlueBalance))
+    _variant_t BlueBalance;
+    __declspec(property(get=Get_BlueBalance,put=Put_BlueBalance))
+    long _BlueBalance;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Balance ( );
+    _variant_t GetGain ( );
+    void PutGain (
+        const _variant_t & pVal );
+    long Get_Gain ( );
+    void Put_Gain (
+        long pVal );
+    _variant_t GetRedGain ( );
+    void PutRedGain (
+        const _variant_t & pVal );
+    long Get_RedGain ( );
+    void Put_RedGain (
+        long pVal );
+    _variant_t GetGreenGain ( );
+    void PutGreenGain (
+        const _variant_t & pVal );
+    long Get_GreenGain ( );
+    void Put_GreenGain (
+        long pVal );
+    _variant_t GetBlueGain ( );
+    void PutBlueGain (
+        const _variant_t & pVal );
+    long Get_BlueGain ( );
+    void Put_BlueGain (
+        long pVal );
+    _variant_t GetRedSaturation ( );
+    void PutRedSaturation (
+        const _variant_t & pVal );
+    long Get_RedSaturation ( );
+    void Put_RedSaturation (
+        long pVal );
+    _variant_t GetBlueSaturation ( );
+    void PutBlueSaturation (
+        const _variant_t & pVal );
+    long Get_BlueSaturation ( );
+    void Put_BlueSaturation (
+        long pVal );
+    _variant_t GetGreenSaturation ( );
+    void PutGreenSaturation (
+        const _variant_t & pVal );
+    long Get_GreenSaturation ( );
+    void Put_GreenSaturation (
+        long pVal );
+    _variant_t GetHue ( );
+    void PutHue (
+        const _variant_t & pVal );
+    long Get_Hue ( );
+    void Put_Hue (
+        long pVal );
+    _variant_t GetSaturation ( );
+    void PutSaturation (
+        const _variant_t & pVal );
+    long Get_Saturation ( );
+    void Put_Saturation (
+        long pVal );
+    _variant_t GetContrast ( );
+    void PutContrast (
+        const _variant_t & pVal );
+    long Get_Contrast ( );
+    void Put_Contrast (
+        long pVal );
+    _variant_t GetTone ( );
+    void PutTone (
+        const _variant_t & pVal );
+    long Get_Tone ( );
+    void Put_Tone (
+        long pVal );
+    _variant_t GetRedBalance ( );
+    void PutRedBalance (
+        const _variant_t & pVal );
+    long Get_RedBalance ( );
+    void Put_RedBalance (
+        long pVal );
+    _variant_t GetGreenBalance ( );
+    void PutGreenBalance (
+        const _variant_t & pVal );
+    long Get_GreenBalance ( );
+    void Put_GreenBalance (
+        long pVal );
+    _variant_t GetBlueBalance ( );
+    void PutBlueBalance (
+        const _variant_t & pVal );
+    long Get_BlueBalance ( );
+    void Put_BlueBalance (
+        long pVal );
+    HRESULT PresetTone (
+        _bstr_t DataName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Balance ( ) = 0;
+    virtual HRESULT __stdcall get_Gain (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Gain (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Gain (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Gain (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_RedGain (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_RedGain (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__RedGain (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__RedGain (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_GreenGain (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_GreenGain (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__GreenGain (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__GreenGain (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_BlueGain (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_BlueGain (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__BlueGain (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__BlueGain (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_RedSaturation (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_RedSaturation (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__RedSaturation (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__RedSaturation (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_BlueSaturation (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_BlueSaturation (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__BlueSaturation (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__BlueSaturation (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_GreenSaturation (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_GreenSaturation (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__GreenSaturation (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__GreenSaturation (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Hue (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Hue (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Hue (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Hue (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Saturation (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Saturation (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Saturation (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Saturation (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Contrast (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Contrast (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Contrast (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Contrast (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Tone (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Tone (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Tone (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Tone (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_RedBalance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_RedBalance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__RedBalance (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__RedBalance (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_GreenBalance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_GreenBalance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__GreenBalance (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__GreenBalance (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_BlueBalance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_BlueBalance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__BlueBalance (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__BlueBalance (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_PresetTone (
+        BSTR DataName ) = 0;
+};
+
+struct __declspec(uuid("360ed938-e82b-4642-bca1-b92fe87a747a"))
+IEffects : _IDeviceLink
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetColorCast,put=PutColorCast))
+    _variant_t ColorCast;
+    __declspec(property(get=Get_ColorCast,put=Put_ColorCast))
+    enum EnumColorCast _ColorCast;
+    __declspec(property(get=GetSharpness,put=PutSharpness))
+    _variant_t Sharpness;
+    __declspec(property(get=Get_Sharpness,put=Put_Sharpness))
+    long _Sharpness;
+    __declspec(property(get=GetNoiseReductionEnabled,put=PutNoiseReductionEnabled))
+    _variant_t NoiseReductionEnabled;
+    __declspec(property(get=Get_NoiseReductionEnabled,put=Put_NoiseReductionEnabled))
+    enum EnumStatus _NoiseReductionEnabled;
+    __declspec(property(get=GetShadingCorrection,put=PutShadingCorrection))
+    _variant_t ShadingCorrection;
+    __declspec(property(get=Get_ShadingCorrection,put=Put_ShadingCorrection))
+    long _ShadingCorrection;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetColorCast ( );
+    void PutColorCast (
+        const _variant_t & pVal );
+    enum EnumColorCast Get_ColorCast ( );
+    void Put_ColorCast (
+        enum EnumColorCast pVal );
+    _variant_t GetSharpness ( );
+    void PutSharpness (
+        const _variant_t & pVal );
+    long Get_Sharpness ( );
+    void Put_Sharpness (
+        long pVal );
+    _variant_t GetNoiseReductionEnabled ( );
+    void PutNoiseReductionEnabled (
+        const _variant_t & pVal );
+    enum EnumStatus Get_NoiseReductionEnabled ( );
+    void Put_NoiseReductionEnabled (
+        enum EnumStatus pVal );
+    HRESULT MemorizeShadingData ( );
+    _variant_t GetShadingCorrection ( );
+    void PutShadingCorrection (
+        const _variant_t & pVal );
+    long Get_ShadingCorrection ( );
+    void Put_ShadingCorrection (
+        long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ColorCast (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ColorCast (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__ColorCast (
+        enum EnumColorCast * pVal ) = 0;
+    virtual HRESULT __stdcall put__ColorCast (
+        enum EnumColorCast pVal ) = 0;
+    virtual HRESULT __stdcall get_Sharpness (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Sharpness (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Sharpness (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Sharpness (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_NoiseReductionEnabled (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_NoiseReductionEnabled (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__NoiseReductionEnabled (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__NoiseReductionEnabled (
+        enum EnumStatus pVal ) = 0;
+    virtual HRESULT __stdcall raw_MemorizeShadingData ( ) = 0;
+    virtual HRESULT __stdcall get_ShadingCorrection (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ShadingCorrection (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__ShadingCorrection (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__ShadingCorrection (
+        long pVal ) = 0;
+};
+
+enum EnumColorCast
+{
+    ColorCastUnknown = -1,
+    ColorCastNone = 0,
+    ColorCastNegative = 1,
+    ColorCastBlue = 2,
+    ColorCastGrayscale = 3,
+    ColorCastSepia = 4
+};
+
+struct __declspec(uuid("bce2e0f5-01f0-48d2-b87a-665b855e5cf4"))
+IImageStream : _IDeviceLink
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetTransform,put=PutTransform))
+    _variant_t Transform;
+    __declspec(property(get=Get_Transform,put=Put_Transform))
+    enum EnumTransform _Transform;
+    __declspec(property(get=GetTransformMaximum,put=PutTransformMaximum))
+    _variant_t TransformMaximum;
+    __declspec(property(get=Get_TransformMaximum,put=Put_TransformMaximum))
+    long _TransformMaximum;
+    __declspec(property(get=GetTransformWindowCenter,put=PutTransformWindowCenter))
+    _variant_t TransformWindowCenter;
+    __declspec(property(get=Get_TransformWindowCenter,put=Put_TransformWindowCenter))
+    long _TransformWindowCenter;
+    __declspec(property(get=GetTransformWindowWidth,put=PutTransformWindowWidth))
+    _variant_t TransformWindowWidth;
+    __declspec(property(get=Get_TransformWindowWidth,put=Put_TransformWindowWidth))
+    long _TransformWindowWidth;
+    __declspec(property(get=GetTransformGamma,put=PutTransformGamma))
+    _variant_t TransformGamma;
+    __declspec(property(get=Get_TransformGamma,put=Put_TransformGamma))
+    double _TransformGamma;
+    __declspec(property(get=GetTransformDarkLevel,put=PutTransformDarkLevel))
+    _variant_t TransformDarkLevel;
+    __declspec(property(get=Get_TransformDarkLevel,put=Put_TransformDarkLevel))
+    long _TransformDarkLevel;
+    __declspec(property(get=GetTransformSaturation,put=PutTransformSaturation))
+    _variant_t TransformSaturation;
+    __declspec(property(get=Get_TransformSaturation,put=Put_TransformSaturation))
+    long _TransformSaturation;
+    __declspec(property(get=GetTransformBlackLevel,put=PutTransformBlackLevel))
+    _variant_t TransformBlackLevel;
+    __declspec(property(get=Get_TransformBlackLevel,put=Put_TransformBlackLevel))
+    long _TransformBlackLevel;
+    __declspec(property(get=GetTransformWhiteLevel,put=PutTransformWhiteLevel))
+    _variant_t TransformWhiteLevel;
+    __declspec(property(get=Get_TransformWhiteLevel,put=Put_TransformWhiteLevel))
+    long _TransformWhiteLevel;
+    __declspec(property(get=GetTriggerMode,put=PutTriggerMode))
+    _variant_t TriggerMode;
+    __declspec(property(get=Get_TriggerMode,put=Put_TriggerMode))
+    enum EnumTriggerMode _TriggerMode;
+    __declspec(property(get=GetPath,put=PutPath))
+    _bstr_t Path;
+    __declspec(property(get=GetIsReadySnapshot))
+    enum EnumStatus IsReadySnapshot;
+    __declspec(property(get=GetWindow,put=PutWindow))
+    long Window;
+    __declspec(property(get=GetLiveInterval,put=PutLiveInterval))
+    _variant_t LiveInterval;
+    __declspec(property(get=Get_LiveInterval,put=Put_LiveInterval))
+    long _LiveInterval;
+    __declspec(property(get=GetFileFormat,put=PutFileFormat))
+    _variant_t FileFormat;
+    __declspec(property(get=Get_FileFormat,put=Put_FileFormat))
+    long _FileFormat;
+    __declspec(property(get=GetShiftSnapStatus))
+    _variant_t ShiftSnapStatus;
+    __declspec(property(get=Get_ShiftSnapStatus,put=Put_ShiftSnapStatus))
+    enum EnumShiftSnapStatus _ShiftSnapStatus;
+    __declspec(property(get=GetResolution,put=PutResolution))
+    _variant_t Resolution;
+    __declspec(property(get=Get_Resolution,put=Put_Resolution))
+    enum EnumSize _Resolution;
+    __declspec(property(get=GetFormat,put=PutFormat))
+    _variant_t Format;
+    __declspec(property(get=Get_Format,put=Put_Format))
+    enum EnumFormat _Format;
+    __declspec(property(get=GetField,put=PutField))
+    _variant_t Field;
+    __declspec(property(get=Get_Field,put=Put_Field))
+    enum EnumField _Field;
+    __declspec(property(get=GetXField,put=PutXField))
+    _variant_t XField;
+    __declspec(property(get=Get_XField,put=Put_XField))
+    long _XField;
+    __declspec(property(get=GetYField,put=PutYField))
+    _variant_t YField;
+    __declspec(property(get=Get_YField,put=Put_YField))
+    long _YField;
+    __declspec(property(get=GetPixelSize))
+    _variant_t PixelSize;
+    __declspec(property(get=Get_PixelSize,put=Put_PixelSize))
+    double _PixelSize;
+    __declspec(property(get=GetIsInAutoFocus))
+    _variant_t IsInAutoFocus;
+    __declspec(property(get=Get_IsInAutoFocus,put=Put_IsInAutoFocus))
+    long _IsInAutoFocus;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Start (
+        enum EnumRender RenderMode );
+    HRESULT Stop ( );
+    HRESULT Snapshot (
+        enum EnumRender RenderMode );
+    _bstr_t GetPath ( );
+    void PutPath (
+        _bstr_t pVal );
+    HRESULT ReadBuffer (
+        long * pSize,
+        BSTR * pVal );
+    long GetWindow ( );
+    void PutWindow (
+        long pVal );
+    HRESULT RedrawImage ( );
+    _variant_t GetResolution ( );
+    void PutResolution (
+        const _variant_t & pVal );
+    enum EnumSize Get_Resolution ( );
+    void Put_Resolution (
+        enum EnumSize pVal );
+    _variant_t GetFormat ( );
+    void PutFormat (
+        const _variant_t & pVal );
+    enum EnumFormat Get_Format ( );
+    void Put_Format (
+        enum EnumFormat pVal );
+    _variant_t GetField ( );
+    void PutField (
+        const _variant_t & pVal );
+    enum EnumField Get_Field ( );
+    void Put_Field (
+        enum EnumField pVal );
+    _variant_t GetXField ( );
+    void PutXField (
+        const _variant_t & pVal );
+    long Get_XField ( );
+    void Put_XField (
+        long pVal );
+    _variant_t GetYField ( );
+    void PutYField (
+        const _variant_t & pVal );
+    long Get_YField ( );
+    void Put_YField (
+        long pVal );
+    _variant_t GetPixelSize ( );
+    double Get_PixelSize ( );
+    void Put_PixelSize (
+        double pVal );
+    _variant_t GetIsInAutoFocus ( );
+    long Get_IsInAutoFocus ( );
+    void Put_IsInAutoFocus (
+        long pVal );
+    HRESULT ReadySnapshot (
+        enum EnumRender RenderMode );
+    HRESULT GoSnapshot ( );
+    enum EnumStatus GetIsReadySnapshot ( );
+    HRESULT _OnDeviceChanged ( );
+    _variant_t GetTransform ( );
+    void PutTransform (
+        const _variant_t & pVal );
+    enum EnumTransform Get_Transform ( );
+    void Put_Transform (
+        enum EnumTransform pVal );
+    _variant_t GetTransformMaximum ( );
+    void PutTransformMaximum (
+        const _variant_t & pVal );
+    long Get_TransformMaximum ( );
+    void Put_TransformMaximum (
+        long pVal );
+    _variant_t GetTransformWindowCenter ( );
+    void PutTransformWindowCenter (
+        const _variant_t & pVal );
+    long Get_TransformWindowCenter ( );
+    void Put_TransformWindowCenter (
+        long pVal );
+    _variant_t GetTransformWindowWidth ( );
+    void PutTransformWindowWidth (
+        const _variant_t & pVal );
+    long Get_TransformWindowWidth ( );
+    void Put_TransformWindowWidth (
+        long pVal );
+    _variant_t GetTransformGamma ( );
+    void PutTransformGamma (
+        const _variant_t & pVal );
+    double Get_TransformGamma ( );
+    void Put_TransformGamma (
+        double pVal );
+    _variant_t GetTransformDarkLevel ( );
+    void PutTransformDarkLevel (
+        const _variant_t & pVal );
+    long Get_TransformDarkLevel ( );
+    void Put_TransformDarkLevel (
+        long pVal );
+    _variant_t GetTransformSaturation ( );
+    void PutTransformSaturation (
+        const _variant_t & pVal );
+    long Get_TransformSaturation ( );
+    void Put_TransformSaturation (
+        long pVal );
+    _variant_t GetTransformBlackLevel ( );
+    void PutTransformBlackLevel (
+        const _variant_t & pVal );
+    long Get_TransformBlackLevel ( );
+    void Put_TransformBlackLevel (
+        long pVal );
+    _variant_t GetTransformWhiteLevel ( );
+    void PutTransformWhiteLevel (
+        const _variant_t & pVal );
+    long Get_TransformWhiteLevel ( );
+    void Put_TransformWhiteLevel (
+        long pVal );
+    HRESULT AdjustTransformParameters ( );
+    HRESULT AddAppendix ( );
+    HRESULT RemoveAppendix ( );
+    HRESULT PrepareSnapshotExBuffer (
+        long BufferCount );
+    HRESULT SnapshotEx (
+        long BufferNumber,
+        long Time );
+    HRESULT ReadBufferEx (
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal );
+    HRESULT SetROI (
+        long StartX,
+        long StartY );
+    _variant_t GetTriggerMode ( );
+    void PutTriggerMode (
+        const _variant_t & pVal );
+    enum EnumTriggerMode Get_TriggerMode ( );
+    void Put_TriggerMode (
+        enum EnumTriggerMode pVal );
+    HRESULT ReadTriggerBuffer (
+        enum EnumRender RenderMode,
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal );
+    HRESULT GetTriggerImageInfo (
+        long BufferNumber,
+        long * pDate,
+        long * pWidth,
+        long * pHeight,
+        long * pBitPerPixel );
+    HRESULT PrepareTriggerBuffer (
+        long BufferCount );
+    HRESULT ShiftSnap (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution );
+    _variant_t GetLiveInterval ( );
+    void PutLiveInterval (
+        const _variant_t & pVal );
+    long Get_LiveInterval ( );
+    void Put_LiveInterval (
+        long pVal );
+    _variant_t GetFileFormat ( );
+    void PutFileFormat (
+        const _variant_t & pVal );
+    long Get_FileFormat ( );
+    void Put_FileFormat (
+        long pVal );
+    HRESULT AbortShiftSnap ( );
+    _variant_t GetShiftSnapStatus ( );
+    enum EnumShiftSnapStatus Get_ShiftSnapStatus ( );
+    void Put_ShiftSnapStatus (
+        enum EnumShiftSnapStatus pVal );
+    HRESULT RawSnapshot (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Start (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall raw_Stop ( ) = 0;
+    virtual HRESULT __stdcall raw_Snapshot (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall get_Path (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Path (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_ReadBuffer (
+        long * pSize,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Window (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Window (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_RedrawImage ( ) = 0;
+    virtual HRESULT __stdcall get_Resolution (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Resolution (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Resolution (
+        enum EnumSize * pVal ) = 0;
+    virtual HRESULT __stdcall put__Resolution (
+        enum EnumSize pVal ) = 0;
+    virtual HRESULT __stdcall get_Format (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Format (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Format (
+        enum EnumFormat * pVal ) = 0;
+    virtual HRESULT __stdcall put__Format (
+        enum EnumFormat pVal ) = 0;
+    virtual HRESULT __stdcall get_Field (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Field (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Field (
+        enum EnumField * pVal ) = 0;
+    virtual HRESULT __stdcall put__Field (
+        enum EnumField pVal ) = 0;
+    virtual HRESULT __stdcall get_XField (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_XField (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__XField (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__XField (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_YField (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_YField (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__YField (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__YField (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_PixelSize (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__PixelSize (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put__PixelSize (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_IsInAutoFocus (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__IsInAutoFocus (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__IsInAutoFocus (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_ReadySnapshot (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall raw_GoSnapshot ( ) = 0;
+    virtual HRESULT __stdcall get_IsReadySnapshot (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall raw__OnDeviceChanged ( ) = 0;
+    virtual HRESULT __stdcall get_Transform (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Transform (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Transform (
+        enum EnumTransform * pVal ) = 0;
+    virtual HRESULT __stdcall put__Transform (
+        enum EnumTransform pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformMaximum (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformMaximum (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformMaximum (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformMaximum (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWindowCenter (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWindowCenter (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWindowCenter (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWindowCenter (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWindowWidth (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWindowWidth (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWindowWidth (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWindowWidth (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformGamma (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformGamma (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformGamma (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformGamma (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformDarkLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformDarkLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformDarkLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformDarkLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformSaturation (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformSaturation (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformSaturation (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformSaturation (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformBlackLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformBlackLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformBlackLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformBlackLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWhiteLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWhiteLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWhiteLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWhiteLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_AdjustTransformParameters ( ) = 0;
+    virtual HRESULT __stdcall raw_AddAppendix ( ) = 0;
+    virtual HRESULT __stdcall raw_RemoveAppendix ( ) = 0;
+    virtual HRESULT __stdcall raw_PrepareSnapshotExBuffer (
+        long BufferCount ) = 0;
+    virtual HRESULT __stdcall raw_SnapshotEx (
+        long BufferNumber,
+        long Time ) = 0;
+    virtual HRESULT __stdcall raw_ReadBufferEx (
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetROI (
+        long StartX,
+        long StartY ) = 0;
+    virtual HRESULT __stdcall get_TriggerMode (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TriggerMode (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TriggerMode (
+        enum EnumTriggerMode * pVal ) = 0;
+    virtual HRESULT __stdcall put__TriggerMode (
+        enum EnumTriggerMode pVal ) = 0;
+    virtual HRESULT __stdcall raw_ReadTriggerBuffer (
+        enum EnumRender RenderMode,
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetTriggerImageInfo (
+        long BufferNumber,
+        long * pDate,
+        long * pWidth,
+        long * pHeight,
+        long * pBitPerPixel ) = 0;
+    virtual HRESULT __stdcall raw_PrepareTriggerBuffer (
+        long BufferCount ) = 0;
+    virtual HRESULT __stdcall raw_ShiftSnap (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution ) = 0;
+    virtual HRESULT __stdcall get_LiveInterval (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_LiveInterval (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__LiveInterval (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__LiveInterval (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_FileFormat (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_FileFormat (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__FileFormat (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__FileFormat (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_AbortShiftSnap ( ) = 0;
+    virtual HRESULT __stdcall get_ShiftSnapStatus (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__ShiftSnapStatus (
+        enum EnumShiftSnapStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__ShiftSnapStatus (
+        enum EnumShiftSnapStatus pVal ) = 0;
+    virtual HRESULT __stdcall raw_RawSnapshot (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution ) = 0;
+};
+
+enum EnumRender
+{
+    RenderUnknown = 0,
+    RenderFile = 1,
+    RenderBuffer = 2,
+    RenderFileAndBuffer = 3,
+    RenderWindow = 4,
+    RenderFileAndWindow = 5,
+    RenderBufferAndWindow = 6,
+    RenderAll = 7
+};
+
+enum EnumSize
+{
+    SizeUnknown = -1,
+    Size320x240 = 54,
+    Size640x480 = 52,
+    Size1280x960 = 65,
+    Size2560x1920 = 70,
+    Size1600x1200 = 512,
+    Size800x600 = 513,
+    Size800x560 = 514,
+    Size400x300 = 515,
+    Size400x280 = 517,
+    Size1280x1024 = 518,
+    Size640x512 = 519,
+    Size320x256 = 520,
+    Size1280x720 = 521,
+    Size1360x1040 = 522,
+    Size1312x1028 = 523
+};
+
+enum EnumFormat
+{
+    FormatUnknown = -1,
+    FormatRGB = 1,
+    FormatRAW = 0,
+    FormatYUV422 = 2,
+    FormatYUV411 = 4,
+    FormatY8 = 8,
+    FormatY16 = 16,
+    FormatMJPEG = 32,
+    FormatYUV211 = 64
+};
+
+enum EnumField
+{
+    FieldUnknown = -1,
+    Field1 = 1,
+    Field2 = 2,
+    Field4 = 4,
+    Field8 = 8
+};
+
+enum EnumTransform
+{
+    TransformUnknown = -1,
+    TransformType0 = 0,
+    TransformType1 = 1,
+    TransformType2 = 2
+};
+
+enum EnumTriggerMode
+{
+    TriggerModeOff = 0,
+    TriggerModePulse = 1,
+    TriggerModeLevel = 2
+};
+
+enum EnumCropMode
+{
+    CropModeUnknown = -1,
+    CropModeFullFrame = 0,
+    CropModeView = 1,
+    CropModeRect = 2
+};
+
+enum EnumQualityMode
+{
+    QualityModeUnknown = -1,
+    QualityModeImage = 0,
+    QualityModeSpeed = 1
+};
+
+enum EnumShiftSnapStatus
+{
+    ShiftUnknown = -1,
+    ShiftStandby = 0,
+    ShiftPreProcess = 1,
+    ShiftImage1 = 2,
+    ShiftImage2 = 3,
+    ShiftImage3 = 4,
+    ShiftImage4 = 5,
+    ShiftImage5 = 6,
+    ShiftImage6 = 7,
+    ShiftImage7 = 8,
+    ShiftImage8 = 9,
+    ShiftImage9 = 10,
+    ShiftPostProcess = 11,
+    ShiftEndProcess = 12
+};
+
+enum EnumModel
+{
+    ModelUnknown = -1,
+    ModelDS5MU2 = 0,
+    ModelDS5ML2 = 1,
+    ModelDS5McU2 = 2,
+    ModelDS5McL2 = 3,
+    ModelDS2MvU2 = 4,
+    ModelDS2MvL2 = 5,
+    ModelDS2MBWU2 = 6,
+    ModelDS2MBWL2 = 7,
+    ModelDS2MBWcU2 = 8,
+    ModelDS2MBWcL2 = 9,
+    ModelFi1U2 = 10,
+    ModelFi1L2 = 11,
+    ModelQi1McU2 = 12,
+    ModelQi1McL2 = 13,
+    ModelRi1cU2 = 14,
+    ModelRi1cL2 = 15,
+    ModelFi1cU2 = 16,
+    ModelFi1cL2 = 17
+};
+
+struct __declspec(uuid("75f8ec4b-7e49-4293-9213-d40c423afa15"))
+IDsDevice : IDevice
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetPath,put=PutPath))
+    _bstr_t Path;
+    __declspec(property(get=GetWindow,put=PutWindow))
+    long Window;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Start (
+        enum EnumRender RenderMode );
+    HRESULT Stop ( );
+    HRESULT Snapshot (
+        enum EnumRender RenderMode );
+    _bstr_t GetPath ( );
+    void PutPath (
+        _bstr_t pVal );
+    HRESULT ReadBuffer (
+        long * pSize,
+        BSTR * pVal );
+    long GetWindow ( );
+    void PutWindow (
+        long pVal );
+    HRESULT PrepareSnapshotExBuffer (
+        long BufferCount );
+    HRESULT SnapshotEx (
+        long BufferNumber,
+        long Time );
+    HRESULT ReadBufferEx (
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Start (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall raw_Stop ( ) = 0;
+    virtual HRESULT __stdcall raw_Snapshot (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall get_Path (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Path (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_ReadBuffer (
+        long * pSize,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Window (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Window (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_PrepareSnapshotExBuffer (
+        long BufferCount ) = 0;
+    virtual HRESULT __stdcall raw_SnapshotEx (
+        long BufferNumber,
+        long Time ) = 0;
+    virtual HRESULT __stdcall raw_ReadBufferEx (
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("5646f72f-fea6-491f-946c-bbb549d0b00a"))
+IControllerDevice : IDsDevice
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetIsReadySnapshot))
+    enum EnumStatus IsReadySnapshot;
+    __declspec(property(get=GetDeviceModel))
+    _bstr_t DeviceModel;
+    __declspec(property(get=GetTransform,put=PutTransform))
+    _variant_t Transform;
+    __declspec(property(get=Get_Transform,put=Put_Transform))
+    enum EnumTransform _Transform;
+    __declspec(property(get=GetTransformMaximum,put=PutTransformMaximum))
+    _variant_t TransformMaximum;
+    __declspec(property(get=Get_TransformMaximum,put=Put_TransformMaximum))
+    long _TransformMaximum;
+    __declspec(property(get=GetTransformWindowCenter,put=PutTransformWindowCenter))
+    _variant_t TransformWindowCenter;
+    __declspec(property(get=Get_TransformWindowCenter,put=Put_TransformWindowCenter))
+    long _TransformWindowCenter;
+    __declspec(property(get=GetTransformWindowWidth,put=PutTransformWindowWidth))
+    _variant_t TransformWindowWidth;
+    __declspec(property(get=Get_TransformWindowWidth,put=Put_TransformWindowWidth))
+    long _TransformWindowWidth;
+    __declspec(property(get=GetTransformGamma,put=PutTransformGamma))
+    _variant_t TransformGamma;
+    __declspec(property(get=Get_TransformGamma,put=Put_TransformGamma))
+    double _TransformGamma;
+    __declspec(property(get=GetTransformDarkLevel,put=PutTransformDarkLevel))
+    _variant_t TransformDarkLevel;
+    __declspec(property(get=Get_TransformDarkLevel,put=Put_TransformDarkLevel))
+    long _TransformDarkLevel;
+    __declspec(property(get=GetTransformSaturation,put=PutTransformSaturation))
+    _variant_t TransformSaturation;
+    __declspec(property(get=Get_TransformSaturation,put=Put_TransformSaturation))
+    long _TransformSaturation;
+    __declspec(property(get=GetTransformBlackLevel,put=PutTransformBlackLevel))
+    _variant_t TransformBlackLevel;
+    __declspec(property(get=Get_TransformBlackLevel,put=Put_TransformBlackLevel))
+    long _TransformBlackLevel;
+    __declspec(property(get=GetTransformWhiteLevel,put=PutTransformWhiteLevel))
+    _variant_t TransformWhiteLevel;
+    __declspec(property(get=Get_TransformWhiteLevel,put=Put_TransformWhiteLevel))
+    long _TransformWhiteLevel;
+    __declspec(property(get=GetIsStreamStatus))
+    enum EnumStatus IsStreamStatus;
+    __declspec(property(put=Put_DeviceKind))
+    enum EnumDeviceKind _DeviceKind;
+    __declspec(property(get=GetUserName,put=PutUserName))
+    _bstr_t UserName;
+    __declspec(property(get=GetPassword,put=PutPassword))
+    _bstr_t Password;
+    __declspec(property(put=Put_LiveInterval))
+    long _LiveInterval;
+    __declspec(property(put=PutFileFormat))
+    long FileFormat;
+    __declspec(property(get=Get_ScanModeIndex,put=Put_ScanModeIndex))
+    long _ScanModeIndex;
+    __declspec(property(get=Get_ToneIndex,put=Put_ToneIndex))
+    long _ToneIndex;
+    __declspec(property(get=Get_SnapStatus))
+    long _SnapStatus;
+    __declspec(property(get=GetIsAvailable))
+    long IsAvailable;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT _OnFireStreamStop (
+        long lReason );
+    HRESULT _OnFireNewImage (
+        long FrameNumber );
+    HRESULT _RedrawImage ( );
+    HRESULT _OnCameraEvent (
+        long ObjectNo );
+    HRESULT _OnPollingTimer ( );
+    HRESULT UpdateDeviceData ( );
+    long GetIsAvailable ( );
+    HRESULT ReadySnapshot (
+        enum EnumRender RenderMode );
+    HRESULT GoSnapshot ( );
+    HRESULT _ReadySnapshot ( );
+    enum EnumStatus GetIsReadySnapshot ( );
+    _bstr_t GetDeviceModel ( );
+    _variant_t GetTransform ( );
+    void PutTransform (
+        const _variant_t & pVal );
+    enum EnumTransform Get_Transform ( );
+    void Put_Transform (
+        enum EnumTransform pVal );
+    _variant_t GetTransformMaximum ( );
+    void PutTransformMaximum (
+        const _variant_t & pVal );
+    long Get_TransformMaximum ( );
+    void Put_TransformMaximum (
+        long pVal );
+    _variant_t GetTransformWindowCenter ( );
+    void PutTransformWindowCenter (
+        const _variant_t & pVal );
+    long Get_TransformWindowCenter ( );
+    void Put_TransformWindowCenter (
+        long pVal );
+    _variant_t GetTransformWindowWidth ( );
+    void PutTransformWindowWidth (
+        const _variant_t & pVal );
+    long Get_TransformWindowWidth ( );
+    void Put_TransformWindowWidth (
+        long pVal );
+    _variant_t GetTransformGamma ( );
+    void PutTransformGamma (
+        const _variant_t & pVal );
+    double Get_TransformGamma ( );
+    void Put_TransformGamma (
+        double pVal );
+    _variant_t GetTransformDarkLevel ( );
+    void PutTransformDarkLevel (
+        const _variant_t & pVal );
+    long Get_TransformDarkLevel ( );
+    void Put_TransformDarkLevel (
+        long pVal );
+    _variant_t GetTransformSaturation ( );
+    void PutTransformSaturation (
+        const _variant_t & pVal );
+    long Get_TransformSaturation ( );
+    void Put_TransformSaturation (
+        long pVal );
+    _variant_t GetTransformBlackLevel ( );
+    void PutTransformBlackLevel (
+        const _variant_t & pVal );
+    long Get_TransformBlackLevel ( );
+    void Put_TransformBlackLevel (
+        long pVal );
+    _variant_t GetTransformWhiteLevel ( );
+    void PutTransformWhiteLevel (
+        const _variant_t & pVal );
+    long Get_TransformWhiteLevel ( );
+    void Put_TransformWhiteLevel (
+        long pVal );
+    HRESULT _AdjustTransformParameters ( );
+    HRESULT ReadTriggerBuffer (
+        enum EnumRender RenderMode,
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal );
+    HRESULT GetTriggerImageInfo (
+        long BufferNumber,
+        long * pDate,
+        long * pWidth,
+        long * pHeight,
+        long * pBitPerPixel );
+    HRESULT PrepareTriggerBuffer (
+        long BufferCount );
+    enum EnumStatus GetIsStreamStatus ( );
+    HRESULT _Restart ( );
+    HRESULT _GetAppendixData (
+        BSTR * pVal );
+    HRESULT _AppendixCutMode (
+        long newVal );
+    HRESULT _SetFrameRate (
+        long newVal );
+    HRESULT ShiftSnap (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution );
+    void Put_DeviceKind (
+        enum EnumDeviceKind _arg1 );
+    _bstr_t GetUserName ( );
+    void PutUserName (
+        _bstr_t pVal );
+    _bstr_t GetPassword ( );
+    void PutPassword (
+        _bstr_t pVal );
+    void Put_LiveInterval (
+        long _arg1 );
+    void PutFileFormat (
+        long _arg1 );
+    HRESULT RawSnapshot (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution );
+    HRESULT AbortShiftSnap ( );
+    long Get_ScanModeIndex ( );
+    void Put_ScanModeIndex (
+        long pVal );
+    HRESULT _WaitShiftSnapEnd ( );
+    long Get_ToneIndex ( );
+    void Put_ToneIndex (
+        long pVal );
+    long Get_SnapStatus ( );
+    HRESULT ReadTempBuffer (
+        long nImageNo,
+        long * pImageSize,
+        struct tagSIZE * pResolution,
+        BSTR * pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw__OnFireStreamStop (
+        long lReason ) = 0;
+    virtual HRESULT __stdcall raw__OnFireNewImage (
+        long FrameNumber ) = 0;
+    virtual HRESULT __stdcall raw__RedrawImage ( ) = 0;
+    virtual HRESULT __stdcall raw__OnCameraEvent (
+        long ObjectNo ) = 0;
+    virtual HRESULT __stdcall raw__OnPollingTimer ( ) = 0;
+    virtual HRESULT __stdcall raw_UpdateDeviceData ( ) = 0;
+    virtual HRESULT __stdcall get_IsAvailable (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_ReadySnapshot (
+        enum EnumRender RenderMode ) = 0;
+    virtual HRESULT __stdcall raw_GoSnapshot ( ) = 0;
+    virtual HRESULT __stdcall raw__ReadySnapshot ( ) = 0;
+    virtual HRESULT __stdcall get_IsReadySnapshot (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall get_DeviceModel (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Transform (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Transform (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Transform (
+        enum EnumTransform * pVal ) = 0;
+    virtual HRESULT __stdcall put__Transform (
+        enum EnumTransform pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformMaximum (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformMaximum (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformMaximum (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformMaximum (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWindowCenter (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWindowCenter (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWindowCenter (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWindowCenter (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWindowWidth (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWindowWidth (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWindowWidth (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWindowWidth (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformGamma (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformGamma (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformGamma (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformGamma (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformDarkLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformDarkLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformDarkLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformDarkLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformSaturation (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformSaturation (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformSaturation (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformSaturation (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformBlackLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformBlackLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformBlackLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformBlackLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TransformWhiteLevel (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_TransformWhiteLevel (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__TransformWhiteLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__TransformWhiteLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw__AdjustTransformParameters ( ) = 0;
+    virtual HRESULT __stdcall raw_ReadTriggerBuffer (
+        enum EnumRender RenderMode,
+        long BufferNumber,
+        long * pSize,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetTriggerImageInfo (
+        long BufferNumber,
+        long * pDate,
+        long * pWidth,
+        long * pHeight,
+        long * pBitPerPixel ) = 0;
+    virtual HRESULT __stdcall raw_PrepareTriggerBuffer (
+        long BufferCount ) = 0;
+    virtual HRESULT __stdcall get_IsStreamStatus (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall raw__Restart ( ) = 0;
+    virtual HRESULT __stdcall raw__GetAppendixData (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw__AppendixCutMode (
+        long newVal ) = 0;
+    virtual HRESULT __stdcall raw__SetFrameRate (
+        long newVal ) = 0;
+    virtual HRESULT __stdcall raw_ShiftSnap (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution ) = 0;
+    virtual HRESULT __stdcall put__DeviceKind (
+        enum EnumDeviceKind _arg1 ) = 0;
+    virtual HRESULT __stdcall get_UserName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_UserName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Password (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Password (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall put__LiveInterval (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall put_FileFormat (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall raw_RawSnapshot (
+        enum EnumRender RenderMode,
+        enum EnumCropMode CropMode,
+        long BitCount,
+        enum EnumQualityMode QualityMode,
+        enum EnumStatus AutoCalculation,
+        struct tagRECT CapturePosition,
+        struct tagSIZE * CaptureResolution ) = 0;
+    virtual HRESULT __stdcall raw_AbortShiftSnap ( ) = 0;
+    virtual HRESULT __stdcall get__ScanModeIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__ScanModeIndex (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw__WaitShiftSnapEnd ( ) = 0;
+    virtual HRESULT __stdcall get__ToneIndex (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__ToneIndex (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get__SnapStatus (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_ReadTempBuffer (
+        long nImageNo,
+        long * pImageSize,
+        struct tagSIZE * pResolution,
+        BSTR * pVal ) = 0;
+};
+
+enum EnumDeviceKind
+{
+    DeviceUnknown = -1,
+    DeviceUSB = 0,
+    DeviceNet = 1
+};
+
+struct __declspec(uuid("c5e65922-aa6e-42b5-b2cb-cc7f891d6a4e"))
+IControllerDevices : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IControllerDevicePtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IEnumVARIANTPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    IControllerDevicePtr GetItem (
+        long index );
+    IEnumVARIANTPtr Get_NewEnum ( );
+    HRESULT _UpdateDevices ( );
+    HRESULT Refresh ( );
+    HRESULT AddDevice (
+        _bstr_t IPAddress,
+        _bstr_t UserName,
+        _bstr_t Password,
+        struct IControllerDevice * * ppDevice );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long index,
+        struct IControllerDevice * * pVal ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        struct IEnumVARIANT * * pVal ) = 0;
+    virtual HRESULT __stdcall raw__UpdateDevices ( ) = 0;
+    virtual HRESULT __stdcall raw_Refresh ( ) = 0;
+    virtual HRESULT __stdcall raw_AddDevice (
+        BSTR IPAddress,
+        BSTR UserName,
+        BSTR Password,
+        struct IControllerDevice * * ppDevice ) = 0;
+};
+
+enum EnumQi1TargetTemperature
+{
+    Qi1_TargetTemperature_Unknown = -1,
+    Qi1_TargetTemperature_5 = 0,
+    Qi1_TargetTemperature_10 = 1
+};
+
+struct __declspec(uuid("c5f42975-2e1e-4670-92c0-be2dcffc32c3"))
+_ILockEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT _OnRefreshLock (
+        _bstr_t strStatus );
+    HRESULT OnLockChanged (
+        long IsAvailable );
+};
+
+struct __declspec(uuid("15865c5f-6ece-473a-b644-ada69385f660"))
+Exposure;
+    // [ default ] interface IExposure
+
+struct __declspec(uuid("cd1695c7-4c0e-4010-bb09-4b460ae86dd8"))
+Levels;
+    // [ default ] interface ILevels
+
+struct __declspec(uuid("1c0cd60b-819b-4e8a-b85b-dad838ee7777"))
+Effects;
+    // [ default ] interface IEffects
+
+struct __declspec(uuid("b49f302e-af72-4296-8c27-3c59987ac322"))
+IPreviewEvents : IDispatch
+{};
+
+struct __declspec(uuid("eb337e30-3910-4aeb-a45e-1d0ffb39d664"))
+IDSPropertyBag : IUnknown
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetpiDOMDocument,put=PutpiDOMDocument))
+    IDispatchPtr piDOMDocument;
+    __declspec(property(get=GetpiDOMElement,put=PutpiDOMElement))
+    IDispatchPtr piDOMElement;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SaveToXML (
+        IDispatch * pDocument,
+        IDispatch * pElement,
+        struct IPersistPropertyBag * pObj,
+        long bClearDirty,
+        long bSaveAllProperties );
+    HRESULT LoadFromXML (
+        IDispatch * pDocument,
+        IDispatch * pElement,
+        struct IErrorLog * pLog,
+        struct IPersistPropertyBag * * ppObj );
+    IDispatchPtr GetpiDOMDocument ( );
+    void PutpiDOMDocument (
+        IDispatch * pVal );
+    IDispatchPtr GetpiDOMElement ( );
+    void PutpiDOMElement (
+        IDispatch * pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_SaveToXML (
+        IDispatch * pDocument,
+        IDispatch * pElement,
+        struct IPersistPropertyBag * pObj,
+        long bClearDirty,
+        long bSaveAllProperties ) = 0;
+    virtual HRESULT __stdcall raw_LoadFromXML (
+        IDispatch * pDocument,
+        IDispatch * pElement,
+        struct IErrorLog * pLog,
+        struct IPersistPropertyBag * * ppObj ) = 0;
+    virtual HRESULT __stdcall get_piDOMDocument (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall put_piDOMDocument (
+        IDispatch * pVal ) = 0;
+    virtual HRESULT __stdcall get_piDOMElement (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall put_piDOMElement (
+        IDispatch * pVal ) = 0;
+};
+
+struct __declspec(uuid("0e78f0f4-aeab-478d-9e4e-9a37a41edf13"))
+Preview;
+    // [ default ] interface IPreview
+    // [ default, source ] dispinterface IPreviewEvents
+
+struct __declspec(uuid("1ce12041-dd23-4e9b-8673-dd3c9c4293cb"))
+IPreview : _IDeviceLink
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetShowCross,put=PutShowCross))
+    _variant_t ShowCross;
+    __declspec(property(get=Get_ShowCross,put=Put_ShowCross))
+    enum EnumStatus _ShowCross;
+    __declspec(property(get=GetShowScale,put=PutShowScale))
+    _variant_t ShowScale;
+    __declspec(property(get=Get_ShowScale,put=Put_ShowScale))
+    enum EnumStatus _ShowScale;
+    __declspec(property(get=GetInitCross,put=PutInitCross))
+    _variant_t InitCross;
+    __declspec(property(get=Get_InitCross,put=Put_InitCross))
+    enum EnumCross _InitCross;
+    __declspec(property(get=GetCrossColor,put=PutCrossColor))
+    _variant_t CrossColor;
+    __declspec(property(get=Get_CrossColor,put=Put_CrossColor))
+    enum EnumColor _CrossColor;
+    __declspec(property(get=GetScroll,put=PutScroll))
+    _variant_t Scroll;
+    __declspec(property(get=Get_Scroll,put=Put_Scroll))
+    enum EnumDirection _Scroll;
+    __declspec(property(get=GetSuspended,put=PutSuspended))
+    _variant_t Suspended;
+    __declspec(property(get=Get_Suspended,put=Put_Suspended))
+    enum EnumStatus _Suspended;
+    __declspec(property(get=GetZoom,put=PutZoom))
+    _variant_t Zoom;
+    __declspec(property(get=Get_Zoom,put=Put_Zoom))
+    long _Zoom;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetSuspended ( );
+    void PutSuspended (
+        const _variant_t & pVal );
+    enum EnumStatus Get_Suspended ( );
+    void Put_Suspended (
+        enum EnumStatus pVal );
+    _variant_t GetZoom ( );
+    void PutZoom (
+        const _variant_t & pVal );
+    long Get_Zoom ( );
+    void Put_Zoom (
+        long pVal );
+    _variant_t GetShowCross ( );
+    void PutShowCross (
+        const _variant_t & pVal );
+    enum EnumStatus Get_ShowCross ( );
+    void Put_ShowCross (
+        enum EnumStatus pVal );
+    _variant_t GetShowScale ( );
+    void PutShowScale (
+        const _variant_t & pVal );
+    enum EnumStatus Get_ShowScale ( );
+    void Put_ShowScale (
+        enum EnumStatus pVal );
+    _variant_t GetInitCross ( );
+    void PutInitCross (
+        const _variant_t & pVal );
+    enum EnumCross Get_InitCross ( );
+    void Put_InitCross (
+        enum EnumCross pVal );
+    _variant_t GetCrossColor ( );
+    void PutCrossColor (
+        const _variant_t & pVal );
+    enum EnumColor Get_CrossColor ( );
+    void Put_CrossColor (
+        enum EnumColor pVal );
+    _variant_t GetScroll ( );
+    void PutScroll (
+        const _variant_t & pVal );
+    enum EnumDirection Get_Scroll ( );
+    void Put_Scroll (
+        enum EnumDirection pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Suspended (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Suspended (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Suspended (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__Suspended (
+        enum EnumStatus pVal ) = 0;
+    virtual HRESULT __stdcall get_Zoom (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Zoom (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Zoom (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Zoom (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_ShowCross (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ShowCross (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__ShowCross (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__ShowCross (
+        enum EnumStatus pVal ) = 0;
+    virtual HRESULT __stdcall get_ShowScale (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ShowScale (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__ShowScale (
+        enum EnumStatus * pVal ) = 0;
+    virtual HRESULT __stdcall put__ShowScale (
+        enum EnumStatus pVal ) = 0;
+    virtual HRESULT __stdcall get_InitCross (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_InitCross (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__InitCross (
+        enum EnumCross * pVal ) = 0;
+    virtual HRESULT __stdcall put__InitCross (
+        enum EnumCross pVal ) = 0;
+    virtual HRESULT __stdcall get_CrossColor (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_CrossColor (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__CrossColor (
+        enum EnumColor * pVal ) = 0;
+    virtual HRESULT __stdcall put__CrossColor (
+        enum EnumColor pVal ) = 0;
+    virtual HRESULT __stdcall get_Scroll (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Scroll (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Scroll (
+        enum EnumDirection * pVal ) = 0;
+    virtual HRESULT __stdcall put__Scroll (
+        enum EnumDirection pVal ) = 0;
+};
+
+enum EnumCross
+{
+    CrossUnknown = -1,
+    CrossNone = 0,
+    CrossSmall = 1,
+    CrossLarge = 2
+};
+
+enum EnumColor
+{
+    ColorUnknown = -1,
+    ColorRed = 0,
+    ColorGreen = 1,
+    ColorBlue = 2,
+    ColorPink = 3,
+    ColorWhite = 4,
+    ColorBlack = 5,
+    ColorYellow = 6
+};
+
+enum EnumDirection
+{
+    DirectionUnknown = -1,
+    DirectionLeft = 0,
+    DirectionRight = 1,
+    DirectionUp = 2,
+    DirectionDown = 3
+};
+
+struct __declspec(uuid("63812a71-27e4-4dc1-bc33-8e30273c7461"))
+Image;
+    // [ default ] interface IImage
+
+struct __declspec(uuid("e9cd4f02-4343-4173-85a8-8a580a79a679"))
+IImage : _IDeviceLink
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetFormat,put=PutFormat))
+    _variant_t Format;
+    __declspec(property(get=Get_Format,put=Put_Format))
+    enum EnumFormat _Format;
+    __declspec(property(get=GetResolution,put=PutResolution))
+    _variant_t Resolution;
+    __declspec(property(get=Get_Resolution,put=Put_Resolution))
+    enum EnumSize _Resolution;
+    __declspec(property(get=GetCompression,put=PutCompression))
+    _variant_t Compression;
+    __declspec(property(get=Get_Compression,put=Put_Compression))
+    long _Compression;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long Capture ( );
+    _variant_t GetResolution ( );
+    void PutResolution (
+        const _variant_t & pVal );
+    enum EnumSize Get_Resolution ( );
+    void Put_Resolution (
+        enum EnumSize pVal );
+    _variant_t GetCompression ( );
+    void PutCompression (
+        const _variant_t & pVal );
+    long Get_Compression ( );
+    void Put_Compression (
+        long pVal );
+    _variant_t GetFormat ( );
+    void PutFormat (
+        const _variant_t & pVal );
+    enum EnumFormat Get_Format ( );
+    void Put_Format (
+        enum EnumFormat pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Capture (
+        long * Image ) = 0;
+    virtual HRESULT __stdcall get_Resolution (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Resolution (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Resolution (
+        enum EnumSize * pVal ) = 0;
+    virtual HRESULT __stdcall put__Resolution (
+        enum EnumSize pVal ) = 0;
+    virtual HRESULT __stdcall get_Compression (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Compression (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Compression (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put__Compression (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Format (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Format (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get__Format (
+        enum EnumFormat * pVal ) = 0;
+    virtual HRESULT __stdcall put__Format (
+        enum EnumFormat pVal ) = 0;
+};
+
+struct __declspec(uuid("9524b2ac-fbec-4f7f-ad6b-912a8f02e341"))
+ImageStream;
+    // [ default ] interface IImageStream
+
+struct __declspec(uuid("3fb94d4b-1413-4e21-87dc-ff9e777e42c3"))
+DSPropertyBag;
+    // [ default ] interface IDSPropertyBag
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_DSCAMERALib =
+    {0xcd5e0329,0x2cb4,0x45b3,{0xa2,0x73,0x0f,0x41,0x9b,0x79,0x0f,0x00}};
+extern "C" const GUID __declspec(selectany) CLSID_CameraController =
+    {0xf10fd1b0,0x574e,0x45ae,{0xba,0xcb,0xc2,0xeb,0xca,0x00,0xd2,0x85}};
+extern "C" const GUID __declspec(selectany) IID__IDeviceLink =
+    {0x13d7ddcc,0x764f,0x4fe8,{0x9e,0x86,0xfd,0x7e,0xcd,0x1b,0x7b,0x05}};
+extern "C" const GUID __declspec(selectany) IID_IDeviceClient =
+    {0x6f9891ba,0x0e80,0x4368,{0xb5,0x89,0x09,0x67,0x3f,0x65,0x30,0xb5}};
+extern "C" const GUID __declspec(selectany) IID_IDsCamera =
+    {0x670383fa,0x03f1,0x4be5,{0xad,0xf0,0xce,0x45,0x93,0xfe,0xca,0x36}};
+extern "C" const GUID __declspec(selectany) IID_ICameraController =
+    {0x39cd5b6d,0xddc6,0x451f,{0xb1,0xb2,0xa4,0x3d,0xdd,0xdd,0x8c,0xd9}};
+extern "C" const GUID __declspec(selectany) IID_IPort =
+    {0x195b15d4,0xd233,0x4287,{0x89,0x56,0xd3,0x36,0x8b,0x77,0x06,0xd1}};
+extern "C" const GUID __declspec(selectany) IID_IDevice =
+    {0xa64b3cc9,0x1b73,0x41a8,{0x93,0xdb,0x15,0xc1,0x85,0x59,0xd6,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IExposure =
+    {0x8fd05fd3,0x88be,0x4637,{0xb4,0x62,0x8c,0xda,0xf7,0x79,0x2e,0x68}};
+extern "C" const GUID __declspec(selectany) IID_ILevels =
+    {0xf7ed557d,0x212d,0x4269,{0xa9,0x70,0x91,0xef,0x4e,0xab,0xc7,0xfc}};
+extern "C" const GUID __declspec(selectany) IID_IEffects =
+    {0x360ed938,0xe82b,0x4642,{0xbc,0xa1,0xb9,0x2f,0xe8,0x7a,0x74,0x7a}};
+extern "C" const GUID __declspec(selectany) IID_IImageStream =
+    {0xbce2e0f5,0x01f0,0x48d2,{0xb8,0x7a,0x66,0x5b,0x85,0x5e,0x5c,0xf4}};
+extern "C" const GUID __declspec(selectany) IID_IDsDevice =
+    {0x75f8ec4b,0x7e49,0x4293,{0x92,0x13,0xd4,0x0c,0x42,0x3a,0xfa,0x15}};
+extern "C" const GUID __declspec(selectany) IID_IControllerDevice =
+    {0x5646f72f,0xfea6,0x491f,{0x94,0x6c,0xbb,0xb5,0x49,0xd0,0xb0,0x0a}};
+extern "C" const GUID __declspec(selectany) IID_IControllerDevices =
+    {0xc5e65922,0xaa6e,0x42b5,{0xb2,0xcb,0xcc,0x7f,0x89,0x1d,0x6a,0x4e}};
+extern "C" const GUID __declspec(selectany) DIID__ILockEvents =
+    {0xc5f42975,0x2e1e,0x4670,{0x92,0xc0,0xbe,0x2d,0xcf,0xfc,0x32,0xc3}};
+extern "C" const GUID __declspec(selectany) CLSID_Exposure =
+    {0x15865c5f,0x6ece,0x473a,{0xb6,0x44,0xad,0xa6,0x93,0x85,0xf6,0x60}};
+extern "C" const GUID __declspec(selectany) CLSID_Levels =
+    {0xcd1695c7,0x4c0e,0x4010,{0xbb,0x09,0x4b,0x46,0x0a,0xe8,0x6d,0xd8}};
+extern "C" const GUID __declspec(selectany) CLSID_Effects =
+    {0x1c0cd60b,0x819b,0x4e8a,{0xb8,0x5b,0xda,0xd8,0x38,0xee,0x77,0x77}};
+extern "C" const GUID __declspec(selectany) DIID_IPreviewEvents =
+    {0xb49f302e,0xaf72,0x4296,{0x8c,0x27,0x3c,0x59,0x98,0x7a,0xc3,0x22}};
+extern "C" const GUID __declspec(selectany) IID_IDSPropertyBag =
+    {0xeb337e30,0x3910,0x4aeb,{0xa4,0x5e,0x1d,0x0f,0xfb,0x39,0xd6,0x64}};
+extern "C" const GUID __declspec(selectany) CLSID_Preview =
+    {0x0e78f0f4,0xaeab,0x478d,{0x9e,0x4e,0x9a,0x37,0xa4,0x1e,0xdf,0x13}};
+extern "C" const GUID __declspec(selectany) IID_IPreview =
+    {0x1ce12041,0xdd23,0x4e9b,{0x86,0x73,0xdd,0x3c,0x9c,0x42,0x93,0xcb}};
+extern "C" const GUID __declspec(selectany) CLSID_Image =
+    {0x63812a71,0x27e4,0x4dc1,{0xbc,0x33,0x8e,0x30,0x27,0x3c,0x74,0x61}};
+extern "C" const GUID __declspec(selectany) IID_IImage =
+    {0xe9cd4f02,0x4343,0x4173,{0x85,0xa8,0x8a,0x58,0x0a,0x79,0xa6,0x79}};
+extern "C" const GUID __declspec(selectany) CLSID_ImageStream =
+    {0x9524b2ac,0xfbec,0x4f7f,{0xad,0x6b,0x91,0x2a,0x8f,0x02,0xe3,0x41}};
+extern "C" const GUID __declspec(selectany) CLSID_DSPropertyBag =
+    {0x3fb94d4b,0x1413,0x4e21,{0x87,0xdc,0xff,0x9e,0x77,0x7e,0x42,0xc3}};
+
+//
+// Wrapper method implementations
+//
+
+#include "dscamera2.tli"
+
+#pragma pack(pop)

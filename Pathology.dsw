@@ -1,0 +1,32 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Pathology"=.\Pathology.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {AA408ECC-E50B-401F-8036-021E81B9E5A1}
+    {648A5600-2C6E-101B-82B6-000000000014}
+    {05589FA1-C356-11CE-BF01-00AA0055595A}
+}}}
+
+###############################################################################
+

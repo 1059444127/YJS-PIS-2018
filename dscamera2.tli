@@ -1,0 +1,2847 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (577e5e89).
+//
+// dscamera2.tli
+//
+// Wrapper implementations for Win32 type library C:\Program Files\Nikon\Shared\Bin\dscamera2.dll
+// compiler-generated file created 11/29/10 at 21:13:39 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _IDeviceLink wrapper method implementations
+//
+
+inline _bstr_t _IDeviceLink::Get_LockCookie ( ) {
+    BSTR _result;
+    HRESULT _hr = get__LockCookie(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _IDeviceLink::Put_LockCookie ( _bstr_t pVal ) {
+    HRESULT _hr = put__LockCookie(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT _IDeviceLink::_OnStatusChanged ( _bstr_t strStatus ) {
+    HRESULT _hr = raw__OnStatusChanged(strStatus);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDevicePtr _IDeviceLink::Get_Device ( ) {
+    struct IDevice * _result;
+    HRESULT _hr = get__Device(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDevicePtr(_result, false);
+}
+
+inline void _IDeviceLink::Put_Device ( struct IDevice * pVal ) {
+    HRESULT _hr = put__Device(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IDeviceClient wrapper method implementations
+//
+
+inline HRESULT IDeviceClient::LockDevice ( double dWaitTimeout ) {
+    HRESULT _hr = raw_LockDevice(dWaitTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDeviceClient::UnlockDevice ( ) {
+    HRESULT _hr = raw_UnlockDevice();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDeviceClient::_OnTimer ( ) {
+    HRESULT _hr = raw__OnTimer();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDsCamera wrapper method implementations
+//
+
+inline _bstr_t IDsCamera::GetControllerName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ControllerName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IDsCamera::PutControllerName ( _bstr_t pVal ) {
+    HRESULT _hr = put_ControllerName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IDsCamera::GetVersion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IExposurePtr IDsCamera::GetExposure ( ) {
+    struct IExposure * _result;
+    HRESULT _hr = get_Exposure(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IExposurePtr(_result, false);
+}
+
+inline void IDsCamera::PutExposure ( struct IExposure * pVal ) {
+    HRESULT _hr = put_Exposure(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ILevelsPtr IDsCamera::GetLevels ( ) {
+    struct ILevels * _result;
+    HRESULT _hr = get_Levels(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ILevelsPtr(_result, false);
+}
+
+inline void IDsCamera::PutLevels ( struct ILevels * pVal ) {
+    HRESULT _hr = put_Levels(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IEffectsPtr IDsCamera::GetEffects ( ) {
+    struct IEffects * _result;
+    HRESULT _hr = get_Effects(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEffectsPtr(_result, false);
+}
+
+inline void IDsCamera::PutEffects ( struct IEffects * pVal ) {
+    HRESULT _hr = put_Effects(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IImageStreamPtr IDsCamera::GetImageStream ( ) {
+    struct IImageStream * _result;
+    HRESULT _hr = get_ImageStream(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IImageStreamPtr(_result, false);
+}
+
+inline void IDsCamera::PutImageStream ( struct IImageStream * pVal ) {
+    HRESULT _hr = put_ImageStream(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IDsCamera::GetModel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Model(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum EnumModel IDsCamera::Get_Model ( ) {
+    enum EnumModel _result;
+    HRESULT _hr = get__Model(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDsCamera::Put_Model ( enum EnumModel pVal ) {
+    HRESULT _hr = put__Model(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IDsCamera::SendData ( _bstr_t strCommand ) {
+    HRESULT _hr = raw_SendData(strCommand);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDsCamera::GetData ( _bstr_t strCommand, BSTR * pVal ) {
+    HRESULT _hr = raw_GetData(strCommand, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IDsCamera::GetCameraName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_CameraName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ICameraController wrapper method implementations
+//
+
+inline _variant_t ICameraController::GetScanMode ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ScanMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ICameraController::PutScanMode ( const _variant_t & pVal ) {
+    HRESULT _hr = put_ScanMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumScan ICameraController::Get_ScanMode ( ) {
+    enum EnumScan _result;
+    HRESULT _hr = get__ScanMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraController::Put_ScanMode ( enum EnumScan pVal ) {
+    HRESULT _hr = put__ScanMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IControllerDevicePtr ICameraController::GetDevice ( ) {
+    struct IControllerDevice * _result;
+    HRESULT _hr = get_Device(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IControllerDevicePtr(_result, false);
+}
+
+inline void ICameraController::PutDevice ( struct IControllerDevice * pVal ) {
+    HRESULT _hr = put_Device(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IControllerDevicesPtr ICameraController::GetDevices ( ) {
+    struct IControllerDevices * _result;
+    HRESULT _hr = get_Devices(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IControllerDevicesPtr(_result, false);
+}
+
+inline _bstr_t ICameraController::GetData2 ( _bstr_t strCommand ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetData2(strCommand, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICameraController::GetROIPosition ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ROIPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ICameraController::PutROIPosition ( const _variant_t & pVal ) {
+    HRESULT _hr = put_ROIPosition(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICameraController::Get_ROIPosition ( ) {
+    long _result;
+    HRESULT _hr = get__ROIPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraController::Put_ROIPosition ( long pVal ) {
+    HRESULT _hr = put__ROIPosition(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ICameraController::GetFocus ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Focus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long ICameraController::Get_Focus ( ) {
+    long _result;
+    HRESULT _hr = get__Focus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraController::Put_Focus ( long pVal ) {
+    HRESULT _hr = put__Focus(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ICameraController::PresetFocusArea ( long X, long Y, long Width, long Height ) {
+    HRESULT _hr = raw_PresetFocusArea(X, Y, Width, Height);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICameraController::SaveCameraSettings ( _bstr_t FileName ) {
+    HRESULT _hr = raw_SaveCameraSettings(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICameraController::LoadCameraSettings ( _bstr_t FileName ) {
+    HRESULT _hr = raw_LoadCameraSettings(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t ICameraController::GetCoolingMode ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CoolingMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ICameraController::PutCoolingMode ( const _variant_t & pVal ) {
+    HRESULT _hr = put_CoolingMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumQi1TargetTemperature ICameraController::Get_CoolingMode ( ) {
+    enum EnumQi1TargetTemperature _result;
+    HRESULT _hr = get__CoolingMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICameraController::Put_CoolingMode ( enum EnumQi1TargetTemperature pVal ) {
+    HRESULT _hr = put__CoolingMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IPort wrapper method implementations
+//
+
+inline _bstr_t IPort::GetAddress ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Address(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IPort::Connect ( ) {
+    HRESULT _hr = raw_Connect();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPort::Disconnect ( ) {
+    HRESULT _hr = raw_Disconnect();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IPort::GetConnected ( ) {
+    long _result;
+    HRESULT _hr = get_Connected(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPort::PutConnected ( long pVal ) {
+    HRESULT _hr = put_Connected(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IPort::_LockPort ( ) {
+    HRESULT _hr = raw__LockPort();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IPort::_UnlockPort ( ) {
+    HRESULT _hr = raw__UnlockPort();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IPort::GetLastResponse ( ) {
+    BSTR _result;
+    HRESULT _hr = get_LastResponse(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IDevice wrapper method implementations
+//
+
+inline HRESULT IDevice::GetStringData ( _bstr_t LockCookie, _bstr_t strCommand, BSTR * pVal ) {
+    HRESULT _hr = raw_GetStringData(LockCookie, strCommand, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::GetStatusData ( _bstr_t LockCookie, _bstr_t strCommand, enum EnumStatus * pVal ) {
+    HRESULT _hr = raw_GetStatusData(LockCookie, strCommand, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::GetLongData ( _bstr_t LockCookie, _bstr_t strCommand, long * pVal ) {
+    HRESULT _hr = raw_GetLongData(LockCookie, strCommand, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::SendStringData ( _bstr_t LockCookie, _bstr_t strCommand, _bstr_t strArgument ) {
+    HRESULT _hr = raw_SendStringData(LockCookie, strCommand, strArgument);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::SendStatusData ( _bstr_t LockCookie, _bstr_t strCommand, enum EnumStatus statusArgument ) {
+    HRESULT _hr = raw_SendStatusData(LockCookie, strCommand, statusArgument);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::SendLongData ( _bstr_t LockCookie, _bstr_t strCommand, long lArgument ) {
+    HRESULT _hr = raw_SendLongData(LockCookie, strCommand, lArgument);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::_OnRefreshLock ( _bstr_t LockCookie ) {
+    HRESULT _hr = raw__OnRefreshLock(LockCookie);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::_LockDevice ( _bstr_t LockCookie, struct IDeviceClient * pDeviceClient ) {
+    HRESULT _hr = raw__LockDevice(LockCookie, pDeviceClient);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::_UnlockDevice ( _bstr_t LockCookie ) {
+    HRESULT _hr = raw__UnlockDevice(LockCookie);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDevice::_OnTimer ( ) {
+    HRESULT _hr = raw__OnTimer();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IDevice::Get_LockCookie ( ) {
+    BSTR _result;
+    HRESULT _hr = get__LockCookie(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IDevice::SendAsyncStringData ( _bstr_t LockCookie, _bstr_t strData, long lLength ) {
+    HRESULT _hr = raw_SendAsyncStringData(LockCookie, strData, lLength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IDevice::_GetSupportedFormat ( ) {
+    long _result;
+    HRESULT _hr = raw__GetSupportedFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IExposure wrapper method implementations
+//
+
+inline _variant_t IExposure::GetMode ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutMode ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Mode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumExposure IExposure::Get_Mode ( ) {
+    enum EnumExposure _result;
+    HRESULT _hr = get__Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_Mode ( enum EnumExposure pVal ) {
+    HRESULT _hr = put__Mode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetMeteringMode ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_MeteringMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutMeteringMode ( const _variant_t & pVal ) {
+    HRESULT _hr = put_MeteringMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumMeteringMode IExposure::Get_MeteringMode ( ) {
+    enum EnumMeteringMode _result;
+    HRESULT _hr = get__MeteringMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_MeteringMode ( enum EnumMeteringMode pVal ) {
+    HRESULT _hr = put__MeteringMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetBias ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Bias(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutBias ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Bias(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IExposure::Get_Bias ( ) {
+    long _result;
+    HRESULT _hr = get__Bias(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_Bias ( long pVal ) {
+    HRESULT _hr = put__Bias(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetTime ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Time(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutTime ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Time(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IExposure::Get_Time ( ) {
+    long _result;
+    HRESULT _hr = get__Time(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_Time ( long pVal ) {
+    HRESULT _hr = put__Time(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetGain ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Gain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutGain ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Gain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IExposure::Get_Gain ( ) {
+    long _result;
+    HRESULT _hr = get__Gain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_Gain ( long pVal ) {
+    HRESULT _hr = put__Gain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetIsLocked ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_IsLocked(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutIsLocked ( const _variant_t & pVal ) {
+    HRESULT _hr = put_IsLocked(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumStatus IExposure::Get_IsLocked ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get__IsLocked(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_IsLocked ( enum EnumStatus pVal ) {
+    HRESULT _hr = put__IsLocked(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetPreset ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Preset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutPreset ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Preset(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IExposure::Get_Preset ( ) {
+    long _result;
+    HRESULT _hr = get__Preset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_Preset ( long pVal ) {
+    HRESULT _hr = put__Preset(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetMeteringArea ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_MeteringArea(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutMeteringArea ( const _variant_t & pVal ) {
+    HRESULT _hr = put_MeteringArea(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumMeteringArea IExposure::Get_MeteringArea ( ) {
+    enum EnumMeteringArea _result;
+    HRESULT _hr = get__MeteringArea(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_MeteringArea ( enum EnumMeteringArea pVal ) {
+    HRESULT _hr = put__MeteringArea(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetIsSuspended ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_IsSuspended(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutIsSuspended ( const _variant_t & pVal ) {
+    HRESULT _hr = put_IsSuspended(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumStatus IExposure::Get_IsSuspended ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get__IsSuspended(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_IsSuspended ( enum EnumStatus pVal ) {
+    HRESULT _hr = put__IsSuspended(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IExposure::_TimeAsString ( ) {
+    BSTR _result;
+    HRESULT _hr = raw__TimeAsString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t IExposure::GetLapseOfTime ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_LapseOfTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IExposure::Get_LapseOfTime ( ) {
+    long _result;
+    HRESULT _hr = get__LapseOfTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_LapseOfTime ( long pVal ) {
+    HRESULT _hr = put__LapseOfTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IExposure::GetStatus ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum EnumExposureStatus IExposure::Get_Status ( ) {
+    enum EnumExposureStatus _result;
+    HRESULT _hr = get__Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_Status ( enum EnumExposureStatus pVal ) {
+    HRESULT _hr = put__Status(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IExposure::OnePushAutoExposure ( ) {
+    HRESULT _hr = raw_OnePushAutoExposure();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IExposure::GetDetailedGain ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DetailedGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutDetailedGain ( const _variant_t & pVal ) {
+    HRESULT _hr = put_DetailedGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IExposure::Get_DetailedGain ( ) {
+    double _result;
+    HRESULT _hr = get__DetailedGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_DetailedGain ( double pVal ) {
+    HRESULT _hr = put__DetailedGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IExposure::PresetMeteringArea ( long X, long Y, long Width, long Height ) {
+    HRESULT _hr = raw_PresetMeteringArea(X, Y, Width, Height);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IExposure::GetPresetEx ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_PresetEx(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutPresetEx ( const _variant_t & pVal ) {
+    HRESULT _hr = put_PresetEx(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IExposure::Get_PresetEx ( ) {
+    long _result;
+    HRESULT _hr = get__PresetEx(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_PresetEx ( long pVal ) {
+    HRESULT _hr = put__PresetEx(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IExposure::ExpCalculation ( enum EnumScan TargetScan, long * Gain, long * Time ) {
+    HRESULT _hr = raw_ExpCalculation(TargetScan, Gain, Time);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IExposure::ExpCalculationEx ( enum EnumScan TargetScan, double TargetGain, long * Time ) {
+    HRESULT _hr = raw_ExpCalculationEx(TargetScan, TargetGain, Time);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IExposure::GetDetailedTime ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DetailedTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IExposure::PutDetailedTime ( const _variant_t & pVal ) {
+    HRESULT _hr = put_DetailedTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IExposure::Get_DetailedTime ( ) {
+    long _result;
+    HRESULT _hr = get__DetailedTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IExposure::Put_DetailedTime ( long pVal ) {
+    HRESULT _hr = put__DetailedTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ILevels wrapper method implementations
+//
+
+inline HRESULT ILevels::Balance ( ) {
+    HRESULT _hr = raw_Balance();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t ILevels::GetGain ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Gain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutGain ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Gain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_Gain ( ) {
+    long _result;
+    HRESULT _hr = get__Gain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_Gain ( long pVal ) {
+    HRESULT _hr = put__Gain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetRedGain ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RedGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutRedGain ( const _variant_t & pVal ) {
+    HRESULT _hr = put_RedGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_RedGain ( ) {
+    long _result;
+    HRESULT _hr = get__RedGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_RedGain ( long pVal ) {
+    HRESULT _hr = put__RedGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetGreenGain ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GreenGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutGreenGain ( const _variant_t & pVal ) {
+    HRESULT _hr = put_GreenGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_GreenGain ( ) {
+    long _result;
+    HRESULT _hr = get__GreenGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_GreenGain ( long pVal ) {
+    HRESULT _hr = put__GreenGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetBlueGain ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_BlueGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutBlueGain ( const _variant_t & pVal ) {
+    HRESULT _hr = put_BlueGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_BlueGain ( ) {
+    long _result;
+    HRESULT _hr = get__BlueGain(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_BlueGain ( long pVal ) {
+    HRESULT _hr = put__BlueGain(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetRedSaturation ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RedSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutRedSaturation ( const _variant_t & pVal ) {
+    HRESULT _hr = put_RedSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_RedSaturation ( ) {
+    long _result;
+    HRESULT _hr = get__RedSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_RedSaturation ( long pVal ) {
+    HRESULT _hr = put__RedSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetBlueSaturation ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_BlueSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutBlueSaturation ( const _variant_t & pVal ) {
+    HRESULT _hr = put_BlueSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_BlueSaturation ( ) {
+    long _result;
+    HRESULT _hr = get__BlueSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_BlueSaturation ( long pVal ) {
+    HRESULT _hr = put__BlueSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetGreenSaturation ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GreenSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutGreenSaturation ( const _variant_t & pVal ) {
+    HRESULT _hr = put_GreenSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_GreenSaturation ( ) {
+    long _result;
+    HRESULT _hr = get__GreenSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_GreenSaturation ( long pVal ) {
+    HRESULT _hr = put__GreenSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetHue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Hue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutHue ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Hue(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_Hue ( ) {
+    long _result;
+    HRESULT _hr = get__Hue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_Hue ( long pVal ) {
+    HRESULT _hr = put__Hue(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetSaturation ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Saturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutSaturation ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Saturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_Saturation ( ) {
+    long _result;
+    HRESULT _hr = get__Saturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_Saturation ( long pVal ) {
+    HRESULT _hr = put__Saturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetContrast ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Contrast(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutContrast ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Contrast(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_Contrast ( ) {
+    long _result;
+    HRESULT _hr = get__Contrast(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_Contrast ( long pVal ) {
+    HRESULT _hr = put__Contrast(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetTone ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Tone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutTone ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Tone(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_Tone ( ) {
+    long _result;
+    HRESULT _hr = get__Tone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_Tone ( long pVal ) {
+    HRESULT _hr = put__Tone(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetRedBalance ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_RedBalance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutRedBalance ( const _variant_t & pVal ) {
+    HRESULT _hr = put_RedBalance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_RedBalance ( ) {
+    long _result;
+    HRESULT _hr = get__RedBalance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_RedBalance ( long pVal ) {
+    HRESULT _hr = put__RedBalance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetGreenBalance ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GreenBalance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutGreenBalance ( const _variant_t & pVal ) {
+    HRESULT _hr = put_GreenBalance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_GreenBalance ( ) {
+    long _result;
+    HRESULT _hr = get__GreenBalance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_GreenBalance ( long pVal ) {
+    HRESULT _hr = put__GreenBalance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ILevels::GetBlueBalance ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_BlueBalance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void ILevels::PutBlueBalance ( const _variant_t & pVal ) {
+    HRESULT _hr = put_BlueBalance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ILevels::Get_BlueBalance ( ) {
+    long _result;
+    HRESULT _hr = get__BlueBalance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ILevels::Put_BlueBalance ( long pVal ) {
+    HRESULT _hr = put__BlueBalance(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ILevels::PresetTone ( _bstr_t DataName ) {
+    HRESULT _hr = raw_PresetTone(DataName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IEffects wrapper method implementations
+//
+
+inline _variant_t IEffects::GetColorCast ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ColorCast(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IEffects::PutColorCast ( const _variant_t & pVal ) {
+    HRESULT _hr = put_ColorCast(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumColorCast IEffects::Get_ColorCast ( ) {
+    enum EnumColorCast _result;
+    HRESULT _hr = get__ColorCast(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IEffects::Put_ColorCast ( enum EnumColorCast pVal ) {
+    HRESULT _hr = put__ColorCast(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IEffects::GetSharpness ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Sharpness(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IEffects::PutSharpness ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Sharpness(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IEffects::Get_Sharpness ( ) {
+    long _result;
+    HRESULT _hr = get__Sharpness(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IEffects::Put_Sharpness ( long pVal ) {
+    HRESULT _hr = put__Sharpness(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IEffects::GetNoiseReductionEnabled ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_NoiseReductionEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IEffects::PutNoiseReductionEnabled ( const _variant_t & pVal ) {
+    HRESULT _hr = put_NoiseReductionEnabled(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumStatus IEffects::Get_NoiseReductionEnabled ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get__NoiseReductionEnabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IEffects::Put_NoiseReductionEnabled ( enum EnumStatus pVal ) {
+    HRESULT _hr = put__NoiseReductionEnabled(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IEffects::MemorizeShadingData ( ) {
+    HRESULT _hr = raw_MemorizeShadingData();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IEffects::GetShadingCorrection ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ShadingCorrection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IEffects::PutShadingCorrection ( const _variant_t & pVal ) {
+    HRESULT _hr = put_ShadingCorrection(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IEffects::Get_ShadingCorrection ( ) {
+    long _result;
+    HRESULT _hr = get__ShadingCorrection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IEffects::Put_ShadingCorrection ( long pVal ) {
+    HRESULT _hr = put__ShadingCorrection(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IImageStream wrapper method implementations
+//
+
+inline HRESULT IImageStream::Start ( enum EnumRender RenderMode ) {
+    HRESULT _hr = raw_Start(RenderMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::Stop ( ) {
+    HRESULT _hr = raw_Stop();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::Snapshot ( enum EnumRender RenderMode ) {
+    HRESULT _hr = raw_Snapshot(RenderMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IImageStream::GetPath ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Path(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IImageStream::PutPath ( _bstr_t pVal ) {
+    HRESULT _hr = put_Path(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IImageStream::ReadBuffer ( long * pSize, BSTR * pVal ) {
+    HRESULT _hr = raw_ReadBuffer(pSize, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IImageStream::GetWindow ( ) {
+    long _result;
+    HRESULT _hr = get_Window(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::PutWindow ( long pVal ) {
+    HRESULT _hr = put_Window(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IImageStream::RedrawImage ( ) {
+    HRESULT _hr = raw_RedrawImage();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IImageStream::GetResolution ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Resolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutResolution ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Resolution(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumSize IImageStream::Get_Resolution ( ) {
+    enum EnumSize _result;
+    HRESULT _hr = get__Resolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_Resolution ( enum EnumSize pVal ) {
+    HRESULT _hr = put__Resolution(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetFormat ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Format(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutFormat ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Format(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumFormat IImageStream::Get_Format ( ) {
+    enum EnumFormat _result;
+    HRESULT _hr = get__Format(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_Format ( enum EnumFormat pVal ) {
+    HRESULT _hr = put__Format(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetField ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Field(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutField ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Field(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumField IImageStream::Get_Field ( ) {
+    enum EnumField _result;
+    HRESULT _hr = get__Field(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_Field ( enum EnumField pVal ) {
+    HRESULT _hr = put__Field(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetXField ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_XField(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutXField ( const _variant_t & pVal ) {
+    HRESULT _hr = put_XField(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_XField ( ) {
+    long _result;
+    HRESULT _hr = get__XField(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_XField ( long pVal ) {
+    HRESULT _hr = put__XField(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetYField ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_YField(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutYField ( const _variant_t & pVal ) {
+    HRESULT _hr = put_YField(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_YField ( ) {
+    long _result;
+    HRESULT _hr = get__YField(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_YField ( long pVal ) {
+    HRESULT _hr = put__YField(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetPixelSize ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_PixelSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline double IImageStream::Get_PixelSize ( ) {
+    double _result;
+    HRESULT _hr = get__PixelSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_PixelSize ( double pVal ) {
+    HRESULT _hr = put__PixelSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetIsInAutoFocus ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_IsInAutoFocus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IImageStream::Get_IsInAutoFocus ( ) {
+    long _result;
+    HRESULT _hr = get__IsInAutoFocus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_IsInAutoFocus ( long pVal ) {
+    HRESULT _hr = put__IsInAutoFocus(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IImageStream::ReadySnapshot ( enum EnumRender RenderMode ) {
+    HRESULT _hr = raw_ReadySnapshot(RenderMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::GoSnapshot ( ) {
+    HRESULT _hr = raw_GoSnapshot();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum EnumStatus IImageStream::GetIsReadySnapshot ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get_IsReadySnapshot(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IImageStream::_OnDeviceChanged ( ) {
+    HRESULT _hr = raw__OnDeviceChanged();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IImageStream::GetTransform ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Transform(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransform ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Transform(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumTransform IImageStream::Get_Transform ( ) {
+    enum EnumTransform _result;
+    HRESULT _hr = get__Transform(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_Transform ( enum EnumTransform pVal ) {
+    HRESULT _hr = put__Transform(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformMaximum ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformMaximum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformMaximum ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformMaximum(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_TransformMaximum ( ) {
+    long _result;
+    HRESULT _hr = get__TransformMaximum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformMaximum ( long pVal ) {
+    HRESULT _hr = put__TransformMaximum(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformWindowCenter ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformWindowCenter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformWindowCenter ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformWindowCenter(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_TransformWindowCenter ( ) {
+    long _result;
+    HRESULT _hr = get__TransformWindowCenter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformWindowCenter ( long pVal ) {
+    HRESULT _hr = put__TransformWindowCenter(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformWindowWidth ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformWindowWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformWindowWidth ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformWindowWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_TransformWindowWidth ( ) {
+    long _result;
+    HRESULT _hr = get__TransformWindowWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformWindowWidth ( long pVal ) {
+    HRESULT _hr = put__TransformWindowWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformGamma ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformGamma(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformGamma ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformGamma(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IImageStream::Get_TransformGamma ( ) {
+    double _result;
+    HRESULT _hr = get__TransformGamma(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformGamma ( double pVal ) {
+    HRESULT _hr = put__TransformGamma(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformDarkLevel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformDarkLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformDarkLevel ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformDarkLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_TransformDarkLevel ( ) {
+    long _result;
+    HRESULT _hr = get__TransformDarkLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformDarkLevel ( long pVal ) {
+    HRESULT _hr = put__TransformDarkLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformSaturation ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformSaturation ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_TransformSaturation ( ) {
+    long _result;
+    HRESULT _hr = get__TransformSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformSaturation ( long pVal ) {
+    HRESULT _hr = put__TransformSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformBlackLevel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformBlackLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformBlackLevel ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformBlackLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_TransformBlackLevel ( ) {
+    long _result;
+    HRESULT _hr = get__TransformBlackLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformBlackLevel ( long pVal ) {
+    HRESULT _hr = put__TransformBlackLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetTransformWhiteLevel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformWhiteLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTransformWhiteLevel ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformWhiteLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_TransformWhiteLevel ( ) {
+    long _result;
+    HRESULT _hr = get__TransformWhiteLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TransformWhiteLevel ( long pVal ) {
+    HRESULT _hr = put__TransformWhiteLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IImageStream::AdjustTransformParameters ( ) {
+    HRESULT _hr = raw_AdjustTransformParameters();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::AddAppendix ( ) {
+    HRESULT _hr = raw_AddAppendix();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::RemoveAppendix ( ) {
+    HRESULT _hr = raw_RemoveAppendix();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::PrepareSnapshotExBuffer ( long BufferCount ) {
+    HRESULT _hr = raw_PrepareSnapshotExBuffer(BufferCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::SnapshotEx ( long BufferNumber, long Time ) {
+    HRESULT _hr = raw_SnapshotEx(BufferNumber, Time);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::ReadBufferEx ( long BufferNumber, long * pSize, BSTR * pVal ) {
+    HRESULT _hr = raw_ReadBufferEx(BufferNumber, pSize, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::SetROI ( long StartX, long StartY ) {
+    HRESULT _hr = raw_SetROI(StartX, StartY);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IImageStream::GetTriggerMode ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TriggerMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutTriggerMode ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TriggerMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumTriggerMode IImageStream::Get_TriggerMode ( ) {
+    enum EnumTriggerMode _result;
+    HRESULT _hr = get__TriggerMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_TriggerMode ( enum EnumTriggerMode pVal ) {
+    HRESULT _hr = put__TriggerMode(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IImageStream::ReadTriggerBuffer ( enum EnumRender RenderMode, long BufferNumber, long * pSize, BSTR * pVal ) {
+    HRESULT _hr = raw_ReadTriggerBuffer(RenderMode, BufferNumber, pSize, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::GetTriggerImageInfo ( long BufferNumber, long * pDate, long * pWidth, long * pHeight, long * pBitPerPixel ) {
+    HRESULT _hr = raw_GetTriggerImageInfo(BufferNumber, pDate, pWidth, pHeight, pBitPerPixel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::PrepareTriggerBuffer ( long BufferCount ) {
+    HRESULT _hr = raw_PrepareTriggerBuffer(BufferCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IImageStream::ShiftSnap ( enum EnumRender RenderMode, enum EnumCropMode CropMode, long BitCount, enum EnumQualityMode QualityMode, enum EnumStatus AutoCalculation, struct tagRECT CapturePosition, struct tagSIZE * CaptureResolution ) {
+    HRESULT _hr = raw_ShiftSnap(RenderMode, CropMode, BitCount, QualityMode, AutoCalculation, CapturePosition, CaptureResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IImageStream::GetLiveInterval ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_LiveInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutLiveInterval ( const _variant_t & pVal ) {
+    HRESULT _hr = put_LiveInterval(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_LiveInterval ( ) {
+    long _result;
+    HRESULT _hr = get__LiveInterval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_LiveInterval ( long pVal ) {
+    HRESULT _hr = put__LiveInterval(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImageStream::GetFileFormat ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_FileFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImageStream::PutFileFormat ( const _variant_t & pVal ) {
+    HRESULT _hr = put_FileFormat(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImageStream::Get_FileFormat ( ) {
+    long _result;
+    HRESULT _hr = get__FileFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_FileFormat ( long pVal ) {
+    HRESULT _hr = put__FileFormat(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IImageStream::AbortShiftSnap ( ) {
+    HRESULT _hr = raw_AbortShiftSnap();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IImageStream::GetShiftSnapStatus ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ShiftSnapStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline enum EnumShiftSnapStatus IImageStream::Get_ShiftSnapStatus ( ) {
+    enum EnumShiftSnapStatus _result;
+    HRESULT _hr = get__ShiftSnapStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImageStream::Put_ShiftSnapStatus ( enum EnumShiftSnapStatus pVal ) {
+    HRESULT _hr = put__ShiftSnapStatus(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IImageStream::RawSnapshot ( enum EnumRender RenderMode, enum EnumCropMode CropMode, long BitCount, enum EnumQualityMode QualityMode, enum EnumStatus AutoCalculation, struct tagRECT CapturePosition, struct tagSIZE * CaptureResolution ) {
+    HRESULT _hr = raw_RawSnapshot(RenderMode, CropMode, BitCount, QualityMode, AutoCalculation, CapturePosition, CaptureResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IDsDevice wrapper method implementations
+//
+
+inline HRESULT IDsDevice::Start ( enum EnumRender RenderMode ) {
+    HRESULT _hr = raw_Start(RenderMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDsDevice::Stop ( ) {
+    HRESULT _hr = raw_Stop();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDsDevice::Snapshot ( enum EnumRender RenderMode ) {
+    HRESULT _hr = raw_Snapshot(RenderMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IDsDevice::GetPath ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Path(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IDsDevice::PutPath ( _bstr_t pVal ) {
+    HRESULT _hr = put_Path(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IDsDevice::ReadBuffer ( long * pSize, BSTR * pVal ) {
+    HRESULT _hr = raw_ReadBuffer(pSize, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IDsDevice::GetWindow ( ) {
+    long _result;
+    HRESULT _hr = get_Window(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IDsDevice::PutWindow ( long pVal ) {
+    HRESULT _hr = put_Window(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IDsDevice::PrepareSnapshotExBuffer ( long BufferCount ) {
+    HRESULT _hr = raw_PrepareSnapshotExBuffer(BufferCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDsDevice::SnapshotEx ( long BufferNumber, long Time ) {
+    HRESULT _hr = raw_SnapshotEx(BufferNumber, Time);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDsDevice::ReadBufferEx ( long BufferNumber, long * pSize, BSTR * pVal ) {
+    HRESULT _hr = raw_ReadBufferEx(BufferNumber, pSize, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IControllerDevice wrapper method implementations
+//
+
+inline HRESULT IControllerDevice::_OnFireStreamStop ( long lReason ) {
+    HRESULT _hr = raw__OnFireStreamStop(lReason);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_OnFireNewImage ( long FrameNumber ) {
+    HRESULT _hr = raw__OnFireNewImage(FrameNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_RedrawImage ( ) {
+    HRESULT _hr = raw__RedrawImage();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_OnCameraEvent ( long ObjectNo ) {
+    HRESULT _hr = raw__OnCameraEvent(ObjectNo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_OnPollingTimer ( ) {
+    HRESULT _hr = raw__OnPollingTimer();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::UpdateDeviceData ( ) {
+    HRESULT _hr = raw_UpdateDeviceData();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IControllerDevice::GetIsAvailable ( ) {
+    long _result;
+    HRESULT _hr = get_IsAvailable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IControllerDevice::ReadySnapshot ( enum EnumRender RenderMode ) {
+    HRESULT _hr = raw_ReadySnapshot(RenderMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::GoSnapshot ( ) {
+    HRESULT _hr = raw_GoSnapshot();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_ReadySnapshot ( ) {
+    HRESULT _hr = raw__ReadySnapshot();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum EnumStatus IControllerDevice::GetIsReadySnapshot ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get_IsReadySnapshot(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IControllerDevice::GetDeviceModel ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DeviceModel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t IControllerDevice::GetTransform ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Transform(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransform ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Transform(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumTransform IControllerDevice::Get_Transform ( ) {
+    enum EnumTransform _result;
+    HRESULT _hr = get__Transform(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_Transform ( enum EnumTransform pVal ) {
+    HRESULT _hr = put__Transform(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformMaximum ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformMaximum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformMaximum ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformMaximum(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_TransformMaximum ( ) {
+    long _result;
+    HRESULT _hr = get__TransformMaximum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformMaximum ( long pVal ) {
+    HRESULT _hr = put__TransformMaximum(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformWindowCenter ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformWindowCenter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformWindowCenter ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformWindowCenter(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_TransformWindowCenter ( ) {
+    long _result;
+    HRESULT _hr = get__TransformWindowCenter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformWindowCenter ( long pVal ) {
+    HRESULT _hr = put__TransformWindowCenter(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformWindowWidth ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformWindowWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformWindowWidth ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformWindowWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_TransformWindowWidth ( ) {
+    long _result;
+    HRESULT _hr = get__TransformWindowWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformWindowWidth ( long pVal ) {
+    HRESULT _hr = put__TransformWindowWidth(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformGamma ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformGamma(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformGamma ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformGamma(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IControllerDevice::Get_TransformGamma ( ) {
+    double _result;
+    HRESULT _hr = get__TransformGamma(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformGamma ( double pVal ) {
+    HRESULT _hr = put__TransformGamma(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformDarkLevel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformDarkLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformDarkLevel ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformDarkLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_TransformDarkLevel ( ) {
+    long _result;
+    HRESULT _hr = get__TransformDarkLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformDarkLevel ( long pVal ) {
+    HRESULT _hr = put__TransformDarkLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformSaturation ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformSaturation ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_TransformSaturation ( ) {
+    long _result;
+    HRESULT _hr = get__TransformSaturation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformSaturation ( long pVal ) {
+    HRESULT _hr = put__TransformSaturation(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformBlackLevel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformBlackLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformBlackLevel ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformBlackLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_TransformBlackLevel ( ) {
+    long _result;
+    HRESULT _hr = get__TransformBlackLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformBlackLevel ( long pVal ) {
+    HRESULT _hr = put__TransformBlackLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IControllerDevice::GetTransformWhiteLevel ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TransformWhiteLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IControllerDevice::PutTransformWhiteLevel ( const _variant_t & pVal ) {
+    HRESULT _hr = put_TransformWhiteLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_TransformWhiteLevel ( ) {
+    long _result;
+    HRESULT _hr = get__TransformWhiteLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_TransformWhiteLevel ( long pVal ) {
+    HRESULT _hr = put__TransformWhiteLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IControllerDevice::_AdjustTransformParameters ( ) {
+    HRESULT _hr = raw__AdjustTransformParameters();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::ReadTriggerBuffer ( enum EnumRender RenderMode, long BufferNumber, long * pSize, BSTR * pVal ) {
+    HRESULT _hr = raw_ReadTriggerBuffer(RenderMode, BufferNumber, pSize, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::GetTriggerImageInfo ( long BufferNumber, long * pDate, long * pWidth, long * pHeight, long * pBitPerPixel ) {
+    HRESULT _hr = raw_GetTriggerImageInfo(BufferNumber, pDate, pWidth, pHeight, pBitPerPixel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::PrepareTriggerBuffer ( long BufferCount ) {
+    HRESULT _hr = raw_PrepareTriggerBuffer(BufferCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline enum EnumStatus IControllerDevice::GetIsStreamStatus ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get_IsStreamStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IControllerDevice::_Restart ( ) {
+    HRESULT _hr = raw__Restart();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_GetAppendixData ( BSTR * pVal ) {
+    HRESULT _hr = raw__GetAppendixData(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_AppendixCutMode ( long newVal ) {
+    HRESULT _hr = raw__AppendixCutMode(newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::_SetFrameRate ( long newVal ) {
+    HRESULT _hr = raw__SetFrameRate(newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::ShiftSnap ( enum EnumRender RenderMode, enum EnumCropMode CropMode, long BitCount, enum EnumQualityMode QualityMode, enum EnumStatus AutoCalculation, struct tagRECT CapturePosition, struct tagSIZE * CaptureResolution ) {
+    HRESULT _hr = raw_ShiftSnap(RenderMode, CropMode, BitCount, QualityMode, AutoCalculation, CapturePosition, CaptureResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline void IControllerDevice::Put_DeviceKind ( enum EnumDeviceKind _arg1 ) {
+    HRESULT _hr = put__DeviceKind(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IControllerDevice::GetUserName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_UserName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IControllerDevice::PutUserName ( _bstr_t pVal ) {
+    HRESULT _hr = put_UserName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IControllerDevice::GetPassword ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Password(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IControllerDevice::PutPassword ( _bstr_t pVal ) {
+    HRESULT _hr = put_Password(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IControllerDevice::Put_LiveInterval ( long _arg1 ) {
+    HRESULT _hr = put__LiveInterval(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void IControllerDevice::PutFileFormat ( long _arg1 ) {
+    HRESULT _hr = put_FileFormat(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IControllerDevice::RawSnapshot ( enum EnumRender RenderMode, enum EnumCropMode CropMode, long BitCount, enum EnumQualityMode QualityMode, enum EnumStatus AutoCalculation, struct tagRECT CapturePosition, struct tagSIZE * CaptureResolution ) {
+    HRESULT _hr = raw_RawSnapshot(RenderMode, CropMode, BitCount, QualityMode, AutoCalculation, CapturePosition, CaptureResolution);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevice::AbortShiftSnap ( ) {
+    HRESULT _hr = raw_AbortShiftSnap();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IControllerDevice::Get_ScanModeIndex ( ) {
+    long _result;
+    HRESULT _hr = get__ScanModeIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_ScanModeIndex ( long pVal ) {
+    HRESULT _hr = put__ScanModeIndex(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IControllerDevice::_WaitShiftSnapEnd ( ) {
+    HRESULT _hr = raw__WaitShiftSnapEnd();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IControllerDevice::Get_ToneIndex ( ) {
+    long _result;
+    HRESULT _hr = get__ToneIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IControllerDevice::Put_ToneIndex ( long pVal ) {
+    HRESULT _hr = put__ToneIndex(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IControllerDevice::Get_SnapStatus ( ) {
+    long _result;
+    HRESULT _hr = get__SnapStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IControllerDevice::ReadTempBuffer ( long nImageNo, long * pImageSize, struct tagSIZE * pResolution, BSTR * pVal ) {
+    HRESULT _hr = raw_ReadTempBuffer(nImageNo, pImageSize, pResolution, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IControllerDevices wrapper method implementations
+//
+
+inline long IControllerDevices::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IControllerDevicePtr IControllerDevices::GetItem ( long index ) {
+    struct IControllerDevice * _result;
+    HRESULT _hr = get_Item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IControllerDevicePtr(_result, false);
+}
+
+inline IEnumVARIANTPtr IControllerDevices::Get_NewEnum ( ) {
+    struct IEnumVARIANT * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IEnumVARIANTPtr(_result, false);
+}
+
+inline HRESULT IControllerDevices::_UpdateDevices ( ) {
+    HRESULT _hr = raw__UpdateDevices();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevices::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IControllerDevices::AddDevice ( _bstr_t IPAddress, _bstr_t UserName, _bstr_t Password, struct IControllerDevice * * ppDevice ) {
+    HRESULT _hr = raw_AddDevice(IPAddress, UserName, Password, ppDevice);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface _ILockEvents wrapper method implementations
+//
+
+inline HRESULT _ILockEvents::_OnRefreshLock ( _bstr_t strStatus ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0008", (BSTR)strStatus);
+    return _result;
+}
+
+inline HRESULT _ILockEvents::OnLockChanged ( long IsAvailable ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003", IsAvailable);
+    return _result;
+}
+
+//
+// interface IDSPropertyBag wrapper method implementations
+//
+
+inline HRESULT IDSPropertyBag::SaveToXML ( IDispatch * pDocument, IDispatch * pElement, struct IPersistPropertyBag * pObj, long bClearDirty, long bSaveAllProperties ) {
+    HRESULT _hr = raw_SaveToXML(pDocument, pElement, pObj, bClearDirty, bSaveAllProperties);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDSPropertyBag::LoadFromXML ( IDispatch * pDocument, IDispatch * pElement, struct IErrorLog * pLog, struct IPersistPropertyBag * * ppObj ) {
+    HRESULT _hr = raw_LoadFromXML(pDocument, pElement, pLog, ppObj);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDispatchPtr IDSPropertyBag::GetpiDOMDocument ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_piDOMDocument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void IDSPropertyBag::PutpiDOMDocument ( IDispatch * pVal ) {
+    HRESULT _hr = put_piDOMDocument(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IDSPropertyBag::GetpiDOMElement ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_piDOMElement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void IDSPropertyBag::PutpiDOMElement ( IDispatch * pVal ) {
+    HRESULT _hr = put_piDOMElement(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IPreview wrapper method implementations
+//
+
+inline _variant_t IPreview::GetSuspended ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Suspended(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPreview::PutSuspended ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Suspended(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumStatus IPreview::Get_Suspended ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get__Suspended(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreview::Put_Suspended ( enum EnumStatus pVal ) {
+    HRESULT _hr = put__Suspended(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IPreview::GetZoom ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Zoom(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPreview::PutZoom ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Zoom(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IPreview::Get_Zoom ( ) {
+    long _result;
+    HRESULT _hr = get__Zoom(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreview::Put_Zoom ( long pVal ) {
+    HRESULT _hr = put__Zoom(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IPreview::GetShowCross ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ShowCross(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPreview::PutShowCross ( const _variant_t & pVal ) {
+    HRESULT _hr = put_ShowCross(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumStatus IPreview::Get_ShowCross ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get__ShowCross(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreview::Put_ShowCross ( enum EnumStatus pVal ) {
+    HRESULT _hr = put__ShowCross(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IPreview::GetShowScale ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ShowScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPreview::PutShowScale ( const _variant_t & pVal ) {
+    HRESULT _hr = put_ShowScale(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumStatus IPreview::Get_ShowScale ( ) {
+    enum EnumStatus _result;
+    HRESULT _hr = get__ShowScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreview::Put_ShowScale ( enum EnumStatus pVal ) {
+    HRESULT _hr = put__ShowScale(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IPreview::GetInitCross ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_InitCross(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPreview::PutInitCross ( const _variant_t & pVal ) {
+    HRESULT _hr = put_InitCross(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumCross IPreview::Get_InitCross ( ) {
+    enum EnumCross _result;
+    HRESULT _hr = get__InitCross(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreview::Put_InitCross ( enum EnumCross pVal ) {
+    HRESULT _hr = put__InitCross(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IPreview::GetCrossColor ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CrossColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPreview::PutCrossColor ( const _variant_t & pVal ) {
+    HRESULT _hr = put_CrossColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumColor IPreview::Get_CrossColor ( ) {
+    enum EnumColor _result;
+    HRESULT _hr = get__CrossColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreview::Put_CrossColor ( enum EnumColor pVal ) {
+    HRESULT _hr = put__CrossColor(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IPreview::GetScroll ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Scroll(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IPreview::PutScroll ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Scroll(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumDirection IPreview::Get_Scroll ( ) {
+    enum EnumDirection _result;
+    HRESULT _hr = get__Scroll(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreview::Put_Scroll ( enum EnumDirection pVal ) {
+    HRESULT _hr = put__Scroll(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IImage wrapper method implementations
+//
+
+inline long IImage::Capture ( ) {
+    long _result;
+    HRESULT _hr = raw_Capture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t IImage::GetResolution ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Resolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImage::PutResolution ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Resolution(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumSize IImage::Get_Resolution ( ) {
+    enum EnumSize _result;
+    HRESULT _hr = get__Resolution(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImage::Put_Resolution ( enum EnumSize pVal ) {
+    HRESULT _hr = put__Resolution(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImage::GetCompression ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Compression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImage::PutCompression ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Compression(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IImage::Get_Compression ( ) {
+    long _result;
+    HRESULT _hr = get__Compression(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImage::Put_Compression ( long pVal ) {
+    HRESULT _hr = put__Compression(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IImage::GetFormat ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Format(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IImage::PutFormat ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Format(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum EnumFormat IImage::Get_Format ( ) {
+    enum EnumFormat _result;
+    HRESULT _hr = get__Format(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IImage::Put_Format ( enum EnumFormat pVal ) {
+    HRESULT _hr = put__Format(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}

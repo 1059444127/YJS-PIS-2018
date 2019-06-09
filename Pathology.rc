@@ -1,0 +1,4250 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "fores.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""fores.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Pathology.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "#include ""fores.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MainIcon.ico"
+IDR_CPI_RETYPE          ICON    DISCARDABLE     "res\\PathologyDoc.ico"
+IDI_ICON_STATISTIC      ICON    DISCARDABLE     "res\\ico00002.ico"
+IDB_ICON_CHARGEDETAIL   ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_ICON_ENROLL         ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_ICON_SECURITY       ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_ICON_STOPPREVIEW    ICON    DISCARDABLE     "res\\icon_ok1.ico"
+IDI_ICON_STOPPRINT      ICON    DISCARDABLE     "res\\icon_ok2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PICTURE      BITMAP  MOVEABLE PURE   "res\\B3.bmp"
+IDB_IMAGELIST           BITMAP  MOVEABLE PURE   "res\\il_tab.bmp"
+IDB_RECYCLE             BITMAP  MOVEABLE PURE   "res\\recycle32.bmp"
+IDB_MULTI_DOC           BITMAP  MOVEABLE PURE   "res\\multidoc.bmp"
+IDB_SINGLE_DOC          BITMAP  MOVEABLE PURE   "res\\Singleidoc.bmp"
+IDB_FILETYPE_BMP        BITMAP  MOVEABLE PURE   "res\\bmp_file_1.bmp"
+IDB_FILETYPE_JPG        BITMAP  MOVEABLE PURE   "res\\jpg_file_1.bmp"
+IDB_FILETYPE_TIF        BITMAP  MOVEABLE PURE   "res\\tif.bmp"
+IDB_BITMAP_TOOLBARGRAY  BITMAP  MOVEABLE PURE   "res\\biggraybar.bmp"
+IDR_MAINFRAME_SMALL     BITMAP  MOVEABLE PURE   "res\\toolbar1.bmp"
+IDR_MAINFRAME_SMALL_GRAY BITMAP  MOVEABLE PURE   "res\\bmp00001.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP_MIC          BITMAP  MOVEABLE PURE   "res\\mic.bmp"
+IDB_BITMAP_STOP         BITMAP  MOVEABLE PURE   "res\\stop.bmp"
+IDB_BITMAP_PHOTO        BITMAP  MOVEABLE PURE   "res\\photoin.bmp"
+IDR_TOOLBAR_DBLIST      BITMAP  MOVEABLE PURE   "res\\bmp00002.bmp"
+IDR_TOOLBAR_STATISTIC   BITMAP  MOVEABLE PURE   "res\\bmp00008.bmp"
+IDB_BITMAP_HISIDIN      BITMAP  MOVEABLE PURE   "res\\hisidin.bmp"
+IDR_TOOLBAR_CHARGEDETAIL BITMAP  MOVEABLE PURE   "res\\bmp00015.bmp"
+IDB_BITMAP_WAV          BITMAP  MOVEABLE PURE   "res\\11.bmp"
+IDB_IMGLIST_VIEW        BITMAP  MOVEABLE PURE   "res\\ImgView.bmp"
+IDR_POPUP_TREE          BITMAP  MOVEABLE PURE   "res\\bmp00003.bmp"
+IDR_TOOLBAR_DRAWBAR     BITMAP  MOVEABLE PURE   "res\\bmp00006.bmp"
+IDB_ORIG                BITMAP  MOVEABLE PURE   "res\\orig.bmp"
+IDB_ROTATE180           BITMAP  MOVEABLE PURE   "res\\rotate180.bmp"
+IDB_ROTATE270           BITMAP  MOVEABLE PURE   "res\\rotate270.bmp"
+IDB_ROTATE90            BITMAP  MOVEABLE PURE   "res\\rotate90.bmp"
+IDB_FLIPHORI            BITMAP  MOVEABLE PURE   "res\\fliphori.bmp"
+IDB_FLIPVERT            BITMAP  MOVEABLE PURE   "res\\flipvert.bmp"
+IDR_TOOLBAR_PSMANAGE    BITMAP  MOVEABLE PURE   "res\\toolbar_.bmp"
+IDB_BITMAP_PRINT        BITMAP  MOVEABLE PURE   "res\\printer.bmp"
+IDB_BITMAP_SECURITY     BITMAP  MOVEABLE PURE   "res\\security.bmp"
+IDB_BITMAP_VIDEO        BITMAP  MOVEABLE PURE   "res\\shoot.bmp"
+IDB_BITMAP_MOVIE        BITMAP  MOVEABLE PURE   "res\\movie.bmp"
+IDB_BITMAP_VIDEOIN      BITMAP  MOVEABLE PURE   "res\\videoin.bmp"
+IDB_BITMAP_IMGCAP       BITMAP  MOVEABLE PURE   "res\\imgcap.bmp"
+IDR_TOOLBAR_TRANSTABLE  BITMAP  MOVEABLE PURE   "res\\bmp00004.bmp"
+IDB_BITMAP_PRINTER      BITMAP  MOVEABLE PURE   "res\\printer32.bmp"
+IDR_TOOLBAR_REPORT      BITMAP  MOVEABLE PURE   "res\\bmp00005.bmp"
+IDB_BITMAP_DOWN         BITMAP  MOVEABLE PURE   "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME_SMALL TOOLBAR MOVEABLE PURE  17, 15
+BEGIN
+    BUTTON      ID_DOC_NEWORDER
+    BUTTON      ID_DOC_NEWORDER1
+    BUTTON      ID_DOC_QUICKINPUT
+    BUTTON      ID_APP_CAMERA
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_APP_REFRESH
+    BUTTON      ID_APP_LAST
+    BUTTON      ID_APP_NEXT
+    BUTTON      ID_APP_CHECK
+    BUTTON      ID_APP_UNCHECK
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_SEND
+    BUTTON      ID_APP_COLLECT
+    BUTTON      ID_APP_NOTEPAD
+    BUTTON      ID_APP_DZBL
+    BUTTON      ID_APP_LOGOUT
+    BUTTON      ID_APP_EXIT
+END
+
+IDR_MAINFRAME_SMALL_GRAY TOOLBAR MOVEABLE PURE  17, 15
+BEGIN
+    BUTTON      ID_DOC_NEWORDER
+    BUTTON      ID_DOC_NEWORDER1
+    BUTTON      ID_DOC_QUICKINPUT
+    BUTTON      ID_APP_CAMERA
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_APP_REFRESH
+    BUTTON      ID_APP_LAST
+    BUTTON      ID_APP_NEXT
+    BUTTON      ID_APP_CHECK
+    BUTTON      ID_APP_UNCHECK
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_SEND
+    BUTTON      ID_APP_COLLECT
+    BUTTON      ID_APP_NOTEPAD
+    BUTTON      ID_APP_DZBL
+    BUTTON      ID_APP_LOGOUT
+    BUTTON      ID_APP_EXIT
+END
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  32, 32
+BEGIN
+    BUTTON      ID_DOC_NEWORDER
+    BUTTON      ID_DOC_NEWORDER1
+    BUTTON      ID_DOC_QUICKINPUT
+    BUTTON      ID_APP_CAMERA
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_APP_REFRESH
+    BUTTON      ID_APP_LAST
+    BUTTON      ID_APP_NEXT
+    BUTTON      ID_APP_CHECK
+    BUTTON      ID_APP_UNCHECK
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_SEND
+    BUTTON      ID_APP_COLLECT
+    BUTTON      ID_APP_NOTEPAD
+    BUTTON      ID_APP_DZBL
+    BUTTON      ID_APP_LOGOUT
+    BUTTON      ID_APP_EXIT
+END
+
+IDR_TOOLBAR_DBLIST TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_DBLIST_STATE0
+    BUTTON      ID_DBLIST_STATE1
+    BUTTON      ID_DBLIST_STATE2
+    BUTTON      ID_DBLIST_STATE3
+    BUTTON      ID_DBLIST_STATE4
+    BUTTON      ID_DBLIST_STATE5
+    BUTTON      ID_DBLIST_STATE6
+    BUTTON      ID_DATESEL
+END
+
+IDR_TOOLBAR_STATISTIC TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_YEAR
+    BUTTON      ID_TIME
+END
+
+IDR_TOOLBAR_CHARGEDETAIL TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_CHARGEITEM_NEW
+    BUTTON      ID_CHARGEITEM_DELETE
+    BUTTON      ID_CHARGEITEM_ALLITEM
+END
+
+IDR_POPUP_TREE TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_TREE_ADD
+    BUTTON      ID_TREE_DELETE
+    BUTTON      ID_TREE_MODIFY
+    BUTTON      ID_TREE_IMAGESHOW
+    BUTTON      ID_TREE_IMAGEINPUT
+END
+
+IDR_TOOLBAR_DRAWBAR TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_FO_VIEW_SCALEADD25
+    BUTTON      ID_FO_VIEW_SCALESUB25
+    BUTTON      ID_FO_VIEW_ZOOM100
+    BUTTON      ID_FO_ZOOMWITHINRECT
+    BUTTON      ID_FO_ZOOMFITPAGE
+    BUTTON      ID_FO_ZOOMFITWIDTH
+    BUTTON      ID_FO_ZOOMFITHEIGHT
+    BUTTON      ID_FO_ZOOM_FITSELECT
+    BUTTON      ID_FO_DRAW_SELECT
+    BUTTON      ID_FO_CMD_AUTOPAN
+    BUTTON      ID_FO_DRAW_IMAGE
+    BUTTON      ID_FO_DRAW_STATIC
+    BUTTON      ID_FO_DRAW_LINE
+    BUTTON      ID_FO_DRAW_ARROWLINE
+    BUTTON      ID_FO_DRAW_CROSSLINE
+    BUTTON      ID_FO_DRAW_POLYLINE
+    BUTTON      ID_FO_DRAW_FREELINE
+    BUTTON      ID_FO_DRAW_POLYGON
+    BUTTON      ID_FO_DRAW_ELLIPSE
+    BUTTON      ID_FO_DRAW_UPRIGHT_CIRCLE
+    BUTTON      ID_FO_DRAW_RECTANGLE
+    BUTTON      ID_FO_UPRIGHT_RECT
+    BUTTON      ID_FO_DRAW_FREECLOSELINE
+    BUTTON      ID_FO_EDIT_SPOTS
+    BUTTON      ID_EDIT_MAGIC
+    BUTTON      ID_AREAGROW
+    BUTTON      ID_IMAGE_CUT
+    BUTTON      ID_IMAGE_COPY
+    BUTTON      ID_IMAGE_PASTE
+    BUTTON      ID_IMAGE_MARK
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    BUTTON      ID_AOI_CUT
+    BUTTON      ID_AOI_REFER
+    BUTTON      ID_IMAGE_RECTIFY
+    BUTTON      ID_IMAGEPS_COLORRECTIFY
+    BUTTON      ID_IMAGE_SAVE
+END
+
+IDR_TOOLBAR_PSMANAGE TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_USER_GEN
+    BUTTON      ID_USER_DELETE
+    BUTTON      ID_USER_MODIFY
+END
+
+IDR_TOOLBAR_TRANSTABLE TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_YEAR
+    BUTTON      ID_TIME
+    BUTTON      ID_LOC_PRINT_PREVIEW
+    BUTTON      ID_LOC_PRINT
+END
+
+IDR_TOOLBAR_REPORT TOOLBAR MOVEABLE PURE  21, 20
+BEGIN
+    BUTTON      ID_REPORT_BLH
+    BUTTON      ID_REPORT_VIEW
+    BUTTON      ID_REPORT_PREVIOUS
+    BUTTON      ID_REPORT_NEXT
+    SEPARATOR
+    BUTTON      ID_REPORT_FORMAT
+    SEPARATOR
+    BUTTON      ID_REPORT_SELPIC
+    SEPARATOR
+    BUTTON      ID_FO_VIEW_SCALESUB25
+    BUTTON      ID_FO_VIEW_ZOOM100
+    BUTTON      ID_FO_ZOOMFITPAGE
+    BUTTON      ID_FO_ZOOMFITWIDTH
+    BUTTON      ID_FO_ZOOMFITHEIGHT
+    BUTTON      ID_FO_CMD_AUTOPAN
+    SEPARATOR
+    BUTTON      ID_REPORT_CHECK
+    BUTTON      ID_REPORT_PRINT
+    BUTTON      ID_REPORT_SEND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "病历库"
+    BEGIN
+        MENUITEM "选择病历库",                  ID_APP_DBSELECT
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "病历管理"
+    BEGIN
+        MENUITEM "新建病历(杭创)\tF2",                ID_DOC_NEWORDER
+        MENUITEM "新建病历(联想)",                ID_DOC_NEWORDER1
+        MENUITEM "打开病历",                    ID_FILE_OPEN
+        MENUITEM "保存病历\tF3",                ID_FILE_SAVE
+        MENUITEM "关闭病历",                    ID_DOC_CLOSE
+        MENUITEM "病历转存",                    ID_DOC_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "快速录入",                    ID_DOC_QUICKINPUT
+        MENUITEM SEPARATOR
+        MENUITEM "读入病历",                    ID_FILE_INPUT
+        MENUITEM "输出病历",                    ID_FILE_OUTPUT
+        MENUITEM "远程发送",                    ID_FILE_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "系统日志",                    ID_DOC_LOGO
+        MENUITEM SEPARATOR
+        MENUITEM "漏编号查找",                  ID_DOC_QUERY
+        MENUITEM "档案管理",                    ID_DOC_MANAGER
+    END
+    POPUP "制片管理"
+    BEGIN
+        MENUITEM "标本材料移交",                ID_ZPGL_CKYJ
+        MENUITEM "医嘱工作列表",                ID_ZPGL_YZDY
+        MENUITEM "成品玻片移交",                ID_ZPGL_QPYJ
+        MENUITEM "制片情况统计",                ID_ZPGL_ZPQKTJ
+        MENUITEM "常规收费列表",                ID_ZPGL_CGSFQR
+        MENUITEM "特检收费列表",                ID_ZPGL_SFQR
+        MENUITEM "医嘱暂存列表",                ID_ZPGL_ZCSFQR
+    END
+    POPUP "图像管理"
+    BEGIN
+        MENUITEM "数码扫描(&C)",                ID_ACQUIRE
+        MENUITEM "选择数码设备(&L)",            ID_SELECT_SOURCE
+        MENUITEM SEPARATOR
+        MENUITEM "OLYMPUS数码采集",             ID_IMG_OLYMPUS
+        MENUITEM SEPARATOR
+        MENUITEM "图像采集参数",                ID_IMG_CAPTURESTP
+        MENUITEM "图像采集格式",                ID_IMG_CAPTURE_FORMAT
+        MENUITEM "采集设备选择",                ID_WDM_DEVICE
+        POPUP "Dh_HV系列数字摄像机"
+        BEGIN
+            MENUITEM "设置",                        ID_DH_SETUP
+            MENUITEM "白平衡",                      ID_DH_WB
+            MENUITEM "伽马校正",                    ID_DH_GAMMA
+            MENUITEM "无伽马校正",                  ID_DH_CANCELGAMMA
+            POPUP "分辨率"
+            BEGIN
+                MENUITEM "模式1",                       ID_DH_MODE0
+                MENUITEM "模式2",                       ID_DH_MODE1
+                MENUITEM "模式3",                       ID_DH_MODE2
+            END
+            POPUP "格式图像数据排列"
+            BEGIN
+                MENUITEM "GBRG",                        ID_DH_CONVERSION_GB
+                MENUITEM "GRBG",                        ID_DH_CONVERSION_GR
+                MENUITEM "BGGR",                        ID_DH_CONVERSION_BG
+                MENUITEM "RGGB",                        ID_DH_CONVERSION_RG
+            END
+        END
+    END
+    POPUP "报告管理"
+    BEGIN
+        POPUP "报告复制"
+        BEGIN
+            MENUITEM "诊断信息",                    ID_FILE_RPTCOPY
+            MENUITEM "病理图像",                    ID_FILE_RPTCOPYIMG
+            MENUITEM "全部信息",                    ID_FILE_RPTCOPYALL
+        END
+        MENUITEM "调整报告格式",                ID_FILE_RPTMODIFY
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "报告浏览",                    ID_FILE_RPTVIEW
+        MENUITEM "报告输出",                    ID_REPORT_OUTPUT
+        MENUITEM "延期报告",                    ID_YQBG
+    END
+    POPUP "系统设置"
+    BEGIN
+        MENUITEM "权限管理",                    ID_FILE_SECURITYSETUP
+        MENUITEM "运行参数设置",                ID_FILE_SYSSETUP
+        MENUITEM "自定义库编辑",                ID_FILE_DBSETUP
+        POPUP "测量定标"
+        BEGIN
+            MENUITEM "浏览定标值",                  ID_STANDARD_VIEW
+            MENUITEM "追加定标值",                  ID_STANDARD_ADD
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "线型设置",                    ID_LINETYPE_SELECT
+        MENUITEM "文本注记样式",                ID_TEXTTYPE_SELECT
+        MENUITEM SEPARATOR
+        MENUITEM "特染标记物/套餐",             ID_SETUP_TAG
+        MENUITEM "字段提示信息",                ID_FIELD_NOTIFICATION
+        MENUITEM "诊断模板维护",                ID_MAINTANCE_REPORT
+        POPUP "诊断常用词维护"
+        BEGIN
+            MENUITEM "光镜所见常用词",              ID_REPORT_DISCRIBE
+            MENUITEM "位置常用词",                  ID_REPORT_REGION
+            MENUITEM "诊断意见常用词",              ID_REPORT_DIA
+            MENUITEM "肉眼所见常用词",              ID_REPORT_RYSJ
+        END
+        MENUITEM "图像注释维护",                ID_MAINTENANCE_PICNOTE
+        MENUITEM "自定义录入设置",              ID_MAINTANCE_SELFFIELD
+        MENUITEM "自定义显示设置",              ID_MAINTANCE_SELFSHOW
+        MENUITEM SEPARATOR
+        MENUITEM "打印机设置(&R)...",           ID_FILE_PRINT_SETUP
+        MENUITEM "包埋打印机设置",              ID_WRITER_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "获取随机密码",                ID_APP_GETCODE
+    END
+    POPUP "窗口"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "列表栏",                      ID_VIEW_MEDLIST
+        MENUITEM "输出栏",                      ID_VIEW_OUTPUT
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "帮助(&H)",                    ID_HELP
+        MENUITEM "病理诊断参考资料",            ID_REFERENCE
+        MENUITEM SEPARATOR
+        MENUITEM "关于病理网络管理信息系统",    ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_TREE MENU DISCARDABLE 
+BEGIN
+    POPUP "tree"
+    BEGIN
+        MENUITEM "隐藏空节点",                  ID_TREE_HIDEEMPTY
+        MENUITEM SEPARATOR
+        MENUITEM "增加",                        ID_TREE_ADD
+        MENUITEM "删除",                        ID_TREE_DELETE
+        MENUITEM "更新范本",                    ID_TREE_MODIFY
+        MENUITEM "典型图像",                    ID_TREE_IMAGESHOW
+        MENUITEM "更新图像",                    ID_TREE_IMAGEINPUT
+    END
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "返回&Q",                      ID_APP_EXIT
+    MENUITEM "粗选&C",                      ID_SEG_SELECT
+    MENUITEM "细选&X",                      ID_CHOICE_SELECT
+    MENUITEM "模拟显示&S",                  ID_SHOW
+    POPUP "设置颜色"
+    BEGIN
+        MENUITEM "背底颜色",                    ID_BACKCOLOR
+        MENUITEM "已选正文颜色",                ID_SELECTTEXT
+        MENUITEM "未选正文颜色",                ID_UNSELECTTEXT
+        MENUITEM "已选选项颜色",                ID_SELECTCHOICE
+        MENUITEM "未选选项颜色",                ID_UNSELECTCHOICE
+    END
+END
+
+IDR_MENU_PICPROCESS MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "取消打印",                    ID_PIC_UNPRINT
+        MENUITEM "取消所有打印",                ID_PIC_PRINT
+        MENUITEM "图像置换",                    ID_PIC_EXCHANGE
+        MENUITEM SEPARATOR
+        POPUP "图像注释"
+        BEGIN
+            MENUITEM "取材明细",                    ID_NOTE_QCMX
+        END
+        MENUITEM "注释内容",                    ID_PIC_NOTE
+        MENUITEM "图像旋转",                    ID_PIC_ROTATE
+        MENUITEM "图像镜向",                    ID_PIC_MIRROR
+        MENUITEM "图像融合",                    ID_PIC_FUSION
+        MENUITEM "图像插值",                    ID_PIC_RESAMPLE
+        MENUITEM SEPARATOR
+        MENUITEM "图像输出",                    ID_PIC_OUTPUT
+        MENUITEM "图像另存...",                 ID_PIC_SAVEAS
+        MENUITEM "全屏显示",                    ID_FULLSCREEN
+    END
+END
+
+CG_IDR_POPUP_DBF_STANDARD MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "删除当前记录",                ID_DELETE
+        MENUITEM "删除全部记录",                ID_DELETE_ALL
+        MENUITEM "设为当前定标量",              ID_GET
+    END
+END
+
+IDR_MENU_IMAGEPROCESSING MENU DISCARDABLE 
+BEGIN
+    POPUP "menu"
+    BEGIN
+        POPUP "视　　图"
+        BEGIN
+            MENUITEM "放　　大",                    ID_FO_VIEW_SCALEADD25
+            MENUITEM "缩　　小",                    ID_FO_VIEW_SCALESUB25
+            MENUITEM "恢　　复",                    ID_FO_VIEW_ZOOM100
+            MENUITEM SEPARATOR
+            MENUITEM "适合整页",                    ID_FO_ZOOMFITPAGE
+            MENUITEM "适合页宽",                    ID_FO_ZOOMFITWIDTH
+            MENUITEM "适合页高",                    ID_FO_ZOOMFITHEIGHT
+        END
+        POPUP "注　　记"
+        BEGIN
+            MENUITEM "组　　合",                    ID_FO_GROUP
+            MENUITEM "取消组合",                    ID_FO_UNGROUP
+            MENUITEM SEPARATOR
+            MENUITEM "剪切",                        ID_EDIT_CUT
+            MENUITEM "复制",                        ID_EDIT_COPY
+            MENUITEM "粘贴",                        ID_EDIT_PASTE
+            MENUITEM SEPARATOR
+            MENUITEM "注记设置",                    ID_TEXTTYPE_SELECT
+            MENUITEM "线形设置",                    ID_LINETYPE_SELECT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "文本注记",                    ID_FO_DRAW_STATIC
+        POPUP "图形注记"
+        BEGIN
+            MENUITEM "线条",                        ID_FO_DRAW_LINE
+            MENUITEM "箭头",                        ID_FO_DRAW_ARROWLINE
+            MENUITEM "直线",                        ID_FO_DRAW_CROSSLINE
+            MENUITEM "折线",                        ID_FO_DRAW_POLYLINE
+            MENUITEM "曲线",                        ID_FO_DRAW_FREELINE
+            MENUITEM "多边形",                      ID_FO_DRAW_POLYGON
+            MENUITEM "椭圆",                        ID_FO_DRAW_ELLIPSE
+            MENUITEM "圆形",                        ID_FO_DRAW_UPRIGHT_CIRCLE
+
+            MENUITEM "长方形",                      ID_FO_DRAW_RECTANGLE
+            MENUITEM "正方形",                      ID_FO_UPRIGHT_RECT
+            MENUITEM "闭合曲线",                    ID_FO_DRAW_FREECLOSELINE
+            MENUITEM "编辑控制点",                  ID_FO_EDIT_SPOTS
+        END
+        MENUITEM "图片注记",                    ID_FO_DRAW_IMAGE
+        MENUITEM "写入图像",                    ID_IMAGE_MARK
+        MENUITEM SEPARATOR
+        MENUITEM "图像裁切",                    ID_AOI_CUT
+        MENUITEM "指定区域裁切",                ID_AOI_REFER
+        MENUITEM SEPARATOR
+        MENUITEM "背底校正",                    ID_IMAGEPS_COLORRECTIFY
+        MENUITEM "图像平衡调节",                ID_IMAGE_RECTIFY
+        MENUITEM SEPARATOR
+        MENUITEM "全选",                        ID_EDIT_SELECT_ALL
+    END
+END
+
+IDM_MY_EDIT MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "剪切",                        ID_EDIT_CUT
+        MENUITEM "&复制",                       ID_EDIT_COPY
+        MENUITEM "&粘贴",                       ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "插入标本名称",                ID_BBMC
+        MENUITEM "插入冰冻结果",                ID_BDJG
+        MENUITEM "从指定编号复制肉眼所见",      ID_COPY_RYSJ
+        MENUITEM "从指定编号复制光镜所见",      ID_COPY_GJSJ
+        MENUITEM "从指定编号复制诊断意见",      ID_COPY_ZDYJ
+    END
+    POPUP "pop2"
+    BEGIN
+        MENUITEM "剪切",                        ID_EDIT_CUT
+        MENUITEM "复制",                        ID_EDIT_COPY
+        MENUITEM "粘贴",                        ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        POPUP "插入"
+        BEGIN
+            MENUITEM "病史摘要",                    ID_INSERT_BSZY
+            MENUITEM "肉眼所见",                    ID_INSERT_RYSJ
+            MENUITEM "诊断意见",                    ID_INSERT_ZDYJ
+        END
+    END
+    POPUP "pop3"
+    BEGIN
+        MENUITEM "剪切",                        ID_EDIT_CUT
+        MENUITEM "复制",                        ID_EDIT_COPY
+        MENUITEM "粘贴",                        ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "插入标本名称",                ID_BBMC
+    END
+END
+
+IDR_MENU_SLICE MENU DISCARDABLE 
+BEGIN
+    POPUP "menu"
+    BEGIN
+        MENUITEM "批量修改",                    IDM_BATCHUPADATE
+    END
+    MENUITEM "",                            65535
+END
+
+IDR_MENU_REPORTVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "&文本属性...",                ID_FO_TEXT_PROPERTIES
+    END
+END
+
+IDR_MENU_MATERIAL MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "取材医嘱",                    IDM_MATEARIAL_YZ
+        MENUITEM "标签打印",                    IDM_MATEARIAL_WriterPrint
+        MENUITEM "蜡块标识",                    IDM_MATEARIAL_LKBS
+        MENUITEM SEPARATOR
+        MENUITEM "包埋盒打印",                  IDM_MATEARIAL_EMBEDBOXPRINT
+        MENUITEM SEPARATOR
+        MENUITEM "全选",                        IDM_MATEARIAL_SelAll
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PATHOLOGY_FORM DIALOG DISCARDABLE  0, 0, 167, 136
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_CTRL,"SysTabControl32",0x0,0,0,167,134
+END
+
+IDD_DIALOG_MEDPERSON DIALOG DISCARDABLE  0, 0, 461, 290
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_ORDERTYPE,45,3,55,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SQH,143,3,44,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_BRID,246,3,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BDH,372,3,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BLH,45,19,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YBH,143,19,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MZH,246,19,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZYH,372,19,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XM,45,35,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XB,143,35,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NL,246,35,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NLDW,277,35,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CSRQ,372,34,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HF,45,51,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZY,143,51,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MZ,246,51,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SFZH,372,51,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LXDZ,45,67,154,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LXDH,246,67,206,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SJDW,45,83,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SJKS,143,83,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SJYS,246,83,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BQ,45,99,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CH,143,99,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BBLX,246,99,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BBQK,372,98,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BBMC,45,115,141,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BHGYY,246,115,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BBQS,372,115,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FB,45,131,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SF,143,131,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QCYS,246,131,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LCZD,45,147,155,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MCYJ,247,147,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_JJ,372,147,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BSZY,45,163,408,91,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_SSSJ,45,258,404,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "申请单打印",IDC_BUTTON_SQDDY,47,275,42,11
+    PUSHBUTTON      "电子病历",IDC_BUTTON_JCXX,96,275,42,11
+    PUSHBUTTON      "退　单",IDC_BUTTON_TD,145,275,42,11
+    PUSHBUTTON      "肿瘤信息",IDC_BUTTON_ZLXX,194,275,42,11
+    PUSHBUTTON      "妇科信息",IDC_BUTTON_FKXX,243,275,42,11
+    PUSHBUTTON      "保　存",IDC_BUTTON_BC,292,275,42,11
+    CONTROL         "",IDC_DATE_SJRQ,"Static",SS_GRAYFRAME,372,83,80,12
+    PUSHBUTTON      "",IDC_SF_DETAIL,187,131,12,12
+    CONTROL         "",IDC_DATE_QCRQ,"Static",SS_GRAYFRAME,372,130,80,12
+    PUSHBUTTON      "保存/新建",IDC_BUTTON_NEW,341,275,42,11
+    PUSHBUTTON      "打　印",IDC_BUTTON_PRINT,390,275,42,11
+    RTEXT           "标本类型:",IDC_STATIC_BBLX,202,100,41,8
+    RTEXT           "患者来源:",IDC_STATIC_ORDERTYPE,0,4,41,8
+    RTEXT           "病理号:",IDC_STATIC_BLH,0,20,41,8
+    RTEXT           "姓　名:",IDC_STATIC_XM,0,36,41,8
+    RTEXT           "婚　否:",IDC_STATIC_HF,0,52,41,8
+    RTEXT           "联系地址:",IDC_STATIC_LXDZ,0,68,41,8
+    RTEXT           "送检单位:",IDC_STATIC_SJDW,0,84,41,8
+    RTEXT           "病　区:",IDC_STATIC_BQ,0,100,41,8
+    RTEXT           "标本名称:",IDC_STATIC_BBMC,0,116,41,8
+    RTEXT           "费　别:",IDC_STATIC_FB,0,132,41,8
+    RTEXT           "临床诊断:",IDC_STATIC_LCZD,0,148,41,8
+    RTEXT           "病史摘要:",IDC_STATIC_BSZY,0,165,41,8
+    RTEXT           "手术所见:",IDC_STATIC_SSSJ,0,259,41,8
+    RTEXT           "申请号:",IDC_STATIC_SQH,104,4,35,8
+    RTEXT           "原编号:",IDC_STATIC_YBH,104,20,35,8
+    RTEXT           "性　别:",IDC_STATIC_XB,104,36,35,8
+    RTEXT           "职　业:",IDC_STATIC_ZY,104,52,35,8
+    RTEXT           "送检科室:",IDC_STATIC_SJKS,104,84,35,8
+    RTEXT           "床　号:",IDC_STATIC_CH,104,100,35,8
+    RTEXT           "收　费:",IDC_STATIC_SF,104,132,35,8
+    RTEXT           "病人ID:",IDC_STATIC_BRID,213,4,29,8
+    RTEXT           "门诊号:",IDC_STATIC_MZH,202,20,41,8
+    RTEXT           "年　龄:",IDC_STATIC_NL,202,36,41,8
+    RTEXT           "联系电话:",IDC_STATIC_LXDH,202,68,41,8
+    RTEXT           "末次月经:",IDC_STATIC_MCYJ,203,148,41,8
+    RTEXT           "送检医生:",IDC_STATIC_SJYS,202,84,41,8
+    RTEXT           "不合格原因:",IDC_STATIC_BHGYY,199,116,44,8
+    RTEXT           "取材医生:",IDC_STATIC_QCYS,202,132,41,8
+    RTEXT           "冰冻标识:",IDC_STATIC_BDH,333,4,37,8
+    RTEXT           "住院号:",IDC_STATIC_ZYH,333,20,37,8
+    RTEXT           "民　族:",IDC_STATIC_MZ,206,53,37,8
+    RTEXT           "身份证号:",IDC_STATIC_SFZH,333,52,37,8
+    RTEXT           "绝　经:",IDC_STATIC_JJ,333,148,37,8
+    RTEXT           "送检日期:",IDC_STATIC_SJRQ,333,84,37,8
+    RTEXT           "标本接收:",IDC_STATIC_BBQS,333,116,37,8
+    RTEXT           "接收日期:",IDC_STATIC_QCRQ,333,132,37,8
+    RTEXT           "标本情况:",IDC_STATIC_BBQK,333,100,37,8
+    PUSHBUTTON      "",IDC_HISID_EXTRACT,188,2,10,12
+    PUSHBUTTON      "",IDC_HISID1_EXTRACT,201,2,10,12
+    PUSHBUTTON      "",IDC_MAX_BDH,439,3,12,12
+    PUSHBUTTON      "",IDC_BBMC_DETAIL,187,115,12,12
+    RTEXT           "出生日期:",IDC_STATIC_CSRQ,329,37,41,8
+END
+
+IDD_DIALOG_MEDDIAGNOSE DIALOG DISCARDABLE  0, 0, 439, 290
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_RYSJ,39,4,282,70,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_GJSJ,39,77,282,70,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ZDYJ,39,150,282,50,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ZDBM,39,209,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZDGJC,144,209,177,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SFYX,39,223,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZDFH,144,223,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CZYS,241,223,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZZYS,39,237,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHYS,144,237,56,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_BGRQ,"Static",SS_GRAYFRAME,241,237,80,12
+    PUSHBUTTON      "取材记录",IDC_BUTTON_QCMX,15,257,37,11
+    PUSHBUTTON      "冰冻报告",IDC_BUTTON_BDBG,58,257,37,11
+    PUSHBUTTON      "修改意见",IDC_BUTTON_XGYJ,101,257,37,11
+    PUSHBUTTON      "会诊意见",IDC_BUTTON_KNHZ,144,257,37,11
+    PUSHBUTTON      "补充报告",IDC_BUTTON_BCBG,187,257,37,11
+    PUSHBUTTON      "追踪随访",IDC_BUTTON_SFJG,230,257,37,11
+    PUSHBUTTON      "技术医嘱",IDC_BUTTON_JSYZ,15,273,37,11
+    PUSHBUTTON      "特检医嘱",IDC_BUTTON_TJYZ,58,273,37,11
+    PUSHBUTTON      "切片信息",IDC_BUTTON_QPPJ,101,273,37,11
+    PUSHBUTTON      "常 用 词",IDC_BUTTON_CYC,144,273,37,11
+    PUSHBUTTON      "诊断模板",IDC_BUTTON_ZDMB,187,273,37,11
+    PUSHBUTTON      "保  存",IDC_BUTTON_BC,274,257,37,11
+    PUSHBUTTON      "详细资料",IDC_BUTTON_BLH,230,273,37,11
+    COMBOBOX        IDC_COMBO_BGGS,325,4,98,148,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tree1",IDC_TREE_GJSJ,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP,333,145,59,81
+    RTEXT           "肉眼所见:",IDC_STATIC_RYSJ,0,5,37,8
+    RTEXT           "光镜所见:",IDC_STATIC_GJSJ,0,77,37,8
+    RTEXT           "诊断意见:",IDC_STATIC_ZDYJ,0,150,37,8
+    RTEXT           "诊断编码:",IDC_STATIC_ZDBM,0,210,37,8
+    RTEXT           "是否阳性:",IDC_STATIC_SFYX,0,224,37,8
+    RTEXT           "主诊医生:",IDC_STATIC_ZZYS,0,238,37,8
+    RTEXT           "诊断符合:",IDC_STATIC_ZDFH,98,223,42,8
+    RTEXT           "审核医生:",IDC_STATIC_SHYS,98,238,42,8
+    RTEXT           "初诊医生:",IDC_STATIC_CZYS,203,223,37,8
+    RTEXT           "报告日期:",IDC_STATIC_SJRQ,203,238,37,8
+    RTEXT           "诊断关键词:",IDC_STATIC_ZDGJC,98,211,42,8
+    LTEXT           "词典:",IDC_STATIC_BWBZ,325,20,96,8
+    PUSHBUTTON      "M",IDC_BUTTON_MICD10,77,210,9,9
+    PUSHBUTTON      "S",IDC_BUTTON_SICD10,86,210,9,9
+    PUSHBUTTON      "报告底单",IDC_BUTTON_PRINT,274,273,37,11
+    CONTROL         "Tree1",IDC_TREE_RYSJ,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP,325,35,96,241
+    CONTROL         "Tree1",IDC_TREE_ZDYJ,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP,322,100,59,81
+END
+
+IDD_DIALOG_MEDIMAGE DIALOG DISCARDABLE  0, 0, 73, 97
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         139,IDC_RECYCLE,"Static",SS_BITMAP,52,72,21,23
+    CONTROL         "List1",IDC_LIST_THUMBNAIL,"SysListView32",
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | WS_BORDER | 
+                    WS_TABSTOP,0,0,73,69
+    PUSHBUTTON      "",IDC_BUTTON_PHOTO,1,70,23,24
+    PUSHBUTTON      "",IDC_BUTTON_PRINTER,26,70,23,24
+END
+
+IDD_DIALOG_RECORDING DIALOGEX 0, 0, 87, 17
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_LEDTEXT,0,0,88,17
+END
+
+IDD_DIALOG_MEDSOUND DIALOG DISCARDABLE  0, 0, 85, 132
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         139,IDC_RECYCLE,"Static",SS_BITMAP,64,107,21,23
+    CONTROL         "List1",IDC_LIST_THUMBNAIL,"SysListView32",
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | WS_BORDER | 
+                    WS_TABSTOP,0,0,85,104
+    PUSHBUTTON      "",IDC_BUTTON_RECORD,2,106,24,23
+    PUSHBUTTON      "",IDC_BUTTON_STOP,29,106,24,23
+END
+
+IDD_DIALOG_DBLIST DIALOGEX 0, 0, 173, 278
+STYLE WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,45,16,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "提取",IDC_BUTTON_BLH,95,16,20,14
+    CONTROL         "本年",IDC_CHECK_CURYEAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,117,17,27,12
+    CONTROL         "模糊",IDC_CHECK_BLUR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,17,27,12
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,32,173,193,0,WS_EX_CLIENTEDGE
+    LTEXT           "会诊病例:  0  例",IDC_HYP_HZBL,2,228,67,10
+    LTEXT           "补取列表:  0  例",IDC_HYP_BQLB,72,228,67,10
+    LTEXT           "随访病例:  0  例",IDC_HYP_SFBL,2,241,67,10
+    LTEXT           "查看短信:  0/0",IDC_HYP_KNLY,72,241,67,10
+    LTEXT           "历次检查:  0  例",IDC_HYP_LSJC,2,254,67,10
+    PUSHBUTTON      "刷新",IDC_BUTTON_REFRESH,96,263,21,14
+    EDITTEXT        IDC_EDIT_WFYY,37,265,57,12,ES_AUTOHSCROLL
+    CONTROL         "全库",IDC_CHECK_ALLDB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,119,265,29,10
+    COMBOBOX        IDC_COMBO_BLH,0,16,44,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "延期原因",IDC_STATIC_WFYY,2,266,33,10
+    LTEXT           "冰冻预约:  0  例",IDC_HYP_BDYY,72,254,67,10
+END
+
+IDD_DIALOG_STATISTIC DIALOG DISCARDABLE  0, 0, 187, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "统计"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,126,53,50,14
+    EDITTEXT        IDC_EDIT_START,61,10,114,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END,61,35,114,12,ES_AUTOHSCROLL
+    LTEXT           "起始时间：",IDC_STATIC,13,12,40,11
+    LTEXT           "终止时间：",IDC_STATIC,13,38,40,11
+END
+
+IDD_DIALOG_AREAOUT DIALOG DISCARDABLE  0, 0, 232, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_FROM,36,8,189,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TO,36,31,189,17,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,98,56,34,14
+    PUSHBUTTON      "取消",IDCANCEL,160,56,34,14
+    DEFPUSHBUTTON   "提示",IDLISTVIEW,36,56,34,14
+    LTEXT           "从：",IDC_STATIC_FROM,13,13,16,12
+    LTEXT           "至：",IDC_STATIC_TO,13,34,16,12
+END
+
+IDD_DIALOG_LISTINPUT DIALOG DISCARDABLE  0, 0, 179, 284
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "列表选择输入"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "关键词检索",IDINDEX,83,268,50,16
+    PUSHBUTTON      "关闭",IDCANCEL,143,268,29,16
+    EDITTEXT        IDC_EDIT_INDEXWORD,7,268,73,15,ES_AUTOHSCROLL
+END
+
+IDD_StrEdit DIALOG DISCARDABLE  50, 50, 235, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,5,10,224,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,94,34,44,14
+    PUSHBUTTON      "取消",IDCANCEL,165,34,44,14
+    PUSHBUTTON      "提示",IDLISTVIEW,23,34,44,14
+END
+
+IDD_DIALOG_COMPOSITEQUERY DIALOG DISCARDABLE  0, 0, 267, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义条件查询"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_FIELD,58,7,94,267,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_OPERATOR,58,26,53,201,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CONTENT,58,46,93,95,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "清除",IDC_BUTTON_CLEAR,12,67,48,12
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,77,67,48,12
+    PUSHBUTTON      "并且(And)",IDC_BUTTON_AND,142,67,48,12
+    PUSHBUTTON      "或者(Or)",IDC_BUTTON_OR,207,67,48,12
+    EDITTEXT        IDC_EDIT_QUERY,7,85,253,98,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,116,193,36,13
+    PUSHBUTTON      "取消",IDCANCEL,185,193,36,13
+    PUSHBUTTON      "提示",IDLISTVIEW,47,193,36,13
+    RTEXT           "查询项目：",IDC_STATIC,7,10,44,11
+    RTEXT           "运算符：",IDC_STATIC,7,29,44,11
+    RTEXT           "查询内容：",IDC_STATIC,7,48,44,11
+END
+
+IDD_DIALOG_SFDETAIL DIALOG DISCARDABLE  0, 0, 650, 269
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "收费明细表"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,257,255,37,12
+    PUSHBUTTON      "取消",IDCANCEL,355,255,37,12
+END
+
+IDD_RECORD_INFO DIALOGEX 0, 0, 360, 260
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "设置字段提示信息"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_FIELD,0,7,96,253,0,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_PROMPT1,99,7,128,253,0,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_STATIC_PROMPT2,230,7,128,253,0,WS_EX_CLIENTEDGE
+END
+
+IDD_NORMALWORD DIALOG DISCARDABLE  180, 10, 373, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,336,130,36,13
+    LTEXT           "常用词",IDC_FUNCTION,5,2,55,8
+    LTEXT           "位置常用词",IDC_SITE,219,2,53,8
+    LISTBOX         IDC_LIST1,4,12,212,130,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LIST2,217,12,59,130,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "脏器或病种",IDC_ZQM,279,2,56,8
+    LISTBOX         IDC_LIST4,277,12,94,115,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "切换",IDSWITCH,291,130,36,13
+END
+
+IDD_SECECTBZ DIALOG DISCARDABLE  10, 10, 380, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION " 选择样本"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,284,172,50,14
+    PUSHBUTTON      "取消",IDCANCEL,284,200,50,14
+    LTEXT           "脏器",IDC_STATIC,24,4,34,10
+    LTEXT           "病种",IDC_STATIC,144,4,34,10
+    LTEXT           "已选脏器，病种",IDC_STATIC,260,4,78,10
+    LISTBOX         IDC_LIST1,4,16,108,220,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LIST2,116,16,128,220,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3,252,16,120,144,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NUMINPUT DIALOG DISCARDABLE  500, 0, 96, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入数值"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,10,5,75,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,10,25,30,14
+    PUSHBUTTON      "取消",IDCANCEL,50,25,30,14
+END
+
+IDD_BuweiBZ DIALOG DISCARDABLE  30, 30, 260, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "部位病种"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST1,5,23,113,107,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LIST2,139,23,111,106,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "增加脏器",IDC_BUTTON1,11,143,57,17
+    PUSHBUTTON      "修改脏器",IDC_BUTTON2,11,164,57,17
+    PUSHBUTTON      "删除脏器",IDC_BUTTON3,11,185,57,17
+    PUSHBUTTON      "增加病种",IDC_BUTTON4,101,143,57,17
+    PUSHBUTTON      "修改病种",IDC_BUTTON5,101,164,57,17
+    PUSHBUTTON      "删除病种",IDC_BUTTON6,101,184,57,17
+    PUSHBUTTON      "编辑报告",IDC_BUTTON7,187,143,57,17
+    PUSHBUTTON      "检验报告",IDC_BUTTON8,187,163,57,17
+    DEFPUSHBUTTON   "退出",IDOK,187,183,56,17
+    LTEXT           "脏器",IDC_STATIC,17,8,46,10
+    LTEXT           "病种",IDC_STATIC,152,8,41,10
+    GROUPBOX        "",IDC_STATIC,4,131,72,78
+    GROUPBOX        "",IDC_STATIC,94,131,71,78
+    GROUPBOX        "",IDC_STATIC,179,131,72,78
+END
+
+IDD_Edit_Report DIALOG DISCARDABLE  10, 10, 325, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "修改报告样本"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,4,14,314,124,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT2,4,147,313,68,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,82,220,50,14
+    PUSHBUTTON      "取消",IDCANCEL,182,220,50,14
+    LTEXT           "检查所见：",IDC_STATIC,8,4,69,9
+    LTEXT           "诊断意见：",IDC_STATIC,4,138,75,9
+END
+
+IDD_ZHENDUAN DIALOG DISCARDABLE  80, 50, 463, 203
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "编辑提示"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST1,5,23,99,107,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "上移",IDUP,63,131,20,13
+    DEFPUSHBUTTON   "下移",IDDOWN,85,131,20,13
+    PUSHBUTTON      "增加一级提示",IDC_BUTTON1,5,145,57,17
+    PUSHBUTTON      "修改一级提示",IDC_BUTTON2,5,165,57,17
+    PUSHBUTTON      "删除一级提示",IDC_BUTTON3,5,185,57,17
+    DEFPUSHBUTTON   "保存退出",IDOK,112,183,56,17
+    LTEXT           "一级提示",IDC_STATIC1,17,8,46,10
+    LTEXT           "二级提示",IDC_STATIC2,128,8,41,10
+    EDITTEXT        IDC_EDIT1,112,24,347,148,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+IDD_DIALOG_XGYJ DIALOG DISCARDABLE  0, 0, 370, 290
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "修改意见"
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_CZYJ,7,19,356,66,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_XGYJ,7,100,356,74,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "常用词",IDC_BUTTON_CYC,14,269,50,14
+    PUSHBUTTON      "主诊回写",IDC_BUTTON_TQZD,72,269,50,14
+    PUSHBUTTON      "会诊回写",IDC_BUTTON_HXZD,130,269,50,14
+    PUSHBUTTON      "保　存",IDC_BUTTON_SAVE,188,269,50,14
+    DEFPUSHBUTTON   "保存/退出",IDOK,246,269,50,14
+    PUSHBUTTON      "退　出",IDCANCEL,304,269,50,14
+    LTEXT           "初诊意见：",IDC_STATIC_CZYJ,7,7,45,8
+    LTEXT           "主诊意见：",IDC_STATIC_XGYJ,7,88,45,8
+    EDITTEXT        IDC_EDIT_HZYJ,7,192,356,74,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "会诊意见：",IDC_STATIC_XGYJ2,7,179,45,8
+    PUSHBUTTON      "复制初诊",IDC_BUTTON_COPYCZ,72,86,50,14
+    PUSHBUTTON      "复制主诊",IDC_BUTTON_COPYZZ,72,177,50,14
+END
+
+IDD_DIALOG_BDBG DIALOG DISCARDABLE  0, 0, 342, 211
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "冰冻报告"
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_BDJG,7,13,328,143,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BDBGYS,68,159,79,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BDSHYS,254,159,79,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_BDBGRQ,"Static",SS_GRAYFRAME,68,177,79,12
+    EDITTEXT        IDC_EDIT_BDFH,254,177,79,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "打印",IDPRINT,241,194,46,14
+    PUSHBUTTON      "退出",IDCANCEL,288,194,46,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,54,194,46,14
+    PUSHBUTTON      "冰冻审核",IDC_BUTTON_BGCHECK,101,194,46,14
+    PUSHBUTTON      "追加标本",IDC_BUTTON_NEWSAMPLE,147,194,46,14
+    PUSHBUTTON      "发至手术室",IDC_SENDBDYY,194,194,46,14
+    LTEXT           "冰冻结果",IDC_STATIC_BDJG,7,2,36,10
+    RTEXT           "冰冻报告医生:",IDC_STATIC_BDBGYS,11,162,52,8
+    RTEXT           "冰冻报告日期:",IDC_STATIC_BDBGRQ,11,180,52,8
+    RTEXT           "冰冻符合:",IDC_STATIC_BDFH,205,180,46,8
+    RTEXT           "审核医生:",IDC_STATIC_BDSHYS,205,162,46,8
+    PUSHBUTTON      "常用词",IDC_BUTTON_CYC,7,194,46,14
+END
+
+IDD_DIALOG_BCBG DIALOG DISCARDABLE  0, 0, 294, 184
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "补充报告"
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_BCZD,7,18,280,118,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BCBGYS,71,142,79,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_BCBGRQ,"Static",SS_GRAYFRAME,208,142,79,12
+    PUSHBUTTON      "常用词",IDC_BUTTON_CYC,8,163,50,14
+    PUSHBUTTON      "保　存",IDC_BUTTON_SAVE,65,163,50,14
+    PUSHBUTTON      "打　印",IDPRINT,122,163,50,14
+    DEFPUSHBUTTON   "保存/退出",IDOK,179,163,50,14
+    PUSHBUTTON      "退　出",IDCANCEL,236,163,50,14
+    LTEXT           "补充诊断:",IDC_STATIC_BCZD,7,7,40,8
+    RTEXT           "补充报告医生:",IDC_STATIC_BCBGYS,14,145,52,8
+    RTEXT           "补充报告日期:",IDC_STATIC_BCBGRQ,153,145,52,8
+END
+
+IDD_DIALOG_SFJG DIALOG DISCARDABLE  0, 0, 254, 151
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "追踪随访"
+FONT 11, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DATE_JHSFSJ,"Static",SS_GRAYFRAME,65,7,70,12
+    EDITTEXT        IDC_EDIT_SFYS,181,7,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SFJG,7,35,240,89,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "随访确认",IDOK,140,130,50,14
+    PUSHBUTTON      "结束随访",IDCANCEL,197,130,50,14
+    PUSHBUTTON      "保　存",IDC_BUTTON_SAVE,83,130,50,14
+    RTEXT           "计划随访时间:",IDC_STATIC_JHSFSJ,7,9,54,8
+    RTEXT           "随访医生:",IDC_STATIC_SFYS,139,9,38,8
+    LTEXT           "随访结果",IDC_STATIC_SFJG,13,23,38,8
+END
+
+IDD_DIALOG_KLHZ DIALOG DISCARDABLE  0, 0, 369, 305
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "会诊意见"
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_HZFQR,54,7,59,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CYYS,157,7,205,30,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_DATE_HZRQ,"Static",SS_GRAYFRAME,54,26,59,11
+    EDITTEXT        IDC_EDIT_ZJYJ,54,42,308,30,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Tab1",IDC_TAB_CTRL,"SysTabControl32",0x0,54,76,308,172
+    EDITTEXT        IDC_EDIT_YSYJ,54,252,253,27,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,311,253,25,11
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,337,253,25,11
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,311,266,25,11
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,337,266,25,11
+    PUSHBUTTON      "发起会诊",IDC_BUTTON_START,147,284,50,14
+    PUSHBUTTON      "保　存",IDC_BUTTON_SAVE,202,284,50,14
+    DEFPUSHBUTTON   "保存/退出",IDOK,257,284,50,14
+    PUSHBUTTON      "退　出",IDCANCEL,312,284,50,14
+    LTEXT           "会诊发起人:",IDC_STATIC_HZFQR,7,8,44,8
+    LTEXT           "参与人员:",IDC_STATIC_CYYS,117,8,38,8
+    LTEXT           "发起时间:",IDC_STATIC_HZRQ,7,27,44,8
+    LTEXT           "专家意见:",IDC_STATIC_ZJYJ,7,43,44,8
+    LTEXT           "科内会诊:",IDC_STATIC_HLYJ,7,78,44,8
+    LTEXT           "意见录入:",IDC_STATIC_YSYJ,7,254,44,8
+END
+
+IDD_DIALOG_MEDMATERIAL DIALOGEX 0, 0, 460, 290
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_RWLY,0,13,37,49,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_XH,38,13,35,49,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_QCBW,74,13,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CKS,147,13,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QCYS,170,13,69,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_QCRQ,"Static",SS_GRAYFRAME,243,13,80,11
+    EDITTEXT        IDC_EDIT_LKZS,39,158,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CKZS,119,158,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QCFY,197,158,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BBWZ,298,158,59,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QCJLR,298,172,59,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RYSJ,0,188,356,81,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "检查模板",IDC_BUTTON_ZDMB,76,275,41,11
+    PUSHBUTTON      "常用词",IDC_BUTTON_CYC,34,275,41,11
+    PUSHBUTTON      "保　存",IDC_BUTTON_BC,244,275,41,11
+    PUSHBUTTON      "暂  存",IDC_BUTTON_ZC,202,275,41,11
+    LTEXT           "补取信息",IDC_HYP_BQXX,42,175,162,8
+    CONTROL         "Tree1",IDC_TREE_RYSJ,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP,363,14,85,164
+    LTEXT           "词典:",IDC_STATIC_BWBZ,363,3,97,8
+    CTEXT           "任务来源",IDC_STATIC_RWLY,0,1,37,8
+    CTEXT           "序号",IDC_STATIC_XH,44,1,21,8
+    CTEXT           "取材部位",IDC_STATIC_QCBW,84,1,37,8
+    CTEXT           "材块数",IDC_STATIC_CKS,143,1,28,8
+    CTEXT           "取材医生",IDC_STATIC_QCYS,172,1,37,8
+    CTEXT           "取材日期",IDC_STATIC_QCRQ,252,1,37,8
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,327,1,30,11
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,327,14,30,11
+    LTEXT           "",IDC_STATIC_QCXX,0,29,357,123,0,WS_EX_CLIENTEDGE
+    RTEXT           "蜡块总数:",IDC_STATIC_LKZS,0,160,37,8
+    RTEXT           "材块总数:",IDC_STATIC_CKZS,80,160,37,8
+    RTEXT           "标本处理:",IDC_STATIC_QCFY,159,160,36,8
+    RTEXT           "存放位置:",IDC_STATIC_BBWZ,260,160,37,8
+    RTEXT           "记录人:",IDC_STATIC_QCJLR,260,174,37,8
+    RTEXT           "肉眼所见:",IDC_STATIC_RYSJ,0,175,37,8
+    LTEXT           "",IDC_HYP_NOTE,204,182,8,8,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "切片信息",IDC_BUTTON_QPPJ,160,275,41,11,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "打  印",IDC_BUTTON_PRINT,286,275,41,11
+    PUSHBUTTON      "材块核对",IDC_BUTTON_WAX,118,275,41,11
+    CONTROL         "Tree1",IDC_TREE_BWMX,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP,364,186,81,68
+END
+
+IDD_DIALOG_QCMX DIALOGEX 0, 0, 358, 246
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "取材明细"
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,316,229,35,10
+    RTEXT           "标本处理:",IDC_STATIC_QCFY,10,7,39,8
+    RTEXT           "存放位置:",IDC_STATIC_BBWZ,93,7,39,8
+    RTEXT           "材块总数:",IDC_STATIC_CKZS,10,231,39,8
+    RTEXT           "记录员:",IDC_STATIC_QCJLR,267,7,35,8
+    LTEXT           "标本处理:",IDC_TEXT_QCFY,55,7,38,8
+    LTEXT           "存放位置:",IDC_TEXT_BBWZ,135,7,138,8
+    LTEXT           "材块总数:",IDC_TEXT_CKZS,54,231,34,8
+    LTEXT           "记录员:",IDC_TEXT_QCJLR,308,7,39,8
+    LTEXT           "",IDC_STATIC_QCXX,7,19,344,207,0,WS_EX_CLIENTEDGE
+    RTEXT           "蜡块总数:",IDC_STATIC_LKZS,93,231,39,8
+    LTEXT           "蜡块总数:",IDC_TEXT_LKZS,137,231,34,8
+END
+
+IDD_DIALOG_HISTORY DIALOGEX 0, 0, 487, 319
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "历史检查记录列表"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,7,487,108,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_RYSJ,1,130,239,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ZDYJ,248,130,239,53,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "肉眼所见：",IDC_STATIC,3,119,50,8
+    LTEXT           "诊断意见：",IDC_STATIC,248,119,50,8
+    EDITTEXT        IDC_EDIT_CZYJ,248,196,239,54,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_XGYJ,248,266,239,50,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BDJG,0,196,240,54,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BCZD,0,266,240,50,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "冰冻结果：",IDC_STATIC,3,187,50,8
+    LTEXT           "初诊意见：",IDC_STATIC,248,187,50,8
+    LTEXT           "补充意见：",IDC_STATIC,3,256,50,8
+    LTEXT           "主诊意见：",IDC_STATIC,248,256,50,8
+END
+
+IDD_DIALOG_WAX DIALOGEX 0, 0, 425, 303
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,33,2,46,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_QCYS,163,1,51,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_DATE_QCRQ,"Static",SS_GRAYFRAME,254,1,62,12
+    PUSHBUTTON      "查询",IDC_BUTTON_QUERY,351,2,28,11
+    PUSHBUTTON      "移交表打印",IDC_BUTTON_TRANSTABLE,381,2,43,11
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,18,26,9
+    PUSHBUTTON      "材块核对",IDC_BUTTON_CKHD,35,17,39,11
+    PUSHBUTTON      "包埋确认",IDC_BUTTON_BMQR,115,17,39,11
+    LTEXT           "",IDC_STATIC_BMXX,0,30,425,272,0,WS_EX_CLIENTEDGE
+    RTEXT           "病理号",IDC_STATIC_BLH,3,5,26,8
+    CTEXT           "取材日期",IDC_STATIC_QCRQ,216,3,37,8
+    LTEXT           "取材医生",IDC_STATIC_QCYS,126,4,35,8
+    LTEXT           "当前待包埋数：0  材块数：0",IDC_HYP_NOTE,242,18,104,8
+    RTEXT           "包埋提前",IDC_STATIC,154,18,33,8
+    LTEXT           "天确认",IDC_STATIC,209,18,29,8
+    EDITTEXT        IDC_EDIT_TIMESPAN,191,16,13,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "默认检索",IDC_BUTTON_DEFAULTQUERY,382,17,42,11
+    PUSHBUTTON      "冰冻",IDC_BUTTON_BDQUERY,351,17,28,11
+    LTEXT           "分组:",IDC_STATIC,82,4,21,10
+    COMBOBOX        IDC_COMBO_GROUP,104,2,19,87,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "标签打印",IDC_BUTTON_BQDY,75,17,39,11
+    CONTROL         "未打印",IDC_CHECK_NOTPRINT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,318,2,32,11
+END
+
+IDD_DIALOG_PRESLICE DIALOGEX 0, 0, 425, 303
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,33,1,45,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_BMRQ,"Static",SS_GRAYFRAME,116,1,60,12
+    PUSHBUTTON      "查询",IDC_BUTTON_QUERY,178,2,21,11
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,229,3,28,9
+    PUSHBUTTON      "切片确认",IDC_BUTTON_QPQR,257,2,38,11
+    LTEXT           "",IDC_STATIC_QPXX,0,17,425,285,0,WS_EX_CLIENTEDGE
+    RTEXT           "病理号",IDC_STATIC_BLH,0,3,29,8
+    CTEXT           "包埋日期",IDC_STATIC_BMRQ,80,2,37,8
+    LTEXT           "待切片数：0",IDC_HYP_NOTE,376,4,47,8
+    RTEXT           "切片提前",IDC_STATIC,298,4,30,8
+    LTEXT           "天确认",IDC_STATIC,349,4,25,8
+    EDITTEXT        IDC_EDIT_TIMESPAN,331,2,13,12,ES_AUTOHSCROLL
+    CONTROL         "合并",IDC_CHECK_HEBING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,201,3,25,9
+END
+
+IDD_DIALOG_SLICE DIALOGEX 0, 0, 425, 304
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,29,2,38,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_QPRQ,"Static",SS_GRAYFRAME,147,2,54,12
+    PUSHBUTTON      "查询",IDC_BUTTON_QUERY,203,2,21,11
+    CONTROL         "未打印",IDC_CHECK_NOTPRINT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,226,3,34,9
+    CONTROL         "未核对",IDC_CHECK_NOTHD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,263,3,34,9
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,299,3,27,9
+    PUSHBUTTON      "标签打印",IDC_BUTTON_BQDY,328,2,39,11
+    PUSHBUTTON      "玻片扫描核对",IDC_BUTTON_BPSMHD,370,2,54,11
+    COMBOBOX        IDC_COMBO_RWLY,1,291,45,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_DATE_ZPSJ,"Static",SS_GRAYFRAME,48,291,62,12
+    COMBOBOX        IDC_COMBO_ZPR,112,291,44,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_QPSM,157,291,47,85,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_QPZH,205,291,32,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_EX_BLH,239,291,65,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_BLH,"msctls_updown32",UDS_ARROWKEYS,305,
+                    291,8,12
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,314,291,25,11
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,341,291,25,11
+    PUSHBUTTON      "移交表打印",IDC_BUTTON_TRANSTABLE,368,291,45,11
+    LTEXT           "",IDC_STATIC_QPXX,0,17,425,258,0,WS_EX_CLIENTEDGE
+    RTEXT           "病理号",IDC_STATIC_BLH,0,4,26,8
+    CTEXT           "制片日期",IDC_STATIC_QPRQ,110,4,34,8
+    LTEXT           "病理号",IDC_STATIC,240,281,28,8
+    LTEXT           "任务来源",IDC_STATIC,2,281,37,8
+    LTEXT           "制片子号",IDC_STATIC,204,281,32,8
+    LTEXT           "制片说明",IDC_STATIC,159,281,37,8
+    LTEXT           "制片人",IDC_STATIC,113,281,37,8
+    LTEXT           "制片时间",IDC_STATIC,49,281,37,8
+    LTEXT           "分组:",IDC_STATIC,69,4,21,10
+    COMBOBOX        IDC_COMBO_GROUP,91,2,19,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ADVICE DIALOGEX 0, 0, 425, 304
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,33,1,64,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_SQRQ,"Static",SS_GRAYFRAME,138,1,62,12
+    COMBOBOX        IDC_COMBO_YZZT,243,1,40,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_YZLX,325,1,51,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON_QUERY,387,2,28,11
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,19,31,9
+    PUSHBUTTON      "收费确认",IDC_BUTTON_YZQR,43,18,39,11
+    PUSHBUTTON      "医嘱执行",IDC_BUTTON_YZZH,87,18,39,11
+    PUSHBUTTON      "工作单打印",IDC_BUTTON_TRANSTABLE,370,18,45,11
+    LTEXT           "",IDC_STATIC_YZXX,0,32,425,271,0,WS_EX_CLIENTEDGE
+    RTEXT           "病理号",IDC_STATIC_BLH,0,3,29,8
+    CTEXT           "申请日期",IDC_STATIC_SQRQ,100,3,37,8
+    RTEXT           "医嘱状态",IDC_STATIC_YZZT,203,3,35,8
+    CTEXT           "医嘱类型",IDC_STATIC_YZLX,286,3,37,8
+    CONTROL         "合并标记物",IDC_CHECK_ADDBJW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,19,54,9
+    PUSHBUTTON      "默认检索",IDC_BUTTON_DEFAULTQUERY,317,18,48,11
+    PUSHBUTTON      "删除",IDC_BUTTON_ADVICEDEL,277,18,36,11,BS_CENTER | 
+                    BS_VCENTER
+END
+
+IDD_DIALOG_JSYZ DIALOGEX 0, 0, 345, 249
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "技术医嘱"
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_YZLX,42,217,65,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LKH,147,217,80,66,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_QPS,266,217,24,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,307,217,30,11
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,307,234,30,11
+    LTEXT           "",IDC_STATIC_JSYZ,0,0,345,213,0,WS_EX_CLIENTEDGE
+    RTEXT           "医嘱类型:",IDC_STATIC_YZLX,0,218,39,9
+    RTEXT           "蜡块号:",IDC_STATIC_LKH,115,218,29,9
+    RTEXT           "数量:",IDC_STATIC_QPS,241,218,22,9
+    RTEXT           "备　　注:",IDC_STATIC_BZ,0,234,39,9
+    COMBOBOX        IDC_COMBO_BZ,42,233,248,125,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_BLH,228,217,11,11
+END
+
+IDD_DIALOG_BQLB DIALOGEX 0, 0, 382, 241
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "补取列表"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,0,382,225,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "关闭",IDCANCEL,340,228,42,11
+    PUSHBUTTON      "补取执行",IDC_BUTTON_BQZX,289,228,42,11
+END
+
+IDD_DIALOG_SYSCONFIG DIALOG DISCARDABLE  0, 0, 251, 265
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "系统设置"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,208,7,36,14
+    PUSHBUTTON      "取消",IDCANCEL,208,24,36,14
+    CONTROL         "",IDC_PLACEHOLDER,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,7,195,251
+END
+
+IDD_DIALOG_TAG DIALOGEX 0, 0, 510, 257
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "特检标记物"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,434,243,33,14
+    PUSHBUTTON      "退出",IDCANCEL,477,243,33,14
+    LTEXT           "",IDC_STATIC_TAGLIST,0,0,510,236,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_BJW,223,243,62,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "新增标记物",IDC_BUTTON_ADDBJW,289,243,46,14
+    PUSHBUTTON      "删除标记物",IDC_BUTTON_DELETE,340,243,46,14
+    PUSHBUTTON      "追加至套餐",IDC_BUTTON_ADDTC,3,243,46,14
+    COMBOBOX        IDC_COMBO_TC,52,244,111,181,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "特检项目:",IDC_STATIC_TJXM,5,246,42,8
+    PUSHBUTTON      "删除套餐",IDC_BUTTON_DELETETC,166,243,36,14
+END
+
+IDD_DIALOG_TJYZ DIALOGEX 0, 0, 432, 251
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "特检医嘱"
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_YZLX,51,219,45,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LKH,129,219,52,66,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BZ,223,219,86,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TB,366,219,66,65,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BJW,51,235,258,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "暂存",IDC_BUTTON_ADD,312,237,24,11
+    PUSHBUTTON      "医嘱确认",IDC_BUTTON_YZQR,340,237,36,11
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,380,237,24,11
+    PUSHBUTTON      "退出",IDCANCEL,407,237,24,11
+    LTEXT           "",IDC_STATIC_JSYZ,0,0,432,214,0,WS_EX_CLIENTEDGE
+    RTEXT           "医嘱类型:",IDC_STATIC_YZLX,1,220,46,9
+    RTEXT           "蜡块号:",IDC_STATIC_LKH,97,222,29,9
+    RTEXT           "备注:",IDC_STATIC_BZ,198,222,21,9
+    PUSHBUTTON      "选择标记物",IDC_BUTTON_SELBJW,2,235,46,11
+    PUSHBUTTON      "分析结果写入",IDC_BUTTON_TBBJW,312,220,52,11
+    PUSHBUTTON      "",IDC_BUTTON_BLH,182,219,11,11
+END
+
+IDD_DIALOG_REFLECTION DIALOGEX 0, 0, 250, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "镜像"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,157,75,41,14
+    PUSHBUTTON      "取消",IDCANCEL,204,75,41,14
+    CONTROL         "水平",IDC_RADIO_HORIZONTAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,19,21,32,10
+    CONTROL         "垂直",IDC_RADIO_VERTICAL,"Button",BS_AUTORADIOBUTTON,19,
+                    37,32,10
+    CONTROL         "水平且垂直",IDC_RADIO_HORI_VERTI,"Button",
+                    BS_AUTORADIOBUTTON,19,53,56,10
+    GROUPBOX        "选项:",-1,3,6,243,65
+    LTEXT           "",IDC_STATIC_IMAGE1,106,27,8,8,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_IMAGE2,172,27,8,8,0,WS_EX_STATICEDGE
+    LTEXT           "镜像",-1,147,34,17,8
+    LTEXT           "->",-1,151,45,9,8
+END
+
+IDD_DIALOG_RESIZE DIALOG DISCARDABLE  0, 0, 147, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像插值"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_WIDTH,35,7,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WIDTHRATE,83,7,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEIGHT,35,20,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEIGHTRATE,83,20,37,12,ES_AUTOHSCROLL
+    CONTROL         "允许失真",IDC_CHECK_DISTORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,39,46,8
+    EDITTEXT        IDC_EDIT_FACTOR,110,38,31,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_METHOD,13,65,122,89,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,25,90,32,12
+    PUSHBUTTON      "取消",IDCANCEL,90,90,32,12
+    LTEXT           "宽度:",IDC_STATIC,6,9,22,9
+    LTEXT           "高度:",IDC_STATIC,6,22,22,9
+    LTEXT           "％",IDC_STATIC,127,9,14,9
+    LTEXT           "％",IDC_STATIC,127,22,14,9
+    GROUPBOX        "插值方式选择",IDC_STATIC,5,53,137,32
+    LTEXT           "平滑因子:",IDC_STATIC,60,39,43,8
+END
+
+IDD_DIALOG_ROTATION DIALOGEX 0, 0, 250, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像旋转"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,159,77,41,14
+    PUSHBUTTON      "取消",IDCANCEL,205,77,41,14
+    CONTROL         "90 度",IDC_RADIO_RIGHT_ANGLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,52,38,10
+    CONTROL         "180 度",IDC_RADIO_STRAIGHT_ANGLE,"Button",
+                    BS_AUTORADIOBUTTON,52,52,38,10
+    CONTROL         "270 度",IDC_RADIO_LEFT_ANGLE,"Button",
+                    BS_AUTORADIOBUTTON,93,52,38,10
+    CONTROL         "任意角度",IDC_RADIO_ANGLE,"Button",BS_AUTORADIOBUTTON,
+                    15,23,48,10
+    EDITTEXT        IDC_EDIT_ANGLE,64,20,32,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ANGLE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,95,20,11,14,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "选项:",-1,3,5,244,67
+    LTEXT           "",IDC_STATIC_IMAGE1,136,26,8,8,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_IMAGE2,203,26,8,8,0,WS_EX_STATICEDGE
+    LTEXT           "旋转",-1,178,33,17,8
+    LTEXT           "->",-1,182,44,9,8
+END
+
+IDD_DIALOG_EQUAL DIALOG DISCARDABLE  0, 0, 234, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "平衡"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_BRIGHTNESS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,46,7,162,14
+    CONTROL         "Slider1",IDC_SLIDER_CONTRAST,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,46,28,162,14
+    CONTROL         "Slider1",IDC_SLIDER_GAMMA,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,46,49,162,14
+    CONTROL         "Slider1",IDC_SLIDER_RED,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,46,70,162,14
+    CONTROL         "Slider1",IDC_SLIDER_GREEN,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,46,91,162,14
+    CONTROL         "Slider1",IDC_SLIDER_BLUE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,46,112,162,14
+    DEFPUSHBUTTON   "确定",IDOK,63,136,38,14
+    DEFPUSHBUTTON   "取消",IDCANCEL,133,136,38,14
+    LTEXT           "亮度",IDC_STATIC,10,14,35,9
+    LTEXT           "对比度",IDC_STATIC,10,35,35,9
+    LTEXT           "100",IDC_STATIC_BRIGHTNESS,209,12,18,9
+    LTEXT           "100",IDC_STATIC_CONTRAST,209,33,18,9
+    LTEXT           "伽码校正",IDC_STATIC,10,56,35,9
+    LTEXT           "1.00",IDC_STATIC_GAMMA,209,54,18,9
+    LTEXT           "红色分量",IDC_STATIC,10,77,35,9
+    LTEXT           "255",IDC_STATIC_RED,209,75,18,9
+    LTEXT           "绿色分量",IDC_STATIC,10,98,35,9
+    LTEXT           "255",IDC_STATIC_GREEN,209,96,18,9
+    LTEXT           "蓝色分量",IDC_STATIC,10,119,35,9
+    LTEXT           "255",IDC_STATIC_BLUE,209,117,18,9
+END
+
+IDD_DIALOG_REALTIMEADVICE DIALOGEX 0, 0, 85, 139
+STYLE WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,0,85,124,0,WS_EX_CLIENTEDGE
+    LTEXT           "短信: 0/0",IDC_HYP_KNLY,2,128,58,10
+    PUSHBUTTON      "刷新",IDC_BUTTON_REFRESH,61,126,21,13
+END
+
+IDD_DIALOG_QPPJ DIALOGEX 0, 0, 369, 254
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "切片信息"
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,3,28,10
+    CONTROL         "Ⅰ级",IDC_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,178,2,31,10
+    CONTROL         "Ⅱ级",IDC_RADIO_2,"Button",BS_AUTORADIOBUTTON,211,2,31,
+                    10
+    CONTROL         "Ⅲ级",IDC_RADIO_3,"Button",BS_AUTORADIOBUTTON,244,2,31,
+                    10
+    PUSHBUTTON      "切片评级",IDC_BUTTON_PD,126,2,41,11
+    LTEXT           "",IDC_STATIC_QPPJ,0,15,369,213,0,WS_EX_CLIENTEDGE
+    LTEXT           "切片总数",IDC_STATIC_QPZS,296,3,69,8
+    COMBOBOX        IDC_COMBO_RWLY,3,240,45,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_QPZH,50,240,32,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_QPSM,156,240,63,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ZPR,221,240,44,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_DATE_ZPSJ,"Static",SS_GRAYFRAME,268,240,62,12
+    PUSHBUTTON      "增加",IDC_BUTTON_ADD,335,228,25,11
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,335,241,25,11
+    LTEXT           "任务来源",IDC_STATIC_RWLY,6,231,37,8
+    LTEXT           "切片子号",IDC_STATIC_QPZH,51,231,32,8
+    LTEXT           "切片说明",IDC_STATIC_QPSM,159,231,37,8
+    LTEXT           "制片人",IDC_STATIC_ZPR,224,231,37,8
+    LTEXT           "制片时间",IDC_STATIC_ZPSJ,271,231,37,8
+    PUSHBUTTON      "玻片核对",IDC_BUTTON_BPSMHD,77,2,46,11
+    PUSHBUTTON      "标签打印",IDC_BUTTON_BQDY,36,2,39,11
+    LTEXT           "取材部位",IDC_STATIC_QCBW,90,231,32,8
+    EDITTEXT        IDC_EDIT_QCBW,85,240,66,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_PICNOTE DIALOG DISCARDABLE  0, 0, 245, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像注释"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NOTE,7,33,230,75,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    COMBOBOX        IDC_COMBO_WORD,60,12,178,287,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "取材明细",IDC_BUTTON_QCMX,7,11,50,14
+    DEFPUSHBUTTON   "确定",IDOK,56,113,50,14
+    PUSHBUTTON      "取消",IDCANCEL,140,113,50,14
+END
+
+IDD_PROPERTY_LINE DIALOGEX 0, 0, 160, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "AOI线型设置"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "线宽:",IDC_STATIC,14,42,45,8
+    LTEXT           "颜色:",IDC_STATIC,14,23,45,8
+    PUSHBUTTON      "颜色",IDC_BUTTON_LINE_COLOR,55,19,77,15
+    PUSHBUTTON      "线宽",IDC_BUTTON_LINE_WIDTH,55,40,77,15
+    LTEXT           "线型:",IDC_STATIC,14,64,41,8
+    PUSHBUTTON      "线型",IDC_BUTTON_LINE_TYPE,55,61,77,15
+    DEFPUSHBUTTON   "确定",IDOK,10,94,41,14
+    PUSHBUTTON      "取消",IDCANCEL,59,94,41,14
+    GROUPBOX        "",IDC_STATIC,1,0,156,88
+    PUSHBUTTON      "帮助",IDHELP,108,94,41,14
+END
+
+IDD_PROPERTY_TEXT DIALOGEX 0, 0, 264, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "设置注记样式"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "文字对齐",IDC_STATIC,3,111,258,42
+    CONTROL         "左",IDC_LEFT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,74,
+                    129,24,10
+    CONTROL         "中",IDC_CENTER,"Button",BS_AUTORADIOBUTTON,97,129,24,10
+    CONTROL         "右",IDC_RIGHT,"Button",BS_AUTORADIOBUTTON,123,129,24,10
+    CONTROL         "上",IDC_TOP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,174,
+                    132,24,10
+    CONTROL         "中",IDC_MIDDLE,"Button",BS_AUTORADIOBUTTON,197,132,24,
+                    10
+    CONTROL         "下",IDC_BOTTOM,"Button",BS_AUTORADIOBUTTON,223,132,24,
+                    10
+    CONTROL         "多行文字",IDC_CHK_MULTILINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,128,46,10
+    GROUPBOX        "",IDC_STATIC,2,52,259,58
+    LTEXT           "颜色：",IDC_STATIC,139,81,36,8
+    CONTROL         "文字颜色",IDC_BUTTON_COLORTEXT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,176,78,79,12
+    LTEXT           "字体：",IDC_STATIC,9,63,25,8
+    COMBOBOX        IDC_COMBO_FONTNAME,48,60,126,177,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "尺寸：",IDC_STATIC,9,81,24,8
+    COMBOBOX        IDC_COMBO_FONTSIZE,48,78,79,159,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "风格：",IDC_STATIC,9,96,25,8
+    CONTROL         "粗体",IDC_CHK_FONTSTYLE_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,97,32,10
+    CONTROL         "斜体",IDC_CHK_FONTSTYLE_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,97,40,10
+    CONTROL         "下划线",IDC_CHK_FONTSTYLE_UNDERLINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,148,97,52,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,43,94,211,1
+    GROUPBOX        "水平方向",IDC_STATIC,59,120,93,28
+    GROUPBOX        "垂直方向",IDC_STATIC,159,120,93,28
+    GROUPBOX        "内容",IDC_STATIC,2,0,259,52
+    EDITTEXT        IDC_EDIT_CONTENT,14,12,233,36,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,129,163,41,14
+    PUSHBUTTON      "取消",IDCANCEL,174,163,41,14
+    PUSHBUTTON      "帮助",IDHELP,219,163,41,14
+END
+
+IDD_DIALOG_MEASURE DIALOGEX 0, 0, 228, 46
+STYLE WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_FIELDSELECT DIALOG DISCARDABLE  0, 0, 203, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "指定输出字段名"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_FIELD,7,7,189,377,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,52,28,33,14
+    PUSHBUTTON      "取消",IDCANCEL,119,28,33,14
+END
+
+IDD_DIALOG_STANDARD DIALOG DISCARDABLE  0, 0, 280, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定标量数据库管理"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,249,109,18,69,BS_MULTILINE
+    CONTROL         "List1",IDC_LIST_DBF,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,198,180
+    DEFPUSHBUTTON   "提取定标量",ID_GET,223,109,18,69,BS_MULTILINE
+    DEFPUSHBUTTON   "删除当前记录",ID_DELETE,223,21,18,69,BS_MULTILINE
+    DEFPUSHBUTTON   "删除全部记录",ID_DELETE_ALL,249,21,18,69,BS_MULTILINE
+    GROUPBOX        "用户操作",IDC_STATIC,216,7,57,180
+END
+
+IDD_DIALOG_DINGBIAO DIALOG DISCARDABLE  0, 0, 236, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定标"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_LENGTH,89,13,73,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_UNIT,169,13,60,102,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ZOOM,89,36,73,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,71,57,33,13
+    PUSHBUTTON      "取消",IDCANCEL,131,57,33,13
+    LTEXT           "指定距离物理长度：",IDC_STATIC,7,16,76,11
+    LTEXT           "显微镜放大倍数：",IDC_STATIC,7,39,76,11
+END
+
+IDD_DIALOG_DBSELECT DIALOG DISCARDABLE  0, 0, 163, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择病例库"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_DB,14,15,135,277,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,35,36,40,14
+    PUSHBUTTON      "取消",IDCANCEL,89,36,40,14
+END
+
+IDD_DIALOG_QUICKQUERY DIALOG DISCARDABLE  0, 0, 251, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "组合查询"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DATE_SJRQ_FROM,"Static",SS_GRAYFRAME,50,7,75,13
+    CONTROL         "",IDC_DATE_SJRQ_TO,"Static",SS_GRAYFRAME,153,7,75,13
+    CONTROL         "",IDC_CHECK_SJRQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    233,8,11,11
+    CONTROL         "",IDC_DATE_BGRQ_FROM,"Static",SS_GRAYFRAME,50,23,75,13
+    CONTROL         "",IDC_DATE_BGRQ_TO,"Static",SS_GRAYFRAME,153,23,75,13
+    CONTROL         "",IDC_CHECK_BGRQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    233,25,11,11
+    EDITTEXT        IDC_EDIT_SJDW,50,54,75,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SJKS,169,54,75,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BBLX,50,69,75,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BBMC,169,69,75,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_BGZT,50,85,75,125,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CZYS,169,85,75,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZZYS,50,101,75,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHYS,169,101,75,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LCZD,50,117,194,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BLZD,50,133,194,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZDBM,50,149,127,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "MICD10",IDC_BUTTON_MICD10,183,149,29,12
+    PUSHBUTTON      "SICD10",IDC_BUTTON_SICD10,215,149,29,12
+    EDITTEXT        IDC_EDIT_ZDGJC,50,165,194,13,ES_AUTOHSCROLL
+    CONTROL         "延期报告",IDC_CHECK_YQBG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,182,46,10
+    CONTROL         "冰冻报告",IDC_CHECK_BDBG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,182,46,10
+    CONTROL         "补充报告",IDC_CHECK_BCBG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,148,182,46,10
+    CONTROL         "会诊记录",IDC_CHECK_HZJL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,197,182,46,10
+    DEFPUSHBUTTON   "查询",IDOK,159,209,36,14
+    PUSHBUTTON      "取消",IDCANCEL,208,209,36,14
+    RTEXT           "送检日期:",IDC_STATIC,3,9,45,8
+    RTEXT           "报告日期:",IDC_STATIC,3,25,45,8
+    RTEXT           "送检单位:",IDC_STATIC,3,55,45,8
+    RTEXT           "标本类型:",IDC_STATIC,3,71,45,8
+    RTEXT           "报告状态:",IDC_STATIC,3,87,45,8
+    RTEXT           "主诊医生:",IDC_STATIC,3,103,45,8
+    RTEXT           "临床诊断:",IDC_STATIC,3,119,45,8
+    RTEXT           "病理诊断:",IDC_STATIC,3,135,45,8
+    RTEXT           "诊断编码:",IDC_STATIC,3,151,45,8
+    RTEXT           "诊断关键词:",IDC_STATIC,3,167,45,8
+    RTEXT           "至",IDC_STATIC,135,9,9,8
+    RTEXT           "至",IDC_STATIC,135,26,9,8
+    RTEXT           "送检科室:",IDC_STATIC,129,55,37,8
+    RTEXT           "标本名称:",IDC_STATIC,129,71,37,8
+    RTEXT           "初诊医生:",IDC_STATIC,129,87,37,8
+    RTEXT           "审核医生:",IDC_STATIC,129,103,37,8
+    LTEXT           "说明：临床诊断、病理诊断、诊断关键词中输入多个关键词时用""|""隔开",
+                    IDC_HYP_NOTE,10,197,237,9
+    CONTROL         "模糊查询",IDC_CHECK_BLUR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,212,46,10
+    RTEXT           "性    别:",IDC_STATIC,12,42,37,8
+    RTEXT           "年    龄:",IDC_STATIC,129,41,37,8
+    EDITTEXT        IDC_EDIT_AGE1,169,39,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AGE2,215,39,29,13,ES_AUTOHSCROLL
+    RTEXT           "至",IDC_STATIC,198,41,11,8
+    EDITTEXT        IDC_EDIT_XB,50,39,75,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_HZLB DIALOGEX 0, 0, 382, 225
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "会诊病例"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,0,382,225,0,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_SFLB DIALOGEX 0, 0, 382, 225
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "随访记录"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,0,382,225,0,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_SECURITY DIALOGEX 0, 0, 263, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "用户登录"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PASSWORD,72,64,91,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_USER,72,45,91,233,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DB,72,14,91,277,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "登录",IDOK,88,98,39,13
+    PUSHBUTTON      "退出",IDCANCEL,130,98,39,13
+    DEFPUSHBUTTON   "用户管理",IDMANAGE,4,98,39,13
+    DEFPUSHBUTTON   "密码修改",IDPASS,46,98,39,13
+    CONTROL         "",IDC_LIVE_FINGER,"Static",SS_WHITERECT | SS_SUNKEN | 
+                    WS_BORDER,173,1,91,98
+    LTEXT           "",IDC_MSG,174,100,77,12,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_ENROLL,252,100,12,12
+    GROUPBOX        "登录到",IDC_STATIC,3,4,168,29
+    RTEXT           "用户名:",IDC_STATIC,37,47,31,10
+    RTEXT           "密　码:",IDC_STATIC,37,65,31,10
+    RTEXT           "病历库:",IDC_STATIC,37,17,31,10
+    ICON            "",IDC_STATIC_DATABASE,13,15,20,20
+    GROUPBOX        "",IDC_STATIC,4,36,167,49
+END
+
+IDD_DIALOG_PASSMANAGE DIALOG DISCARDABLE  0, 0, 433, 381
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "用户帐号管理"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,392,365,34,14
+END
+
+IDD_DIALOG_PASSINPUT DIALOG DISCARDABLE  0, 0, 187, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更改密码"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_PS1,96,11,80,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PS2,96,27,80,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,40,45,34,14
+    PUSHBUTTON      "取消",IDCANCEL,112,45,34,14
+    LTEXT           "请输入新密码：",IDC_STATIC,11,14,79,10
+    LTEXT           "请再次输入新密码：",IDC_STATIC,11,29,79,10
+END
+
+IDD_DIALOG_NEWUSER DIALOG DISCARDABLE  0, 0, 187, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建新用户帐号"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,77,10,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OTHERINFO,77,29,99,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,49,51,36,14
+    PUSHBUTTON      "取消",IDCANCEL,101,51,36,14
+    LTEXT           "用户名:",IDC_STATIC_NAME,13,14,54,11
+    LTEXT           "用户说明信息:",IDC_STATIC_INFO,13,33,54,11
+END
+
+IDD_DIALOG_TBS DIALOG DISCARDABLE  0, 0, 419, 290
+STYLE WS_CHILD
+FONT 11, "MS Sans Serif"
+BEGIN
+    CONTROL         "满意",IDC_CHECK_JBMYD1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,14,52,10
+    CONTROL         "基本满意",IDC_CHECK_JBMYD2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,14,52,10
+    CONTROL         "需重采样",IDC_CHECK_JBMYD3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,14,52,10
+    CONTROL         "＞40%",IDC_CHECK_XBL1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,37,52,10
+    CONTROL         "＜40％",IDC_CHECK_XBL2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,37,52,10
+    CONTROL         "轻度",IDC_CHECK_YZFY1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,60,52,10
+    CONTROL         "中度",IDC_CHECK_YZFY2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,60,52,10
+    CONTROL         "重度",IDC_CHECK_YZFY3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,60,52,10
+    CONTROL         "鳞状细胞",IDC_CHECK_LZXB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,83,52,10
+    CONTROL         "颈管细胞",IDC_CHECK_JGXB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,83,52,10
+    CONTROL         "化生细胞",IDC_CHECK_HSXB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,83,52,10
+    CONTROL         "滴虫感染",IDC_CHECK_DCGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,106,52,10
+    CONTROL         "霉菌感染",IDC_CHECK_MJGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,106,52,10
+    CONTROL         "念珠菌感染",IDC_CHECK_LZJGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,106,52,10
+    CONTROL         "球杆菌感染",IDC_CHECK_QGJGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,214,106,52,10
+    CONTROL         "放线菌感染",IDC_CHECK_FXJGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,119,52,10
+    CONTROL         "HPV感染",IDC_CHECK_HPVGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,119,52,10
+    CONTROL         "疱疹病毒感染",IDC_CHECK_BZBDGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,119,60,10
+    CONTROL         "类似乳头状病毒感染",IDC_CHECK_LSRTZBDGR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,214,119,81,10
+    EDITTEXT        IDC_EDIT_RYSJ,39,133,282,50,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ZDYJ,39,187,282,37,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BCZD,39,228,282,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZZYS,39,262,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHYS,144,262,56,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_BGRQ,"Static",SS_GRAYFRAME,241,262,80,12
+    PUSHBUTTON      "特检医嘱",IDC_BUTTON_TJYZ,25,277,42,11
+    PUSHBUTTON      "切片信息",IDC_BUTTON_QPPJ,70,277,42,11
+    PUSHBUTTON      "检查模板",IDC_BUTTON_ZDMB,117,277,42,11
+    PUSHBUTTON      "常用词",IDC_BUTTON_CYC,164,277,42,11
+    PUSHBUTTON      "保　存",IDC_BUTTON_BC,210,277,42,11
+    COMBOBOX        IDC_COMBO_BGGS,329,4,81,148,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tree1",IDC_TREE_RYSJ,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,329,32,78,253
+    LTEXT           "标本满意度:",IDC_STATIC,2,3,42,8
+    LTEXT           "细胞量:",IDC_STATIC,2,27,42,8
+    RTEXT           "诊断意见:",IDC_STATIC_ZDYJ,0,188,37,8
+    RTEXT           "主诊医生:",IDC_STATIC_ZZYS,0,263,37,8
+    RTEXT           "审核医生:",IDC_STATIC_SHYS,98,263,42,8
+    RTEXT           "报告日期:",IDC_STATIC_SJRQ,203,263,37,8
+    RTEXT           "补充意见:",IDC_STATIC_BCZD,0,230,37,8
+    LTEXT           "词典:",IDC_STATIC_BWBZ,328,20,79,8
+    LTEXT           "炎症反应:",IDC_STATIC,2,49,42,8
+    LTEXT           "细胞项目:",IDC_STATIC,2,73,42,8
+    LTEXT           "微生物项目:",IDC_STATIC,2,96,42,8
+    RTEXT           "肉眼所见:",IDC_STATIC_RYSJ,0,135,37,8
+    EDITTEXT        IDC_EDIT_SFYX,39,245,31,13,ES_AUTOHSCROLL
+    RTEXT           "是否阳性:",IDC_STATIC_,1,247,37,8
+    RTEXT           "诊断关键词:",IDC_STATIC,73,247,43,8
+    EDITTEXT        IDC_EDIT_ZDGJC,118,246,82,12,ES_AUTOHSCROLL
+    RTEXT           "诊断符合:",IDC_STATIC_SJRQ2,203,248,37,8
+    EDITTEXT        IDC_EDIT_ZDFH,241,246,80,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "打  印",IDC_BUTTON_PRINT,255,277,42,11
+    CONTROL         "Tree1",IDC_TREE_ZDYJ,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,224,33,66,35
+END
+
+IDD_DIALOG_BPSMHD DIALOG DISCARDABLE  0, 0, 184, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "玻片扫描核对"
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_CODE,11,25,150,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "核对确认",IDCONFORM,110,45,51,14
+    CONTROL         "条码扫描方式",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,10,
+                    11,61,10
+    CONTROL         "手工选择方式",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,10,
+                    48,61,10
+END
+
+IDD_DIALOG_GETCODE DIALOG DISCARDABLE  0, 0, 187, 27
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统随机密码"
+FONT 11, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_CODE,3,6,153,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "复制",IDCOPY,159,6,26,14
+END
+
+IDD_DIALOG_FMTSELECT DIALOG DISCARDABLE  0, 0, 179, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "批量打印报告格式选择"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "指定格式",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,4,9,53,10
+    CONTROL         "用户自定义格式",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    4,30,74,10
+    CONTROL         "自动选择格式",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,4,
+                    51,74,10
+    COMBOBOX        IDC_COMBO_FMT,58,8,115,191,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "报告格式写入记录",IDC_CHECK_RECORDFMT,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,95,51,77,10
+    DEFPUSHBUTTON   "确定",IDOK,44,70,33,14
+    PUSHBUTTON      "取消",IDCANCEL,101,70,33,14
+    GROUPBOX        "",IDC_STATIC,0,0,179,65
+END
+
+IDD_DIALOG_BATCHPRINT DIALOGEX 0, 0, 33, 19
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BUTTON_STOPPREVIEW,1,2,14,15
+    DEFPUSHBUTTON   "",IDC_BUTTON_STOPPRINT,18,2,14,15
+END
+
+IDD_DIALOG_PROGRESSBAR DIALOG DISCARDABLE  0, 0, 197, 33
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS_BAR,"msctls_progress32",
+                    WS_BORDER,0,18,197,12
+    LTEXT           "请稍后...",IDC_STATIC_MSG,3,5,51,10
+    LTEXT           "Static",IDC_STATIC_VALUE,82,5,34,10
+END
+
+IDD_DLG_ADJUST DIALOG DISCARDABLE  0, 0, 227, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DH_HV 数码相机设置"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_CM_ADC,62,11,65,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CM_GAIN,15,77,86,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    SCROLLBAR       IDC_SB_GAIN,106,78,73,10,WS_TABSTOP
+    PUSHBUTTON      "确定",IDOK,29,213,42,14
+    PUSHBUTTON      "取消",IDCANCEL,71,213,42,14
+    PUSHBUTTON      "刷新",ID_ADJUST_RESET,113,213,42,14
+    PUSHBUTTON      "缺省值",ID_ADJUST_DEFAULT,155,213,42,14
+    GROUPBOX        "增益",IDC_STATIC,10,67,208,29
+    RTEXT           "曝光时间",IDC_STATIC,13,44,59,12,SS_CENTERIMAGE
+    GROUPBOX        "快门",IDC_STATIC,10,31,208,31
+    GROUPBOX        "ADC Control",IDC_STATIC,9,3,208,26
+    CTEXT           "",IDC_TEXT_GAIN,185,77,28,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "ADC Bits",IDC_STATIC,13,11,44,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_TINT_UPPER,83,43,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TINT_LOWER,133,43,79,14,ES_AUTOHSCROLL
+    CTEXT           "/",IDC_STATIC,122,46,8,8
+    GROUPBOX        "HBlanking",IDC_STATIC,9,102,207,28
+    SCROLLBAR       IDC_SB_HBLANKING,15,113,146,10,WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HBLANKING,171,110,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "VBlanking",IDC_STATIC,9,134,207,28
+    SCROLLBAR       IDC_SB_VBLANKING,15,145,146,10,WS_TABSTOP
+    EDITTEXT        IDC_EDIT_VBLANKING,171,142,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Bayer Data Layout",IDC_STATIC,9,166,86,30
+    COMBOBOX        IDC_CM_BAYER,21,176,65,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_DLG_GAMMA DIALOG DISCARDABLE  0, 0, 139, 53
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gamma 校正系数"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,10,30,50,14
+    PUSHBUTTON      "取消",IDCANCEL,78,30,50,14
+    EDITTEXT        IDC_GAMMA_RATIO,73,7,56,14,ES_AUTOHSCROLL
+    LTEXT           "Gamma 校正系数",IDC_STATIC,10,10,57,8
+END
+
+IDD_DLG_WB DIALOG DISCARDABLE  0, 0, 183, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "白平衡"
+FONT 8, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_RED_RATIO,73,21,89,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GREEN_RATIO,73,40,89,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_BLUE_RATIO,73,59,89,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,8,85,38,14
+    PUSHBUTTON      "取消",IDCANCEL,50,85,38,14
+    PUSHBUTTON      "白平衡",ID_WB_RATIO,92,85,38,14
+    RTEXT           "Red ratio",IDC_STATIC,21,21,46,13,SS_CENTERIMAGE
+    RTEXT           "Green ratio",IDC_STATIC,21,40,46,13,SS_CENTERIMAGE
+    RTEXT           "Blue ratio",IDC_STATIC,21,59,46,13,SS_CENTERIMAGE
+    GROUPBOX        "Ratio",IDC_STATIC,13,10,157,69
+    PUSHBUTTON      "设定",ID_WB_SET,134,85,38,14
+END
+
+IDD_DIALOG_SELFDEFINE DIALOG DISCARDABLE  0, 0, 203, 254
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义录入字段"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST_DBDEFINE,0,0,86,253,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_SELFDEFINE,117,0,86,253,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "＞",IDC_BUTTON_SEL,90,104,23,14
+    PUSHBUTTON      "＜",IDC_BUTTON_UNSEL,90,137,23,14
+    PUSHBUTTON      "↑",ID_PREVIOUS,90,38,23,14
+    PUSHBUTTON      "↓",ID_NEXT,90,71,23,14
+END
+
+IDD_RECORD_SELF DIALOG DISCARDABLE  0, 0, 393, 289
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "快速信息录入"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "新建(F2)",IDNEW,9,274,45,14
+    DEFPUSHBUTTON   "保存(F3)",IDOK,64,274,45,14
+    PUSHBUTTON      "上一例(F5)",ID_PREVIOUS,119,274,45,14
+    PUSHBUTTON      "下一例(F6)",ID_NEXT,174,274,45,14
+    PUSHBUTTON      "采　图",ID_CAPTURE,229,274,45,14
+    PUSHBUTTON      "打　印",ID_PRINT,284,274,45,14
+    PUSHBUTTON      "退  出",IDCANCEL,339,274,45,14
+END
+
+IDD_DIALOG_LOGO DIALOGEX 0, 0, 422, 201
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "系统日志"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,33,1,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_START,"Static",SS_GRAYFRAME,146,1,71,14
+    CONTROL         "",IDC_DATE_END,"Static",SS_GRAYFRAME,258,1,71,14
+    PUSHBUTTON      "查询",IDC_BUTTON_QUERY,332,2,32,13
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,374,4,35,10
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,18,422,166,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "删除",IDDELETE,340,185,34,14
+    PUSHBUTTON      "关闭",IDCANCEL,388,185,34,14
+    RTEXT           "病理号",IDC_STATIC_BLH,2,4,26,9
+    CTEXT           "起始日期",IDC_STATIC_START,109,4,35,9
+    CTEXT           "终止日期",IDC_STATIC_END,220,4,35,9
+    LTEXT           "说明：请在""修改前内容""栏双击鼠标左键可显示全部内容",
+                    IDC_HYP_NOTE,2,187,214,9
+END
+
+IDD_DIALOG_TEXT DIALOG DISCARDABLE  0, 0, 362, 220
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "文本显示"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_INFO,0,0,362,220,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG_NOTEPAD DIALOG DISCARDABLE  0, 0, 201, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "发送短信"
+FONT 10, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_PERSON,33,2,70,124,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_INFO,33,19,165,96,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "清空",ID_CLEAR,104,118,29,14
+    DEFPUSHBUTTON   "发送",ID_SEND,138,118,29,14
+    PUSHBUTTON      "退出",IDCANCEL,172,118,29,14
+    RTEXT           "发送给",IDC_STATIC,3,4,24,8
+    RTEXT           "事　项",IDC_STATIC,3,19,24,8
+END
+
+IDD_DIALOG_KNLY DIALOGEX 0, 0, 382, 241
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "短信"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,0,382,225,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "关闭",IDCANCEL,340,228,42,11
+    LTEXT           "操作说明：请在记录中双击鼠标左键即为“已读”，请在“事项”栏双击鼠标左键查看详细事项",
+                    IDC_HYP_NOTE,3,230,314,9
+END
+
+IDD_DIALOG_DSHOW DIALOG DISCARDABLE  0, 0, 143, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WDM/VFW设备采集格式"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,23,60,34,14
+    PUSHBUTTON      "取消",IDCANCEL,86,60,35,14
+    COMBOBOX        IDC_COMBO_DEVICE,49,4,90,127,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FORMAT,49,22,90,129,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_VIDEOINPUT,49,40,90,118,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "采集设备：",IDC_STATIC,5,7,42,9
+    RTEXT           "采集格式：",IDC_STATIC,5,25,42,9
+    RTEXT           "视频输入：",IDC_STATIC,5,43,42,9
+END
+
+IDD_DIALOG_DBTYPE DIALOG DISCARDABLE  0, 0, 218, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义库编辑"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST_DBF,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,0,174,217
+    DEFPUSHBUTTON   "删除",IDDELETE,180,0,38,14
+    PUSHBUTTON      "增加",IDINSERT,180,19,38,14
+    PUSHBUTTON      "关闭",IDCANCEL,180,38,38,14
+END
+
+IDD_DIALOG_BDSEL DIALOG DISCARDABLE  0, 0, 163, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择表单"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_DB,14,15,135,277,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,35,36,40,14
+    PUSHBUTTON      "取消",IDCANCEL,89,36,40,14
+END
+
+IDD_DIALOG_FALSENOQUERY DIALOG DISCARDABLE  0, 0, 215, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "漏编号查找"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_START,23,27,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END,124,27,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QUERYRESULT,24,60,181,123,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "查找",IDQUERY,37,188,34,14
+    DEFPUSHBUTTON   "导出",IDEXPORT,91,188,34,14
+    PUSHBUTTON      "取消",IDCANCEL,145,188,34,14
+    LTEXT           "请输入起止编号：",IDC_STATIC,23,11,68,11
+    LTEXT           "从",IDC_STATIC,9,30,11,11
+    LTEXT           "至",IDC_STATIC,108,30,12,11
+    LTEXT           "漏编号显示：",IDC_STATIC,23,47,68,11
+END
+
+IDD_DIALOG_MOVIEWND DIALOG DISCARDABLE  0, 0, 288, 250
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "视频"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_ACTIVEMOVIECONTROL1,
+                    "{05589FA1-C356-11CE-BF01-00AA0055595A}",WS_TABSTOP,7,7,
+                    274,236
+END
+
+IDD_DIALOG_CKYJ DIALOG DISCARDABLE  0, 0, 151, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "材块移交表打印"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DATE_START,"Static",SS_GRAYFRAME,48,5,97,12
+    CONTROL         "",IDC_DATE_END,"Static",SS_GRAYFRAME,48,23,97,12
+    COMBOBOX        IDC_COMBO_DB,48,57,97,277,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_START,48,76,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END,48,94,97,16,ES_AUTOHSCROLL
+    CONTROL         "编号查询模式",IDC_CHECK_MODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,118,61,10
+    RTEXT           "取材时间",IDC_STATIC,4,6,36,10
+    RTEXT           "至",IDC_STATIC,4,25,36,10
+    RTEXT           "起始编号",IDC_STATIC,4,79,36,10
+    RTEXT           "终止编号",IDC_STATIC,4,97,36,10
+    RTEXT           "所属库别",IDC_STATIC,4,60,36,10
+    RTEXT           "分组",IDC_STATIC,4,43,36,10
+    COMBOBOX        IDC_COMBO_GROUP,48,40,97,69,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_QPYJ DIALOG DISCARDABLE  0, 0, 158, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "切片移交表打印"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DATE_START,"Static",SS_GRAYFRAME,48,5,106,12
+    CONTROL         "",IDC_DATE_END,"Static",SS_GRAYFRAME,48,23,106,12
+    EDITTEXT        IDC_EDIT_START,48,60,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END,48,78,106,14,ES_AUTOHSCROLL
+    CONTROL         "编号查询模式",IDC_CHECK_MODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,97,61,10
+    CONTROL         "常规",IDC_CHECK_ZC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,122,31,10
+    CONTROL         "冰冻",IDC_CHECK_BD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,122,31,10
+    CONTROL         "脱钙",IDC_CHECK_TG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,122,31,10
+    CONTROL         "分子病理",IDC_CHECK_FZBL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,122,41,10
+    CONTROL         "深切",IDC_CHECK_SQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,137,31,10
+    CONTROL         "补取",IDC_CHECK_BQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,137,31,10
+    CONTROL         "电镜",IDC_CHECK_DJ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,137,31,10
+    CONTROL         "免疫组化",IDC_CHECK_MYZH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,137,41,10
+    CONTROL         "薄切",IDC_CHECK_BAOQIE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,152,31,10
+    CONTROL         "重切",IDC_CHECK_CQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,152,31,10
+    CONTROL         "连切",IDC_CHECK_LQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,152,31,10
+    CONTROL         "特殊染色",IDC_CHECK_TSRS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,152,41,10
+    PUSHBUTTON      "全部",IDC_BUTTON_ALL,45,106,29,12
+    RTEXT           "切片时间",IDC_STATIC,4,6,36,10
+    RTEXT           "至",IDC_STATIC,4,25,36,10
+    RTEXT           "起始编号",IDC_STATIC,4,63,36,10
+    RTEXT           "终止编号",IDC_STATIC,4,81,36,10
+    LTEXT           "任务来源：",IDC_STATIC,5,108,38,10
+    CONTROL         "冰余",IDC_CHECK_BY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,167,31,10
+    CONTROL         "冰石",IDC_CHECK_BS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,167,31,10
+    CONTROL         "切全",IDC_CHECK_QQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,167,31,10
+    CONTROL         "不削连切",IDC_CHECK_BXLQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,167,42,10
+    RTEXT           "分组",IDC_STATIC,3,43,36,10
+    COMBOBOX        IDC_COMBO_GROUP,48,41,106,85,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_GZDDY DIALOG DISCARDABLE  0, 0, 179, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "医嘱工作单打印"
+FONT 10, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_TIMEMODE,2,4,63,36,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATE_START,"Static",SS_GRAYFRAME,69,5,97,12
+    CONTROL         "",IDC_DATE_END,"Static",SS_GRAYFRAME,69,23,97,12
+    LTEXT           "执行状态：",IDC_STATIC,1,44,39,10
+    CONTROL         "未执行",IDC_RADIO_ZXZT1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,44,44,35,10
+    CONTROL         "已执行",IDC_RADIO_ZXZT2,"Button",BS_AUTORADIOBUTTON,81,
+                    44,35,10
+    CONTROL         "全部",IDC_RADIO_ZXZT3,"Button",BS_AUTORADIOBUTTON,118,
+                    44,31,10
+    CONTROL         "重切",IDC_CHECK_YZLX1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,71,31,10
+    CONTROL         "补取",IDC_CHECK_YZLX3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,40,71,31,10
+    CONTROL         "免疫组化",IDC_CHECK_YZLX4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,71,46,10
+    CONTROL         "分子病理",IDC_CHECK_YZLX6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,71,46,10
+    CONTROL         "深切",IDC_CHECK_YZLX2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,85,31,10
+    CONTROL         "电镜",IDC_CHECK_YZLX7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,40,85,31,10
+    CONTROL         "特殊染色",IDC_CHECK_YZLX5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,85,46,10
+    CONTROL         "薄切",IDC_CHECK_YZLX8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,85,31,10
+    CONTROL         "连切",IDC_CHECK_YZLX9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,99,31,10
+    CONTROL         "常规",IDC_CHECK_YZLX10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,40,99,31,10
+    PUSHBUTTON      "全部",IDC_BUTTON_ALL,40,57,37,12
+    RTEXT           "至",IDC_STATIC,28,25,36,10
+    LTEXT           "医嘱类型：",IDC_STATIC,1,59,39,10
+    CONTROL         "切全",IDC_CHECK_YZLX11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,99,31,10
+    CONTROL         "不削连切",IDC_CHECK_YZLX12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,99,46,10
+END
+
+IDD_DIALOG_ZPQK DIALOG DISCARDABLE  0, 0, 150, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "制片情况统计"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DATE_START,"Static",SS_GRAYFRAME,48,5,95,12
+    CONTROL         "",IDC_DATE_END,"Static",SS_GRAYFRAME,48,23,95,12
+    EDITTEXT        IDC_EDIT_START,48,40,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END,48,58,95,14,ES_AUTOHSCROLL
+    CONTROL         "编号查询模式",IDC_CHECK_MODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,77,61,10
+    RTEXT           "起始时间",IDC_STATIC,4,6,36,10
+    RTEXT           "终止时间",IDC_STATIC,4,24,36,10
+    RTEXT           "起始编号",IDC_STATIC,4,43,36,10
+    RTEXT           "终止编号",IDC_STATIC,4,61,36,10
+END
+
+IDD_DIALOG_NOTIFY DIALOG DISCARDABLE  0, 0, 128, 22
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "系统提示"
+FONT 11, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_STATIC_INFO,2,5,124,10
+END
+
+IDD_DIALOG_BBMCDETAIL DIALOG DISCARDABLE  0, 0, 650, 269
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "送检标本明细表"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_BBMC,9,254,136,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "核对",IDCHECK,150,255,37,12
+    DEFPUSHBUTTON   "确定",IDOK,257,255,37,12
+    PUSHBUTTON      "取消",IDCANCEL,355,255,37,12
+    DEFPUSHBUTTON   "拒收",IDREJECT,194,255,37,12
+END
+
+IDD_DIALOG_MVC300STP DIALOGEX 0, 0, 229, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MVC3000采集参数设置"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,191,153,31,14
+    PUSHBUTTON      "取消",IDCANCEL,191,171,31,14
+    CONTROL         "Slider1",IDC_SLIDERR,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,51,9,137,8
+    CONTROL         "Slider1",IDC_SLIDERG,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,51,23,137,8
+    CONTROL         "Slider1",IDC_SLIDERB,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,51,37,137,8
+    CONTROL         "Slider1",IDC_SLIDERE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,51,51,137,8
+    CONTROL         "Slider2",IDC_SLIDERXO,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,51,65,137,8
+    CONTROL         "Slider2",IDC_SLIDERYO,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,51,79,137,8
+    CONTROL         "320x240",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,104,52,10
+    CONTROL         "640x480",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,120,
+                    52,10
+    CONTROL         "768x576",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,136,
+                    52,10
+    CONTROL         "800x600",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,7,152,
+                    52,10
+    CONTROL         "1024x768",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,68,104,
+                    52,10
+    CONTROL         "1280x1024",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,68,
+                    120,52,10
+    CONTROL         "1600x1200",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,68,
+                    136,52,10
+    CONTROL         "2048x1536",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,68,
+                    152,52,10
+    CONTROL         "Low Noise",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,137,104,72,10
+    CONTROL         "Normal",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,137,118,
+                    72,10
+    CONTROL         "High Sensitive",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,
+                    137,132,72,10
+    CONTROL         "自动曝光",IDC_CHECK_AE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,171,45,10
+    CONTROL         "RGB/BGR",IDC_CHECK_RGBBGR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,171,44,10
+    CONTROL         "Flip",IDC_CHECK_FLIP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,171,32,10
+    LTEXT           "红色增益:",IDC_STATIC,5,7,40,8
+    LTEXT           "绿色增益:",IDC_STATIC,5,20,40,8
+    LTEXT           "蓝色增益:",IDC_STATIC,5,33,40,8
+    LTEXT           "曝光时间:",IDC_STATIC,5,46,40,8
+    LTEXT           "",IDC_STATICR,194,8,20,8,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATICG,194,22,20,8,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATICB,194,36,20,8,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATICE,194,50,20,8,0,WS_EX_STATICEDGE
+    LTEXT           "横向偏移:",IDC_STATIC,5,59,40,8
+    LTEXT           "纵向偏移:",IDC_STATIC,5,72,40,8
+    LTEXT           "",IDC_STATICXO,194,64,20,8,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATICYO,194,78,20,8,0,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,0,0,222,91
+    GROUPBOX        "捕获窗口大小",IDC_STATIC,0,93,125,74
+    GROUPBOX        "Sensitive",IDC_STATIC,131,94,91,53
+END
+
+IDD_DIALOG_CHARGECONFORM DIALOGEX 0, 0, 403, 245
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "特检收费确认"
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,35,3,73,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATE_SQRQ,"Static",SS_GRAYFRAME,155,3,71,12
+    COMBOBOX        IDC_COMBO_SFZT,269,3,51,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON_QUERY,324,3,32,13
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,19,35,10
+    PUSHBUTTON      "收费确认",IDC_BUTTON_YZQR,50,18,45,13
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,34,403,211,0,WS_EX_CLIENTEDGE
+    RTEXT           "病理号",IDC_STATIC_BLH,1,5,29,9
+    CTEXT           "申请日期",IDC_STATIC_SQRQ,111,5,42,9
+    CTEXT           "收费情况",IDC_STATIC_SFZT,230,6,37,8
+    LTEXT           "当前查询记录数：0",IDC_HYP_NOTE,118,21,148,8
+    PUSHBUTTON      "默认检索",IDC_BUTTON_DEFAULTQUERY,308,18,48,11
+END
+
+IDD_DIALOG_ZDEX DIALOG DISCARDABLE  180, 10, 373, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 11, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,344,133,28,13
+    EDITTEXT        IDC_EDIT_LCZL,0,14,143,132,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_RYSJ,145,14,124,132,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_QCJL,271,14,100,115,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "临床资料：",IDC_FUNCTION,5,2,55,8
+    LTEXT           "肉眼所见：",IDC_SITE,148,2,53,8
+    LTEXT           "取材记录：",IDC_ZQM,279,2,56,8
+    LTEXT           "蜡块数：0",IDC_HYP_NOTE,274,135,67,8
+END
+
+IDD_DIALOG_CGSFQR DIALOGEX 0, 0, 403, 245
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "常规收费确认"
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BLH,34,3,54,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_QCYS,127,3,63,85,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_DATE_QCRQ,"Static",SS_GRAYFRAME,228,3,62,12
+    COMBOBOX        IDC_COMBO_SFZT,329,3,38,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON_QUERY,371,3,32,13
+    CONTROL         "全选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,19,32,10
+    PUSHBUTTON      "收费确认",IDC_BUTTON_YZQR,47,18,41,13
+    COMBOBOX        IDC_COMBO_DB,127,18,63,277,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "默认检索",IDC_BUTTON_DEFAULTQUERY,355,18,48,11
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,34,403,211,0,WS_EX_CLIENTEDGE
+    RTEXT           "病理号",IDC_STATIC_BLH,0,5,29,9
+    RTEXT           "收费情况",IDC_STATIC_SFZT,290,6,36,8
+    LTEXT           "当前查询蜡块数：0，冰冻数：0",IDC_HYP_NOTE,203,21,148,8
+    CTEXT           "取材日期",IDC_STATIC_QCRQ,190,5,37,8
+    RTEXT           "取材医生",IDC_STATIC_QCYS,89,5,35,8
+    RTEXT           "所属库别",IDC_STATIC_KB,89,21,35,9
+END
+
+IDD_DIALOG_TIMEQUERY DIALOG DISCARDABLE  0, 0, 215, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "指定时间段"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,57,74,36,14
+    PUSHBUTTON      "取消",IDCANCEL,121,74,36,14
+    RTEXT           "起始时间：",IDC_STATIC,13,34,45,8
+    RTEXT           "终止时间：",IDC_STATIC,13,56,45,8
+    CONTROL         "DateTimePicker1",IDC_DT_STARTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,62,31,
+                    68,15
+    CONTROL         "DateTimePicker1",IDC_DT_STARTTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,133,31,68,
+                    15
+    CONTROL         "DateTimePicker1",IDC_DT_ENDDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,62,53,
+                    68,15
+    CONTROL         "DateTimePicker1",IDC_DT_ENDTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,133,53,68,
+                    15
+    PUSHBUTTON      "今",IDC_BUTTON_TODAY,7,7,17,14
+    PUSHBUTTON      "昨",IDC_BUTTON_YESTERDAY,24,7,17,14
+    PUSHBUTTON      "三",IDC_BUTTON_THREE,41,7,17,14
+    PUSHBUTTON      "周",IDC_BUTTON_WEEK,58,7,17,14
+END
+
+IDD_DIALOG_BDYY DIALOGEX 0, 0, 382, 225
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "冰冻预约列表"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_RECORDLIST,0,0,382,206,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "回执确认",IDC_BUTTON_HZQR,213,211,50,14
+    PUSHBUTTON      "标本接收",IDC_BUTTON_BBQS,272,211,50,14
+    PUSHBUTTON      "关  闭",IDOK,331,211,50,14
+END
+
+IDD_DIALOG_ZCSFQR DIALOGEX 0, 0, 382, 212
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "医嘱暂存列表"
+FONT 11, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "病理号：",IDC_STATIC_BLH,1,11,32,8
+    EDITTEXT        IDC_EDIT_BLH,34,9,48,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,172,8,35,13,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "默认检索",IDC_BUTTON_SEARCH2,211,8,37,14,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "收费确认",IDC_BUTTON_CONFIRM,253,8,37,14,BS_CENTER | 
+                    BS_VCENTER
+    LTEXT           "病人ID：",IDC_STATIC_BRID,86,10,32,8
+    EDITTEXT        IDC_EDIT_BRID,118,9,48,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_ZCLIST,0,34,380,172,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "删除",IDC_BUTTON_CONFIRM2,337,8,37,14,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "医嘱提交",IDC_BUTTON_YZQR,296,8,37,14,BS_CENTER | 
+                    BS_VCENTER
+END
+
+IDD_DIALOG_DEVICES DIALOG DISCARDABLE  0, 0, 425, 272
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设备"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "设备列表：",IDC_STATIC,22,36,47,10
+    COMBOBOX        IDC_COMBO_DEVICES,74,33,154,83,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "刷新设备",IDC_RefreshList,239,32,47,14
+    LTEXT           "模式：",IDC_STATIC,22,59,47,10
+    COMBOBOX        IDC_COMBO_MODEL,74,55,114,180,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "版本：",IDC_STATIC,22,81,47,10
+    EDITTEXT        IDC_EDIT_VERSION,73,77,113,14,ES_AUTOHSCROLL
+    LTEXT           "照相机类别：",IDC_STATIC,22,104,47,10
+    LTEXT           "控制器名称：",IDC_STATIC,22,130,47,10
+    EDITTEXT        IDC_EDIT_CAMERATYPE,74,102,113,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_NAME,74,127,113,14,ES_AUTOHSCROLL
+    LTEXT           "Camera temp:",IDC_STATIC,22,208,49,10
+    LTEXT           "ROI POSITION:",IDC_STATIC,22,185,61,10
+    LTEXT           "扫描模式：",IDC_STATIC,22,157,47,10
+    COMBOBOX        IDC_COMBO_SCANMODE,74,154,116,180,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ROIPOSITION,136,182,52,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_CAMERATEMP,75,206,116,180,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_PROPERTY DIALOG DISCARDABLE  0, 0, 472, 372
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Exposure",IDC_STATIC,18,21,439,104
+    LTEXT           "Mode",IDC_STATIC,36,39,26,9
+    COMBOBOX        IDC_COMBO_MODE,75,35,66,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Locked",IDC_STATIC,35,56,26,9
+    LTEXT           "M.Mode",IDC_STATIC,35,74,26,9
+    LTEXT           "Bias",IDC_STATIC,35,91,26,9
+    LTEXT           "Preset",IDC_STATIC,35,108,26,9
+    COMBOBOX        IDC_COMBO_LOCKED,75,53,66,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_METERING1,75,105,103,84,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BIAS,75,89,38,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LOCKED2,75,71,66,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Suspended",IDC_STATIC,187,54,44,9
+    COMBOBOX        IDC_COMBO_ISSUSPENDED,232,51,66,84,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "M.Area",IDC_STATIC,188,72,32,9
+    LTEXT           "Gain",IDC_STATIC,187,90,29,9
+    LTEXT           "Detail Ga",IDC_STATIC,187,107,44,9
+    LTEXT           "Time",IDC_STATIC,274,90,24,9
+    COMBOBOX        IDC_COMBO_METERING2,232,69,66,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TIME,302,87,50,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_GAIN,232,86,30,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DTGAIN,232,105,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME,302,104,38,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "OnePushAE",IDC_ONEPUSHAE,359,56,52,13
+    GROUPBOX        "Levels",IDC_STATIC,17,135,439,121
+    LTEXT           "Gain",IDC_STATIC,35,154,26,9
+    LTEXT           "RedGain",IDC_STATIC,35,174,35,9
+    LTEXT           "GreenGain",IDC_STATIC,35,195,42,9
+    LTEXT           "Contrast",IDC_STATIC,35,236,35,9
+    LTEXT           "BlueGain",IDC_STATIC,35,216,33,9
+    LTEXT           "Saturation",IDC_STATIC,120,154,42,9
+    LTEXT           "Red Saturation",IDC_STATIC,120,175,60,9
+    LTEXT           "Green Saturation",IDC_STATIC,120,195,68,9
+    LTEXT           "Blue Saturation",IDC_STATIC,121,215,64,9
+    LTEXT           "Tone",IDC_STATIC,121,235,42,9
+    LTEXT           "Hue",IDC_STATIC,233,154,22,9
+    LTEXT           "Red Balance",IDC_STATIC,233,172,47,9
+    LTEXT           "Green Balance",IDC_STATIC,233,192,56,9
+    LTEXT           "Blue Balance",IDC_STATIC,234,213,52,9
+    GROUPBOX        "Tone Set",IDC_STATIC,331,147,119,48
+    EDITTEXT        IDC_EDIT_LEVELSGAIN,79,153,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REDGAIN,80,170,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GREENGAIN,80,190,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BLUEGAIN,80,211,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTRAST,80,233,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SATURATION,191,150,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REDSATURATION,191,171,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GREENSATURATION,192,192,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BLUESATURATION,192,212,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TONE,192,233,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HUE,291,149,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REDBALANCE,291,169,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GREENBALANCE,291,189,30,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BLUEBALANCE,292,211,30,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Balance",IDC_BUTTON_BALANCE,270,232,51,14
+    LTEXT           "Path",IDC_STATIC,338,161,22,9
+    EDITTEXT        IDC_EDIT_TONEFILE,365,158,72,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TONELIST,365,176,45,12,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set",IDC_BUTTON_TONESET,417,176,19,13
+    GROUPBOX        "Effects",IDC_STATIC,17,263,439,96
+    LTEXT           "ColorCast",IDC_STATIC,36,283,42,11
+    COMBOBOX        IDC_COMBO_COLORCAST,99,280,70,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "NoiseReduction",IDC_STATIC,35,303,58,11
+    COMBOBOX        IDC_COMBO_NOISEREDUCTION,99,301,70,12,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sharpness",IDC_STATIC,184,282,42,11
+    LTEXT           "ShadingCorrection",IDC_STATIC,184,303,72,11
+    EDITTEXT        IDC_EDIT_SHARPNESS,266,279,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHADINGCORRECTION,266,300,35,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "ShadingDataCapture",IDC_BUTTON_SHADINGDATACAPTURE,133,
+                    325,83,13,NOT WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_COMBO_SAVESHADINGPOSITION,232,325,53,12,CBS_DROPDOWN | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PRESET2,386,89,19,14,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PRESET,423,84,18,18,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Button1",IDC_BUTTON_PROPLOAD,210,14,17,5,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Button1",IDC_BUTTON_PROPSAVE,237,16,17,5,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_DIALOG_STREAM DIALOG DISCARDABLE  0, 0, 509, 404
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "视频流"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "图片大小：",IDC_STATIC,14,23,47,11
+    COMBOBOX        IDC_COMBO_RESOLUTION,66,20,61,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "开始",IDC_BUTTON_START,143,19,33,14
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,182,19,33,14
+    PUSHBUTTON      "采图",IDC_BUTTON_SNAPSHOT,223,19,33,14
+    CONTROL         "",IDC_PICTURE_PREVIEW,"Static",SS_ETCHEDFRAME,7,39,495,
+                    358
+    COMBOBOX        IDC_COMBO_RENDER,7,7,61,70,CBS_DROPDOWN | CBS_SORT | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FORMAT,67,7,61,70,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FIELD,127,7,61,70,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SHIFT,187,7,61,70,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_QUALITY,248,7,61,70,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TRIGGER,310,7,61,70,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FILEPATH,21,131,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_BUFFERPATH,56,140,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_XFIELD,206,246,7,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_YFIELD,202,238,6,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_FOCUSX,109,39,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_FOCUSW,134,38,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_FOCUSY,158,39,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_FOCUSH,183,37,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_COMBO_MTLIST,259,22,61,70,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SHADINGLIST,327,21,61,70,CBS_DROPDOWN | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MTX,209,38,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MTW,237,37,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MTY,261,39,21,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MTH,290,38,18,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_WINDOW,13,44,11,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_WINDOW2,32,37,11,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_WINDOW3,49,42,11,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_WINDOW4,68,43,11,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "Radio1",IDC_RADIO_APPADD,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED,89,46,8,8
+    PUSHBUTTON      "Button1",IDC_BUTTON_WINDOWHANDLE,29,49,6,6,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Button2",IDC_BUTTON_CONTINUOUSSHOT,124,107,6,6,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "Radio2",IDC_RADIO_APPREMOVE,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED,139,134,8,8
+    PUSHBUTTON      "Button2",IDC_BUTTON_FOCUSSET,132,116,6,6,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Button2",IDC_BUTTON_MTSET,157,115,6,6,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Button2",IDC_BUTTON_SHADINGSET,178,130,6,6,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Button2",IDC_BUTTON_SNAPSHOTEX,217,118,6,6,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Button2",IDC_BUTTON_SHIFTSNAP,164,150,6,6,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Button2",IDC_BUTTON_RAWSNAP,172,159,6,6,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN_FOCUSX,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,128,178,6,8
+    CONTROL         "Spin1",IDC_SPIN_FOCUSY,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,136,186,6,8
+    CONTROL         "Spin1",IDC_SPIN_FOCUSW,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,144,195,6,8
+    CONTROL         "Spin1",IDC_SPIN_FOCUSH,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,152,204,6,8
+    CONTROL         "Spin1",IDC_SPIN_MTX,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,199,165,9,8
+    CONTROL         "Spin1",IDC_SPIN_MTY,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,207,174,9,8
+    CONTROL         "Spin1",IDC_SPIN_MTW,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,215,182,9,8
+    CONTROL         "Spin1",IDC_SPIN_MTH,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE | WS_DISABLED,223,191,9,8
+    EDITTEXT        IDC_EDIT_INTERVAL,250,178,9,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_COUNT,258,186,9,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+END
+
+IDD_DIALOG_YQJL DIALOGEX 0, 0, 429, 274
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "延期记录"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_YQJL,0,0,429,246,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "关闭",IDC_BUTTON_CLOSE,352,254,56,13
+END
+
+IDD_DIALOG_INPUT DIALOG DISCARDABLE  0, 0, 158, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_INPUT,64,8,82,14,ES_AUTOHSCROLL
+    LTEXT           "请输入编号：",IDC_STATIC,13,10,48,13
+    DEFPUSHBUTTON   "确认",ID_INPUT_OK,36,24,50,14
+    PUSHBUTTON      "取消",ID_INPUT_CANCEL,95,24,50,14
+END
+
+IDD_DIALOG_LeaveMessage DIALOG DISCARDABLE  0, 0, 95, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "短信"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "打开",IDC_BUTTON_LY,0,41,36,13,BS_CENTER | BS_VCENTER | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    CTEXT           "您有未读短信！",IDC_LINK_LY,5,12,83,13
+    CTEXT           "",IDC_STATIC_COUNTLY,20,26,44,11
+END
+
+IDD_DIALOG_NOUSE DIALOG DISCARDABLE  0, 0, 366, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "test"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_STATIC_WAXINM,1,1,365,227
+END
+
+IDD_DIALOG_BookingTip DIALOG DISCARDABLE  0, 0, 95, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "冰冻预约"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "有快速冰冻信息！点击查看",IDC_BUTTON_BOOKING,0,40,94,14,
+                    NOT WS_VISIBLE | WS_DISABLED
+    CTEXT           "有快速冰冻信息！",IDC_LINK_BDYY,0,14,94,12
+    CTEXT           "",IDC_STATIC_BDXXTIP,25,27,36,11
+END
+
+IDD_FO_PROP_TEXT DIALOGEX 0, 0, 295, 276
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "属性"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "标题",IDC_STATIC,7,4,281,63
+    LTEXT           "标题文本:",IDC_STATIC,15,20,40,8
+    EDITTEXT        IDC_FO_COMP_CAPTION,55,19,226,44,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "名称:",IDC_STATIC,17,58,25,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_FO_COMP_NAME,57,57,226,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE
+    GROUPBOX        "属性",IDC_STATIC,7,230,281,31,NOT WS_VISIBLE
+    CONTROL         "平滑",IDC_FO_COMP_FLAT,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,95,237,72,10
+    CONTROL         "可见",IDC_FO_COMP_VISIBLE,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,21,237,53,10
+    CONTROL         "锁定",IDC_FO_COMP_LOCK,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,179,237,32,10
+    GROUPBOX        "文本对齐",IDC_STATIC,7,175,281,72
+    CONTROL         "左对齐",IDC_FO_COMP_LEFT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,97,223,40,10
+    CONTROL         "居中对齐",IDC_FO_COMP_CENTER,"Button",
+                    BS_AUTORADIOBUTTON,145,224,50,10
+    CONTROL         "右对齐",IDC_FO_COMP_RIGHT,"Button",BS_AUTORADIOBUTTON,
+                    193,224,40,10
+    CONTROL         "顶部对齐",IDC_FO_COMP_TOP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,97,197,48,10
+    CONTROL         "中间对齐",IDC_FO_COMP_MIDDLE,"Button",
+                    BS_AUTORADIOBUTTON,145,197,48,10
+    CONTROL         "底部对齐",IDC_FO_COMP_BOTTOM,"Button",
+                    BS_AUTORADIOBUTTON,193,197,48,10
+    CONTROL         "多行",IDC_FO_COMP_MULTILINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,189,52,10
+    PUSHBUTTON      "&确定",IDOK,171,253,55,15
+    PUSHBUTTON      "&关闭",IDCANCEL,233,253,55,15
+    GROUPBOX        "字体属性",IDC_STATIC,7,75,281,96
+    LTEXT           "颜色:",IDC_STATIC,16,128,36,8
+    CONTROL         "文本颜色",IDC_FO_COMP_BUTTON_COLORTEXT,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,55,126,124,15
+    LTEXT           "字体:",IDC_STATIC,16,92,25,8
+    COMBOBOX        IDC_FO_FONT_NAME_COMBO,55,90,226,177,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "大小:",IDC_STATIC,16,110,21,8
+    COMBOBOX        IDC_FO_FONTSIZE_COMBO,55,108,124,159,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "风格:",IDC_STATIC,15,148,25,8
+    CONTROL         "粗体",IDC_FO_FONT_STYLE_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,148,32,10
+    CONTROL         "斜体",IDC_FO_FONT_STYLE_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,102,148,32,10
+    CONTROL         "删除线",IDC_FO_FONT_STYLE_STRIKEOUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,148,52,10
+    CONTROL         "下划线",IDC_FO_FONT_STYLE_UNDERLINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,230,148,52,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,48,170,236,1
+    GROUPBOX        "水平",IDC_STATIC,84,183,198,28
+    GROUPBOX        "垂直",IDC_STATIC,83,213,198,28
+END
+
+IDD_DIALOG_QPSMBATCH DIALOG DISCARDABLE  0, 0, 187, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "制片说明"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "请输入修改内容：",IDC_STATIC,11,19,61,12
+    EDITTEXT        IDC_EDIT_QPSMBATCH,72,18,105,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,25,39,50,14
+    PUSHBUTTON      "取消",IDCANCEL,109,39,50,14
+END
+
+IDD_DIALOG_QCYZBZ DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "取材医嘱"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_QCYZBZ,7,7,171,64,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "确认",IDOK,29,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,77,50,14
+END
+
+IDD_DIALOG_PICNOTEMAINTENANCE DIALOG DISCARDABLE  0, 0, 187, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,168,50,14
+    LTEXT           "Static",IDC_STATIC,7,7,173,157
+END
+
+IDD_DIALOG_AdviceTip DIALOG DISCARDABLE  0, 0, 83, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "医嘱信息"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CTEXT           "有未执行的医嘱信息",IDC_LINK_ADVICE,1,15,82,11
+    CTEXT           "",IDC_STATIC_ADVICETIP,14,28,54,11
+    CTEXT           "",IDC_STATIC_TGTip,15,44,54,11
+END
+
+IDD_DIALOG_DELETEREASON DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除原因"
+FONT 10, "Microsoft Sans Serif"
+BEGIN
+    LTEXT           "请输入删除原因：",IDC_STATIC,8,13,88,12
+    EDITTEXT        IDC_EDIT_DELREASON,7,24,173,47,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "确定",IDOK,26,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,100,77,50,14
+END
+
+IDD_DIALOG_MicroWriterConfig DIALOG DISCARDABLE  0, 0, 219, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "打印设置"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDC_BUTTON_MicroWriterPrint,63,82,40,14
+    PUSHBUTTON      "取消",IDCANCEL,115,81,38,14
+    COMBOBOX        IDC_COMBO_FontOneLine,182,7,22,53,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "字号:",IDC_STATIC,150,9,24,8,SS_CENTERIMAGE
+    LTEXT           "第一行(年份)：",IDC_STATIC,23,48,54,8
+    EDITTEXT        IDC_EDIT_FirstLineText,110,44,38,12,ES_AUTOHSCROLL
+    LTEXT           "第二行(病理号起始位)：",IDC_STATIC,23,65,83,12
+    EDITTEXT        IDC_EDIT_BeginIndex,110,63,38,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_FontFirstLine,182,44,22,52,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "字号:",IDC_STATIC,150,48,24,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_FontSecondLine,182,63,22,50,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "字号:",IDC_STATIC,150,65,24,8,SS_CENTERIMAGE
+    CONTROL         "一行模式",IDC_RADIO_OneLineMode,"Button",
+                    BS_AUTORADIOBUTTON,14,9,46,10
+    CONTROL         "两行模式",IDC_RADIO_TwoLineMode,"Button",
+                    BS_AUTORADIOBUTTON,14,28,46,10
+END
+
+IDD_DIALOG_GOWAX DIALOG DISCARDABLE  0, 0, 272, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+END
+
+IDD_DIALOG_LKBS DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "蜡块标识"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,28,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,77,50,14
+    LTEXT           "请输入蜡块标识：",IDC_STATIC,10,13,68,13
+    EDITTEXT        IDC_EDIT_LKBS,7,28,173,45,ES_MULTILINE | WS_VSCROLL
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 221, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&C.关闭",IDOK,151,65,50,13
+    CTEXT           "病理网络信息管理系统",IDC_STATIC,43,15,160,9,
+                    SS_CENTERIMAGE
+    CTEXT           "Version 1.03",IDC_STATIC,43,28,160,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,9,54,204,1
+    ICON            IDR_MAINFRAME,IDC_STATIC,24,13,20,20
+END
+
+IDD_CAPTURE_CANON_S5 DIALOGEX 0, 0, 383, 171
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "佳能PowerShot S3/S5 IS相机"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "参数设置",IDC_STATIC_RELEASE_PARAM,7,3,120,96
+    RTEXT           "拍摄模式:",IDC_STATIC_SHOOTING_MODE,12,15,43,8,
+                    SS_CENTERIMAGE
+    RTEXT           "曝光补偿:",IDC_STATIC_EXPO_COMP,12,29,43,8,
+                    SS_CENTERIMAGE
+    RTEXT           "闪光灯:",IDC_STATIC_FLASH,12,43,43,8,SS_CENTERIMAGE
+    RTEXT           "ISO感光度:",IDC_STATIC_ISO_SPEED,12,57,43,8,
+                    SS_CENTERIMAGE
+    RTEXT           "图像质量:",IDC_STATIC_PHOTO_QUALITY,12,71,43,8,
+                    SS_CENTERIMAGE
+    RTEXT           " 图像大小:",IDC_STATIC_PHOTO_SIZE,12,85,43,8,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_VIEWIMG,"Static",SS_BLACKRECT,132,6,246,162,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "自动聚焦",IDC_AEAF,25,103,82,13
+    CONTROL         "Slider1",IDC_SLIDERF,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,20,119,90,18
+    PUSHBUTTON      "拍照",IDC_RELEASE,23,145,85,18
+    GROUPBOX        "",IDC_STATIC_RELEASE_COMMAND,7,97,120,72
+    COMBOBOX        IDC_SHOOTING_MODE,57,12,66,96,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL
+    COMBOBOX        IDC_EXPO_COMP,57,26,66,95,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_FLASH,57,40,66,99,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_ISO_SPEED,57,54,66,99,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_PHOTO_QUALITY,57,68,66,107,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL
+    COMBOBOX        IDC_PHOTO_SIZE,57,82,66,105,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 239, 30
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "进度"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    7,225,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,3
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Pathology Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 4\0"
+            VALUE "InternalName", "Pathology\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Pathology.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Pathology 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_PATHOLOGY_FORM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_DIALOG_MEDPERSON, DIALOG
+    BEGIN
+        VERTGUIDE, 121
+    END
+
+    IDD_DIALOG_MEDDIAGNOSE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 412
+    END
+
+    IDD_DIALOG_MEDIMAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_DIALOG_MEDSOUND, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DIALOG_DBLIST, DIALOG
+    BEGIN
+        VERTGUIDE, 133
+        TOPMARGIN, 16
+    END
+
+    IDD_DIALOG_STATISTIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DIALOG_AREAOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG_LISTINPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_COMPOSITEQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_DIALOG_SFDETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 643
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_RECORD_INFO, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_XGYJ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_DIALOG_BDBG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_BCBG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DIALOG_SFJG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG_KLHZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+    END
+
+    IDD_DIALOG_QCMX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_DIALOG_HISTORY, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_SYSCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_DIALOG_TJYZ, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_DIALOG_REFLECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 246
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG_ROTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 247
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_EQUAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_DIALOG_PICNOTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_PROPERTY_LINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 157
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_PROPERTY_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 261
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DIALOG_MEASURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 227
+    END
+
+    IDD_DIALOG_FIELDSELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_DIALOG_STANDARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DIALOG_DINGBIAO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG_DBSELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_DIALOG_QUICKQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_DIALOG_PASSMANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 426
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 379
+    END
+
+    IDD_DIALOG_PASSINPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_DIALOG_NEWUSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_DIALOG_TBS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 417
+    END
+
+    IDD_DIALOG_FMTSELECT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DLG_ADJUST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DLG_GAMMA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 137
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_DLG_WB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_RECORD_SELF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_LOGO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DIALOG_BDSEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_DIALOG_FALSENOQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DIALOG_MOVIEWND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_DIALOG_ZPQK, DIALOG
+    BEGIN
+        RIGHTMARGIN, 149
+    END
+
+    IDD_DIALOG_BBMCDETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 643
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_DIALOG_CHARGECONFORM, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+    END
+
+    IDD_DIALOG_CGSFQR, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+    END
+
+    IDD_DIALOG_TIMEQUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_ZCSFQR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 380
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_DIALOG_DEVICES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+
+    IDD_DIALOG_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 465
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 365
+    END
+
+    IDD_DIALOG_STREAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 502
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 397
+        HORZGUIDE, 340
+    END
+
+    IDD_DIALOG_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_DIALOG_LeaveMessage, DIALOG
+    BEGIN
+        VERTGUIDE, 94
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DIALOG_BookingTip, DIALOG
+    BEGIN
+        VERTGUIDE, 94
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_FO_PROP_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_DIALOG_QPSMBATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_DIALOG_QCYZBZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_PICNOTEMAINTENANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_DIALOG_DELETEREASON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_MicroWriterConfig, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_DIALOG_GOWAX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_DIALOG_LKBS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_CAPTURE_CANON_S5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 3
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 23
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HANDON       CURSOR  DISCARDABLE     "res\\hand2.CUR"
+IDC_CURSOR_RECTIFY      CURSOR  DISCARDABLE     "res\\H_CROSS.CUR"
+IDC_CURSOR_MAGIC        CURSOR  DISCARDABLE     "res\\pp.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_ADVICE DLGINIT
+BEGIN
+    IDC_COMBO_YZZT, 0x403, 7, 0
+0xb4ce, 0xb4d6, 0xd0d0, "\000" 
+    IDC_COMBO_YZZT, 0x403, 7, 0
+0xd1d2, 0xb4d6, 0xd0d0, "\000" 
+    IDC_COMBO_YZZT, 0x403, 5, 0
+0xabc8, 0xbfb2, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xa3b3, 0xe6b9, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xd8d6, 0xd0c7, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xeec9, 0xd0c7, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xa1b1, 0xd0c7, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xacc1, 0xd0c7, "\000" 
+    IDC_COMBO_YZLX, 0x403, 9, 0
+0xe2c3, 0xdfd2, 0xe9d7, 0xafbb, "\000" 
+    IDC_COMBO_YZLX, 0x403, 9, 0
+0xd8cc, 0xe2ca, 0xbec8, 0xabc9, "\000" 
+    IDC_COMBO_YZLX, 0x403, 9, 0
+0xd6b7, 0xd3d7, 0xa1b2, 0xedc0, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xe7b5, 0xb5be, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xe4c6, 0xfccb, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xd0c7, 0xabc8, "\000" 
+    IDC_COMBO_YZLX, 0x403, 9, 0
+0xbbb2, 0xf7cf, 0xacc1, 0xd0c7, "\000" 
+    IDC_COMBO_YZLX, 0x403, 5, 0
+0xabc8, 0xbfb2, "\000" 
+    0
+END
+
+IDD_DIALOG_RESIZE DLGINIT
+BEGIN
+    IDC_COMBO_METHOD, 0x403, 11, 0
+0xeed7, 0xfcbd, 0xdac1, 0xe5b2, 0xb5d6, "\000" 
+    IDC_COMBO_METHOD, 0x403, 11, 0
+0xabcb, 0xdfcf, 0xd4d0, 0xe5b2, 0xb5d6, "\000" 
+    IDC_COMBO_METHOD, 0x403, 11, 0
+0xabcb, 0xfdc8, 0xceb4, 0xe5b2, 0xb5d6, "\000" 
+    IDC_COMBO_METHOD, 0x403, 9, 0
+0x7254, 0x6169, 0x676e, 0x656c, "\000" 
+    IDC_COMBO_METHOD, 0x403, 10, 0
+0x7551, 0x6461, 0x6172, 0x6974, 0x0063, 
+    IDC_COMBO_METHOD, 0x403, 22, 0
+0x6150, 0x6c75, 0x4820, 0x6365, 0x626b, 0x7265, 0x2774, 0x2073, 0x7543, 
+0x6962, 0x0063, 
+    IDC_COMBO_METHOD, 0x403, 7, 0
+0x6143, 0x7274, 0x6d6f, "\000" 
+    IDC_COMBO_METHOD, 0x403, 9, 0
+0x694d, 0x6374, 0x6568, 0x6c6c, "\000" 
+    IDC_COMBO_METHOD, 0x403, 9, 0
+0x6147, 0x7375, 0x6973, 0x6e61, "\000" 
+    IDC_COMBO_METHOD, 0x403, 5, 0
+0x6953, 0x636e, "\000" 
+    IDC_COMBO_METHOD, 0x403, 7, 0
+0x6542, 0x7373, 0x6c65, "\000" 
+    IDC_COMBO_METHOD, 0x403, 8, 0
+0x6148, 0x6e6e, 0x6e69, 0x0067, 
+    IDC_COMBO_METHOD, 0x403, 8, 0
+0x6148, 0x6d6d, 0x6e69, 0x0067, 
+    IDC_COMBO_METHOD, 0x403, 9, 0
+0x6c42, 0x6361, 0x6d6b, 0x6e61, "\000" 
+    IDC_COMBO_METHOD, 0x403, 7, 0
+0x614b, 0x7369, 0x7265, "\000" 
+    0
+END
+
+IDD_DIALOG_MOVIEWND DLGINIT
+BEGIN
+    IDC_ACTIVEMOVIECONTROL1, 0x378, 0, 0
+    0
+END
+
+IDD_DIALOG_CHARGECONFORM DLGINIT
+BEGIN
+    IDC_COMBO_SFZT, 0x403, 7, 0
+0xb4ce, 0xd5ca, 0xd1b7, "\000" 
+    IDC_COMBO_SFZT, 0x403, 7, 0
+0xd1d2, 0xd5ca, 0xd1b7, "\000" 
+    IDC_COMBO_SFZT, 0x403, 5, 0
+0xabc8, 0xbfb2, "\000" 
+    0
+END
+
+IDD_DIALOG_GZDDY DLGINIT
+BEGIN
+    IDC_COMBO_TIMEMODE, 0x403, 9, 0
+0xeac9, 0xebc7, 0xb1ca, 0xe4bc, "\000" 
+    IDC_COMBO_TIMEMODE, 0x403, 9, 0
+0xb4d6, 0xd0d0, 0xb1ca, 0xe4bc, "\000" 
+    0
+END
+
+IDD_DIALOG_CGSFQR DLGINIT
+BEGIN
+    IDC_COMBO_SFZT, 0x403, 7, 0
+0xb4ce, 0xd5ca, 0xd1b7, "\000" 
+    IDC_COMBO_SFZT, 0x403, 7, 0
+0xd1d2, 0xd5ca, 0xd1b7, "\000" 
+    IDC_COMBO_SFZT, 0x403, 5, 0
+0xabc8, 0xbfb2, "\000" 
+    0
+END
+
+IDD_DIALOG_MicroWriterConfig DLGINIT
+BEGIN
+    IDC_COMBO_FontOneLine, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_FontOneLine, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_FontOneLine, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_FontOneLine, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_FontFirstLine, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_FontFirstLine, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_FontFirstLine, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_FontFirstLine, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_FontSecondLine, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_FontSecondLine, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_FontSecondLine, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_FontSecondLine, 0x403, 2, 0
+0x0034, 
+    0
+END
+
+IDD_DIALOG_WAX DLGINIT
+BEGIN
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0042, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0043, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0044, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0046, 
+    0
+END
+
+IDD_DIALOG_SLICE DLGINIT
+BEGIN
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0042, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0043, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0044, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0046, 
+    0
+END
+
+IDD_DIALOG_QPYJ DLGINIT
+BEGIN
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0042, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0043, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0044, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0046, 
+    0
+END
+
+IDD_DIALOG_CKYJ DLGINIT
+BEGIN
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0042, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0043, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0044, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO_GROUP, 0x403, 2, 0
+0x0046, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "病理网络管理信息系统"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "病理网络管理信息系统"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MAINTANCE_SELFFIELD  "自定义快速录入字段\n自定义录入设置"
+    ID_DOC_NEWORDER         "建立新病历(杭创)，快捷键（F2）\n新病历(杭创)（F2）"
+    ID_DOC_NEWORDER1         "建立新病历(联想)\n新病历(联想)"
+    ID_DOC_QUICKINPUT       "提供快速录入、自定义字段录入功能\n快速录入"
+    ID_DBLIST_STATE6        "显示一周以内的记录\n显示一周以内的记录"
+    ID_DOC_LOGO             "对修改或删除的记录进行管理\n系统日志"
+    ID_APP_NOTEPAD          "向科室成员发送短信\n短信"
+    ID_FILE_RPTCOPY         "从指定病例复制光镜所见、诊断意见\n复制诊断信息"
+    ID_FILE_DBSETUP         "自定义库编辑\n自定义库编辑"
+    ID_DOC_QUERY            "进行全库检索，查找漏编号\n漏编号查找"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "打开列表中当前选中的病历\n打开病历"
+    ID_FILE_CLOSE           "关闭当前打开的病历\n关闭病历"
+    ID_FILE_SAVE            "保存当前打开的病历，快捷键（F3）\n保存病历（F3）"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+    ID_HELP                 "打开系统帮助文档\n帮助"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_BGZT       "报告状态"
+    ID_INDICATOR_BGDY       "报告打印"
+    ID_APP_DZBL             "电子病历"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MAINTANCE_REPORT     "用户能在此增加，修改各部位各病种的报告范本，系统能检验范本格式是否正确\n诊断模板维护"
+    ID_REPORT_REGION        "输入或修改位置常用词汇"
+    ID_REPORT_DIA           "输入或修改诊断用词汇"
+    ID_REPORT_RYSJ          "输入或修改肉眼所见常用词汇"
+    ID_FILE_SYSSETUP        "系统缺省运行参数设置\n运行参数设置"
+    ID_ACQUIRE              "数码录入新图像\n数码扫描"
+    ID_SELECT_SOURCE        "选择当前数码设备\n选择数码设备"
+    ID_IMG_CAPTURESTP       "采集卡参数设置\n图像采集参数"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PIC_RESAMPLE         "对选中的图像按照指定大小或比例进行插值重采样\n图像插值"
+    ID_IMG_CAPTURE_FORMAT   "图像采集格式\n图像采集格式"
+    ID_IMAGEPS_COLORRECTIFY "对图像进行背底校正\n背底校正"
+    ID_EDIT_MAGIC           "对图像进行区域增长\n区域增长"
+    ID_AREAGROW             "设定区域增长阈值\n区域增长阈值"
+    ID_AOI_REFER            "指定裁切区域范围（矩形）\n指定区域裁切"
+    ID_AOI_CUT              "图像裁切\n图像裁切"
+    ID_IMAGE_MARK           "将选定的图像、文字等信息标记在当前图像上...\n图幅标记"
+    ID_IMAGE_CUT            "剪切选定区域图像内容并把它放在剪贴板上\n图像剪切"
+    ID_IMAGE_COPY           "复制选定区域图像内容并把它放在剪贴板上\n图像复制"
+    ID_IMAGE_PASTE          "插入剪贴板上的图像内容\n图像粘贴"
+    ID_IMAGE_SAVE           "保存修改后图像\n保存图像"
+    ID_IMAGE_RECTIFY        "调节图像的色彩，对比度和亮度，进行伽码校正\n图像平衡调节"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FO_EDIT_SPOTS        "编辑控制点\n编辑控制点"
+    ID_FO_VIEW_ZOOM100      "恢复原尺寸(1:1显示)\n恢复"
+    ID_FO_VIEW_SCALESUB25   "视窗缩小\n缩小"
+    ID_FO_VIEW_SCALEADD25   "视窗放大\n放大"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FO_DRAW_FREELINE     "绘制自由曲线\n绘制自由曲线"
+    ID_FO_DRAW_FREECLOSELINE "绘制自由闭合曲线\n绘制自由闭合曲线"
+    ID_FO_DRAW_CROSSLINE    "绘制横/纵向直线\n绘制横/纵向直线"
+    ID_FO_ZOOMFITPAGE       "放缩到视窗大小\n窗口自适应放缩"
+    ID_FO_ZOOMFITWIDTH      "窗口宽度自适应放缩\n窗口宽度自适应放缩"
+    ID_FO_ZOOMFITHEIGHT     "窗口高度自适应放缩\n窗口高度自适应放缩"
+    ID_FO_ZOOM_FITSELECT    "选择视窗区域放缩\n选择区域放缩"
+    ID_FO_ZOOMWITHINRECT    "矩形视窗区域放缩\n矩形视窗区域放缩"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LINETYPE_SELECT      "设置线型\n线型设置"
+    ID_TEXTTYPE_SELECT      "设置文本注记\n注记设置"
+    ID_VIEW_OUTPUT          "显示或隐藏输出栏\n输出栏"
+    ID_STANDARD_VIEW        "打开定标库进行编辑及选择当前物镜放大倍数\n浏览定标值"
+    ID_STANDARD_ADD         "将当前指定的物镜放大倍数及定标量追加到定标库中\n追加定标值"
+    ID_APP_LAST             "显示上一个病例，快捷键（F5）\n上一例（F5）"
+    ID_APP_NEXT             "显示下一个病例，快捷键（F6）\n下一例（F6）"
+    ID_DOC_CLOSE            "关闭当前打开的病历\n关闭病历"
+    ID_FILE_INPUT           "读入磁盘上存储的单个病历\n读入病历"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OUTPUT          "输出单个病历到磁盘上\n输出病历"
+    ID_FILE_MAIL            "将病历资料发给病理专家，进行远程咨询\n远程发送"
+    ID_APP_DBSELECT         "选择病历库\n选择病历库"
+    ID_DOC_SAVEAS           "将当前记录转存至其他病例库中\n病历转存"
+    ID_DOC_MANAGER          "病历信息管理"
+    ID_FILE_SECURITYSETUP   "用户权限设置\n权限管理"
+    ID_DBLIST_STATE4        "显示已审核的记录\n已审核"
+    ID_FILE_RPTMODIFY       "调整报告格式\n调整报告格式"
+    ID_APP_GETCODE          "获取随机密码\n获取随机密码"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FO_DRAW_IMAGE        "图片注记\n图片注记"
+    ID_FO_DRAW_SELECT       "箭头选择光标\n箭头选择光标"
+    ID_FO_DRAW_ELLIPSE      "绘制椭圆\n绘制椭圆"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FO_CMD_AUTOPAN       "手工拖动图像漫游\n漫游"
+    ID_FO_DRAW_RECTANGLE    "绘制长方形\n绘制长方形"
+    ID_FO_TEXT_PROPERTIES   "Set caption,style,allign and color\nText Properties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FO_GROUP             "组合所选元素\n组合..."
+    ID_FO_UNGROUP           "分离所选元素\n分离..."
+    ID_FO_DRAW_STATIC       "文本注记\n文本注记"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FO_DRAW_LINE         "绘制线条\n绘制线条"
+    ID_FO_DRAW_POLYLINE     "绘制多边折线\n绘制多边折线"
+    ID_FO_DRAW_ARROWLINE    "绘制任意角度带箭头直线\n绘制箭头"
+    ID_FO_DRAW_POLYGON      "绘制多边形\n绘制多边形"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FO_DRAW_UPRIGHT_CIRCLE "绘制圆形\n绘制圆形"
+    ID_FO_UPRIGHT_RECT      "绘制正方形\n绘制正方形"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REFERENCE            "调用病理诊断参考资料\n病理诊断参考资料"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DBLIST_STATE0        "显示已登记的记录\n已登记"
+    ID_TREE_HIDEEMPTY       "隐藏病种或范本为空的节点"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_CAMERA           "在实时图像内按鼠标左键采集图像，右键结束采集，快捷键（F4）\n图像采集（F4）"
+    ID_DBLIST_STATE1        "显示已取材的记录\n已取材"
+    ID_DBLIST_STATE2        "显示已延期的记录\n已延期"
+    ID_DBLIST_STATE3        "显示已诊断的记录\n已诊断"
+    ID_DBLIST_STATE5        "显示已打印的记录\n已打印"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ZPGL_ZPQKTJ          "制片情况统计"
+    ID_FILE_RPTCOPYALL      "从指定病例复制基本信息、肉眼所见、光镜所见、诊断意见和图像信息\n复制全部信息"
+    ID_MAINTANCE_SELFSHOW   "自定义病历浏览列表显示字段\n自定义显示字段"
+    ID_DATESEL              "指定送检日期快速检索\n指定送检日期快速检索"
+    ID_FILE_RPTCOPYIMG      "从指定病例复制病理图像\n复制病理图像"
+    ID_IMG_OLYMPUS          "OLYMPUS数码采集\nOLYMPUS数码采集"
+    ID_ZPGL_SFQR            "特检收费确认"
+    ID_ZPGL_CGSFQR          "常规收费确认"
+    ID_REPORT_VIEW          "调阅报告\n调阅报告"
+    ID_REPORT_BLH           "设定需要调阅的记录病理号\n输入病理号"
+    ID_REPORT_PREVIOUS      "上一例\n上一例"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REPORT_NEXT          "下一例\n下一例"
+    ID_REPORT_SEND          "发送报告\n发送报告"
+    ID_REPORT_OUTPUT        "报告输出为JPEG或PDF格式文件\n报告输出"
+    ID_REPORT_CHECK         "审核\n审核"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REPORT_PRINT         "打印\n打印"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Pathology.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+#include "fores.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

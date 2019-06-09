@@ -1,0 +1,1074 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (2402e62a).
+//
+// mipparam2.tlh
+//
+// C++ source equivalent of Win32 type library C:\Program Files\Nikon\Shared\Bin\mipparam2.dll
+// compiler-generated file created 11/29/10 at 21:13:39 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct DisplayRawPair;
+struct __declspec(uuid("441590f0-07ed-4e5e-8a60-5b79f46a8eec"))
+/* dual interface */ IMipParamEventSink;
+struct __declspec(uuid("f249f6e1-b27e-4f20-858f-fe362e0a4f2a"))
+/* dual interface */ IVariantCollection;
+struct __declspec(uuid("fcd0177c-2038-49ea-a580-2b63ffad6701"))
+/* dispinterface */ IMipParameterEvents;
+struct __declspec(uuid("fcb29042-b575-4812-9fc9-3541b7f5f822"))
+/* interface */ IEnumDisplayRawPair;
+typedef unsigned long ULONG;
+struct __declspec(uuid("7ebe373f-c40b-4833-b611-50fb9b747a36"))
+/* dual interface */ IDisplayRawPairCollection;
+struct __declspec(uuid("d8da140b-ec14-4576-81ce-ef2c9339168f"))
+/* dual interface */ IMipParameter;
+struct __declspec(uuid("79c5c6c5-4955-4777-b383-2e9703063418"))
+/* interface */ IEnumMipParameter;
+struct __declspec(uuid("40c30447-f1a8-41d1-8039-b3fe3c37e27c"))
+/* dual interface */ IMipParameterCollection;
+struct __declspec(uuid("237e3d3f-1b83-42be-b3d8-fbc9adfbbbcb"))
+/* dispinterface */ _IMipPropListCtrlEvents;
+struct __declspec(uuid("83d5985a-e646-41bc-9ce1-aee8bedd35b2"))
+/* dual interface */ IMipPropListCtrl;
+struct __declspec(uuid("dbf497b0-82a4-4159-8d6c-e8303583d7b8"))
+/* dual interface */ IMipPropEditCtrl;
+struct __declspec(uuid("0288d404-15a0-4d64-8fda-693ef52b7a0b"))
+/* dual interface */ IMipPropBtnCtrl;
+struct __declspec(uuid("1e0217b2-35b9-4475-84d4-a3ad99535910"))
+/* dual interface */ IMipParamCtrl;
+struct /* coclass */ MipParameter;
+struct /* coclass */ VariantCollection;
+struct /* coclass */ DisplayRawPairCollection;
+struct /* coclass */ MipParPropPage;
+struct /* coclass */ MipParamMember;
+struct /* coclass */ MipPropListCtrl;
+struct /* coclass */ MipParameterCollection;
+struct /* coclass */ MipPropEditCtrl;
+struct /* coclass */ MipParamEventSink;
+struct /* coclass */ MipPropBtnCtrl;
+struct /* coclass */ MipParamCtrl;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IMipParamEventSink, __uuidof(IMipParamEventSink));
+_COM_SMARTPTR_TYPEDEF(IVariantCollection, __uuidof(IVariantCollection));
+_COM_SMARTPTR_TYPEDEF(IMipParameterEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IEnumDisplayRawPair, __uuidof(IEnumDisplayRawPair));
+_COM_SMARTPTR_TYPEDEF(IDisplayRawPairCollection, __uuidof(IDisplayRawPairCollection));
+_COM_SMARTPTR_TYPEDEF(IMipParameter, __uuidof(IMipParameter));
+_COM_SMARTPTR_TYPEDEF(IEnumMipParameter, __uuidof(IEnumMipParameter));
+_COM_SMARTPTR_TYPEDEF(IMipParameterCollection, __uuidof(IMipParameterCollection));
+_COM_SMARTPTR_TYPEDEF(_IMipPropListCtrlEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IMipPropListCtrl, __uuidof(IMipPropListCtrl));
+_COM_SMARTPTR_TYPEDEF(IMipPropEditCtrl, __uuidof(IMipPropEditCtrl));
+_COM_SMARTPTR_TYPEDEF(IMipPropBtnCtrl, __uuidof(IMipPropBtnCtrl));
+_COM_SMARTPTR_TYPEDEF(IMipParamCtrl, __uuidof(IMipParamCtrl));
+
+//
+// Type library items
+//
+
+enum EMIPPAR_LIMITATION
+{
+    EMIPPAR_FREE = 0,
+    EMIPPAR_RANGE = 1,
+    EMIPPAR_ENUM = 2
+};
+
+enum EMIPPAR_VARENUM
+{
+    VtEmpty = 0,
+    VtNull = 1,
+    VtInteger = 2,
+    VtLong = 3,
+    VtSingle = 4,
+    VtDouble = 5,
+    VtCurrency = 6,
+    VtDate = 7,
+    VtString = 8,
+    VtError = 10,
+    VtBool = 11,
+    VtDecimal = 14,
+    VtChar = 16,
+    VtByte = 17,
+    VtWord = 18,
+    VtDWord = 19,
+    VtResult = 25
+};
+
+enum EMIPPAR_EVENTDIRTYFLAG
+{
+    EMIPPAR_VALUECHANGED = 1,
+    EMIPPAR_INFOCHANGED = 2,
+    EMIPPAR_DISCONNECT = 3
+};
+
+enum EMIPPAR_ERROR
+{
+    E_READONLY = -536739839,
+    S_LIMIT = 1610743810,
+    E_FIXEDDATATYPE = -536739837,
+    E_ILLEGAL_LIMITATIONTYPE = -536739836,
+    E_UNIT_NOT_SPECIFIED = -536739835,
+    E_DATATYPE_NOT_NUMERICAL = -536739834,
+    E_RANGE_STEPS_OVERFLOW = -536739833,
+    E_NOT_IN_ENUMSET = -536739832,
+    E_ENUMSET_IS_EMPTY = -536739831
+};
+
+struct DisplayRawPair
+{
+    BSTR DisplayString;
+    VARIANT RawValue;
+};
+
+struct __declspec(uuid("441590f0-07ed-4e5e-8a60-5b79f46a8eec"))
+IMipParamEventSink : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT OnValueChanged ( );
+    HRESULT OnInfoChanged ( );
+    HRESULT Disconnect ( );
+    HRESULT Advise (
+        IUnknown * piuSource,
+        long hWnd,
+        long uMsg,
+        long wParam );
+    HRESULT UnAdvise ( );
+    HRESULT ResetValueChangedFlag ( );
+    HRESULT ResetInfoChangedFlag ( );
+    void GetSource (
+        IUnknown * * pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_OnValueChanged ( ) = 0;
+    virtual HRESULT __stdcall raw_OnInfoChanged ( ) = 0;
+    virtual HRESULT __stdcall raw_Disconnect ( ) = 0;
+    virtual HRESULT __stdcall raw_Advise (
+        IUnknown * piuSource,
+        long hWnd,
+        long uMsg,
+        long wParam ) = 0;
+    virtual HRESULT __stdcall raw_UnAdvise ( ) = 0;
+    virtual HRESULT __stdcall raw_ResetValueChangedFlag ( ) = 0;
+    virtual HRESULT __stdcall raw_ResetInfoChangedFlag ( ) = 0;
+    virtual HRESULT __stdcall get_Source (
+        IUnknown * * pVal ) = 0;
+};
+
+struct __declspec(uuid("f249f6e1-b27e-4f20-858f-fe362e0a4f2a"))
+IVariantCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetItem (
+        long index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT Add (
+        const _variant_t & varItem );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        long index,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Add (
+        VARIANT varItem ) = 0;
+};
+
+struct __declspec(uuid("fcd0177c-2038-49ea-a580-2b63ffad6701"))
+IMipParameterEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnValueChanged ( );
+    HRESULT OnInfoChanged ( );
+    HRESULT Disconnect ( );
+};
+
+struct __declspec(uuid("fcb29042-b575-4812-9fc9-3541b7f5f822"))
+IEnumDisplayRawPair : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Next (
+        unsigned long celt,
+        struct DisplayRawPair * rgVar,
+        ULONG * pCeltFetched );
+    HRESULT Skip (
+        unsigned long celt );
+    HRESULT Reset ( );
+    IEnumDisplayRawPairPtr Clone ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Next (
+        unsigned long celt,
+        struct DisplayRawPair * rgVar,
+        ULONG * pCeltFetched ) = 0;
+    virtual HRESULT __stdcall raw_Skip (
+        unsigned long celt ) = 0;
+    virtual HRESULT __stdcall raw_Reset ( ) = 0;
+    virtual HRESULT __stdcall raw_Clone (
+        struct IEnumDisplayRawPair * * ppEnum ) = 0;
+};
+
+struct __declspec(uuid("7ebe373f-c40b-4833-b611-50fb9b747a36"))
+IDisplayRawPairCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    struct DisplayRawPair Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetDataType))
+    enum EMIPPAR_VARENUM DataType;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    struct DisplayRawPair GetItem (
+        long index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT Add (
+        const _variant_t & varRawValue,
+        _bstr_t bstrDisplayString );
+    IDisplayRawPairCollectionPtr Clone ( );
+    _variant_t ConvertDisplayStringToRawValue (
+        _bstr_t bstrDisplay );
+    _bstr_t ConvertRawValueToDisplayString (
+        VARIANT * pvarValue );
+    enum EMIPPAR_VARENUM GetDataType ( );
+    _variant_t LookupRawValue (
+        const _variant_t & varRawValue );
+    long ConvertRawValueToIndex (
+        VARIANT * pvarValue );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        long index,
+        struct DisplayRawPair * pVal ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Add (
+        VARIANT varRawValue,
+        BSTR bstrDisplayString ) = 0;
+    virtual HRESULT __stdcall raw_Clone (
+        struct IDisplayRawPairCollection * * pNew ) = 0;
+    virtual HRESULT __stdcall raw_ConvertDisplayStringToRawValue (
+        BSTR bstrDisplay,
+        VARIANT * pvarRawValue ) = 0;
+    virtual HRESULT __stdcall raw_ConvertRawValueToDisplayString (
+        VARIANT * pvarValue,
+        BSTR * pbstrDisplayString ) = 0;
+    virtual HRESULT __stdcall get_DataType (
+        enum EMIPPAR_VARENUM * pVal ) = 0;
+    virtual HRESULT __stdcall raw_LookupRawValue (
+        VARIANT varRawValue,
+        VARIANT * pvarRoundedValue ) = 0;
+    virtual HRESULT __stdcall raw_ConvertRawValueToIndex (
+        VARIANT * pvarValue,
+        long * pIndex ) = 0;
+};
+
+struct __declspec(uuid("d8da140b-ec14-4576-81ce-ef2c9339168f"))
+IMipParameter : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetRawValue,put=PutRawValue))
+    _variant_t RawValue;
+    __declspec(property(get=GetDataType,put=PutDataType))
+    enum EMIPPAR_VARENUM DataType;
+    __declspec(property(get=GetLimitationType,put=PutLimitationType))
+    enum EMIPPAR_LIMITATION LimitationType;
+    __declspec(property(get=GetHasFixedDataType,put=PutHasFixedDataType))
+    VARIANT_BOOL HasFixedDataType;
+    __declspec(property(get=GetIsReadOnly,put=PutIsReadOnly))
+    VARIANT_BOOL IsReadOnly;
+    __declspec(property(get=GetDisplayString,put=PutDisplayString))
+    _bstr_t DisplayString;
+    __declspec(property(get=GetUnit,put=PutUnit))
+    _bstr_t Unit;
+    __declspec(property(get=GetIsSIUnit,put=PutIsSIUnit))
+    VARIANT_BOOL IsSIUnit;
+    __declspec(property(get=GetDisplayScale,put=PutDisplayScale))
+    double DisplayScale;
+    __declspec(property(get=GetDisplayOffset,put=PutDisplayOffset))
+    double DisplayOffset;
+    __declspec(property(get=GetDisplayCFormat,put=PutDisplayCFormat))
+    _bstr_t DisplayCFormat;
+    __declspec(property(get=GetRangeLowerLimit,put=PutRangeLowerLimit))
+    _variant_t RangeLowerLimit;
+    __declspec(property(get=GetRangeHigherLimit,put=PutRangeHigherLimit))
+    _variant_t RangeHigherLimit;
+    __declspec(property(get=GetRangeIncrement,put=PutRangeIncrement))
+    _variant_t RangeIncrement;
+    __declspec(property(get=GetEnumSet,put=PutEnumSet))
+    IDisplayRawPairCollectionPtr EnumSet;
+    __declspec(property(get=GetParent,put=PutRefParent))
+    IUnknownPtr Parent;
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetDispId,put=PutDispId))
+    long DispId;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetRawValue ( );
+    void PutRawValue (
+        const _variant_t & pVal );
+    HRESULT ClearParam ( );
+    enum EMIPPAR_VARENUM GetDataType ( );
+    void PutDataType (
+        enum EMIPPAR_VARENUM pVal );
+    enum EMIPPAR_LIMITATION GetLimitationType ( );
+    void PutLimitationType (
+        enum EMIPPAR_LIMITATION pVal );
+    VARIANT_BOOL GetHasFixedDataType ( );
+    void PutHasFixedDataType (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetIsReadOnly ( );
+    void PutIsReadOnly (
+        VARIANT_BOOL pVal );
+    _bstr_t GetDisplayString ( );
+    void PutDisplayString (
+        _bstr_t pVal );
+    _variant_t ConvertDisplayStringToRawValue (
+        _bstr_t bstrDisplay );
+    _bstr_t ConvertRawValueToDisplayString (
+        const _variant_t & varValue );
+    _bstr_t GetUnit ( );
+    void PutUnit (
+        _bstr_t pVal );
+    VARIANT_BOOL GetIsSIUnit ( );
+    void PutIsSIUnit (
+        VARIANT_BOOL pVal );
+    double GetDisplayScale ( );
+    void PutDisplayScale (
+        double pVal );
+    double GetDisplayOffset ( );
+    void PutDisplayOffset (
+        double pVal );
+    _bstr_t GetDisplayCFormat ( );
+    void PutDisplayCFormat (
+        _bstr_t pVal );
+    _variant_t GetRangeLowerLimit ( );
+    void PutRangeLowerLimit (
+        const _variant_t & pVal );
+    _variant_t GetRangeHigherLimit ( );
+    void PutRangeHigherLimit (
+        const _variant_t & pVal );
+    _variant_t GetRangeIncrement ( );
+    void PutRangeIncrement (
+        const _variant_t & pVal );
+    IDisplayRawPairCollectionPtr GetEnumSet ( );
+    void PutEnumSet (
+        struct IDisplayRawPairCollection * pVal );
+    HRESULT EnumAdd (
+        const _variant_t & varRawValue,
+        _bstr_t bstrDisplayString );
+    IUnknownPtr GetParent ( );
+    void PutRefParent (
+        IUnknown * ppiuParent );
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    HRESULT AdviseAsync (
+        long hWnd,
+        long uMsg,
+        long wParam,
+        struct IMipParamEventSink * * pLink );
+    long GetDispId ( );
+    void PutDispId (
+        long pVal );
+    void GetTitle (
+        BSTR * pVal );
+    long ConvertRawValueToIndex (
+        const _variant_t & varValue );
+    _variant_t ConvertIndexToRawValue (
+        long iIndex );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RawValue (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_RawValue (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall raw_ClearParam ( ) = 0;
+    virtual HRESULT __stdcall get_DataType (
+        enum EMIPPAR_VARENUM * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataType (
+        enum EMIPPAR_VARENUM pVal ) = 0;
+    virtual HRESULT __stdcall get_LimitationType (
+        enum EMIPPAR_LIMITATION * pVal ) = 0;
+    virtual HRESULT __stdcall put_LimitationType (
+        enum EMIPPAR_LIMITATION pVal ) = 0;
+    virtual HRESULT __stdcall get_HasFixedDataType (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasFixedDataType (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_IsReadOnly (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_IsReadOnly (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_DisplayString (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_DisplayString (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_ConvertDisplayStringToRawValue (
+        BSTR bstrDisplay,
+        VARIANT * pvarValue ) = 0;
+    virtual HRESULT __stdcall raw_ConvertRawValueToDisplayString (
+        VARIANT varValue,
+        BSTR * pbstrDisplay ) = 0;
+    virtual HRESULT __stdcall get_Unit (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Unit (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_IsSIUnit (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_IsSIUnit (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_DisplayScale (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_DisplayScale (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_DisplayOffset (
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall put_DisplayOffset (
+        double pVal ) = 0;
+    virtual HRESULT __stdcall get_DisplayCFormat (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_DisplayCFormat (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_RangeLowerLimit (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_RangeLowerLimit (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_RangeHigherLimit (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_RangeHigherLimit (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_RangeIncrement (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_RangeIncrement (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_EnumSet (
+        struct IDisplayRawPairCollection * * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnumSet (
+        struct IDisplayRawPairCollection * pVal ) = 0;
+    virtual HRESULT __stdcall raw_EnumAdd (
+        VARIANT varRawValue,
+        BSTR bstrDisplayString ) = 0;
+    virtual HRESULT __stdcall get_Parent (
+        IUnknown * * ppiuParent ) = 0;
+    virtual HRESULT __stdcall putref_Parent (
+        IUnknown * ppiuParent ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_AdviseAsync (
+        long hWnd,
+        long uMsg,
+        long wParam,
+        struct IMipParamEventSink * * pLink ) = 0;
+    virtual HRESULT __stdcall get_DispId (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DispId (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Title (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_ConvertRawValueToIndex (
+        VARIANT varValue,
+        long * pIndex ) = 0;
+    virtual HRESULT __stdcall raw_ConvertIndexToRawValue (
+        long iIndex,
+        VARIANT * pvarValue ) = 0;
+};
+
+struct __declspec(uuid("79c5c6c5-4955-4777-b383-2e9703063418"))
+IEnumMipParameter : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Next (
+        unsigned long celt,
+        struct IMipParameter * * rgVar,
+        unsigned long * pCeltFetched );
+    HRESULT Skip (
+        unsigned long celt );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Next (
+        unsigned long celt,
+        struct IMipParameter * * rgVar,
+        unsigned long * pCeltFetched ) = 0;
+    virtual HRESULT __stdcall raw_Skip (
+        unsigned long celt ) = 0;
+};
+
+struct __declspec(uuid("40c30447-f1a8-41d1-8039-b3fe3c37e27c"))
+IMipParameterCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IMipParameterPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IMipParameterPtr GetItem (
+        long index );
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    HRESULT Add (
+        struct IMipParameter * varItem );
+    HRESULT Sort (
+        long bAscending );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        long index,
+        struct IMipParameter * * pVal ) = 0;
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Add (
+        struct IMipParameter * varItem ) = 0;
+    virtual HRESULT __stdcall raw_Sort (
+        long bAscending ) = 0;
+};
+
+struct __declspec(uuid("237e3d3f-1b83-42be-b3d8-fbc9adfbbbcb"))
+_IMipPropListCtrlEvents : IDispatch
+{};
+
+struct __declspec(uuid("83d5985a-e646-41bc-9ce1-aee8bedd35b2"))
+IMipPropListCtrl : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(put=PutRefPropColl))
+    IDispatchPtr PropColl;
+    __declspec(property(get=GetSourcePath,put=PutSourcePath))
+    _bstr_t SourcePath;
+    __declspec(property(get=GetSourceObject,put=PutRefSourceObject))
+    IDispatchPtr SourceObject;
+    __declspec(property(get=GetBackColor,put=PutBackColor))
+    OLE_COLOR BackColor;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutBackColor (
+        OLE_COLOR pclr );
+    OLE_COLOR GetBackColor ( );
+    void PutRefFont (
+        IFontDisp * ppFont );
+    void PutFont (
+        IFontDisp * ppFont );
+    IFontDisp * GetFont ( );
+    void PutRefPropColl (
+        IDispatch * _arg1 );
+    _bstr_t GetSourcePath ( );
+    void PutSourcePath (
+        _bstr_t pVal );
+    void PutRefSourceObject (
+        IDispatch * pVal );
+    IDispatchPtr GetSourceObject ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall putref_Font (
+        IFontDisp * ppFont ) = 0;
+    virtual HRESULT __stdcall put_Font (
+        IFontDisp * ppFont ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        IFontDisp * * ppFont ) = 0;
+    virtual HRESULT __stdcall putref_PropColl (
+        IDispatch * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_SourcePath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SourcePath (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall putref_SourceObject (
+        IDispatch * pVal ) = 0;
+    virtual HRESULT __stdcall get_SourceObject (
+        IDispatch * * pVal ) = 0;
+};
+
+struct __declspec(uuid("dbf497b0-82a4-4159-8d6c-e8303583d7b8"))
+IMipPropEditCtrl : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetOrientation,put=PutOrientation))
+    enum Orientation Orientation;
+    __declspec(property(get=GetHasEditBox,put=PutHasEditBox))
+    long HasEditBox;
+    __declspec(property(get=GetHasScrollBar,put=PutHasScrollBar))
+    long HasScrollBar;
+    __declspec(property(get=GetHasCaption,put=PutHasCaption))
+    long HasCaption;
+    __declspec(property(get=GetHasSpin,put=PutHasSpin))
+    long HasSpin;
+    __declspec(property(get=GetCaptionPosition,put=PutCaptionPosition))
+    enum RelativePosition CaptionPosition;
+    __declspec(property(get=GetScrollBarPosition,put=PutScrollBarPosition))
+    enum RelativePosition ScrollBarPosition;
+    __declspec(property(get=GetLayoutMode,put=PutLayoutMode))
+    enum AutoManual LayoutMode;
+    __declspec(property(get=GetEditLines,put=PutEditLines))
+    long EditLines;
+    __declspec(property(get=GetCaptionWidth,put=PutCaptionWidth))
+    long CaptionWidth;
+    __declspec(property(get=GetEditWidth,put=PutEditWidth))
+    long EditWidth;
+    __declspec(property(get=GetSourceObject,put=PutRefSourceObject))
+    IDispatchPtr SourceObject;
+    __declspec(property(get=GetSourcePath,put=PutSourcePath))
+    _bstr_t SourcePath;
+    __declspec(property(get=GetSourceProperty,put=PutSourceProperty))
+    _bstr_t SourceProperty;
+    __declspec(property(get=GetCaption,put=PutCaption))
+    _bstr_t Caption;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutCaption (
+        _bstr_t pcaption );
+    _bstr_t GetCaption ( );
+    enum Orientation GetOrientation ( );
+    void PutOrientation (
+        enum Orientation pVal );
+    long GetHasEditBox ( );
+    void PutHasEditBox (
+        long pVal );
+    long GetHasScrollBar ( );
+    void PutHasScrollBar (
+        long pVal );
+    long GetHasCaption ( );
+    void PutHasCaption (
+        long pVal );
+    long GetHasSpin ( );
+    void PutHasSpin (
+        long pVal );
+    enum RelativePosition GetCaptionPosition ( );
+    void PutCaptionPosition (
+        enum RelativePosition pVal );
+    enum RelativePosition GetScrollBarPosition ( );
+    void PutScrollBarPosition (
+        enum RelativePosition pVal );
+    enum AutoManual GetLayoutMode ( );
+    void PutLayoutMode (
+        enum AutoManual pVal );
+    long GetEditLines ( );
+    void PutEditLines (
+        long pVal );
+    long GetCaptionWidth ( );
+    void PutCaptionWidth (
+        long pVal );
+    long GetEditWidth ( );
+    void PutEditWidth (
+        long pVal );
+    IDispatchPtr GetSourceObject ( );
+    void PutRefSourceObject (
+        IDispatch * pVal );
+    _bstr_t GetSourcePath ( );
+    void PutSourcePath (
+        _bstr_t pVal );
+    _bstr_t GetSourceProperty ( );
+    void PutSourceProperty (
+        _bstr_t pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_Caption (
+        BSTR pcaption ) = 0;
+    virtual HRESULT __stdcall get_Caption (
+        BSTR * pcaption ) = 0;
+    virtual HRESULT __stdcall get_Orientation (
+        enum Orientation * pVal ) = 0;
+    virtual HRESULT __stdcall put_Orientation (
+        enum Orientation pVal ) = 0;
+    virtual HRESULT __stdcall get_HasEditBox (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasEditBox (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_HasScrollBar (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasScrollBar (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_HasCaption (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasCaption (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_HasSpin (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasSpin (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_CaptionPosition (
+        enum RelativePosition * pVal ) = 0;
+    virtual HRESULT __stdcall put_CaptionPosition (
+        enum RelativePosition pVal ) = 0;
+    virtual HRESULT __stdcall get_ScrollBarPosition (
+        enum RelativePosition * pVal ) = 0;
+    virtual HRESULT __stdcall put_ScrollBarPosition (
+        enum RelativePosition pVal ) = 0;
+    virtual HRESULT __stdcall get_LayoutMode (
+        enum AutoManual * pVal ) = 0;
+    virtual HRESULT __stdcall put_LayoutMode (
+        enum AutoManual pVal ) = 0;
+    virtual HRESULT __stdcall get_EditLines (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EditLines (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_CaptionWidth (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_CaptionWidth (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_EditWidth (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EditWidth (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_SourceObject (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_SourceObject (
+        IDispatch * pVal ) = 0;
+    virtual HRESULT __stdcall get_SourcePath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SourcePath (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SourceProperty (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SourceProperty (
+        BSTR pVal ) = 0;
+};
+
+enum Orientation
+{
+    Vertical = 0,
+    Horizontal = 1,
+    FromSize = 2
+};
+
+enum RelativePosition
+{
+    Top = 0,
+    Left = 1,
+    Middle = 2,
+    Bottom = 3,
+    Right = 4
+};
+
+enum AutoManual
+{
+    Automatic = 0,
+    Manual = 1
+};
+
+struct __declspec(uuid("0288d404-15a0-4d64-8fda-693ef52b7a0b"))
+IMipPropBtnCtrl : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHasCaption,put=PutHasCaption))
+    long HasCaption;
+    __declspec(property(get=GetCaptionLines,put=PutCaptionLines))
+    long CaptionLines;
+    __declspec(property(get=GetOrientation,put=PutOrientation))
+    enum Orientation Orientation;
+    __declspec(property(get=GetSourceObject,put=PutRefSourceObject))
+    IDispatchPtr SourceObject;
+    __declspec(property(get=GetSourcePath,put=PutSourcePath))
+    _bstr_t SourcePath;
+    __declspec(property(get=GetSourceProperty,put=PutSourceProperty))
+    _bstr_t SourceProperty;
+    __declspec(property(get=GetButtonType,put=PutButtonType))
+    enum CheckButtonType ButtonType;
+    __declspec(property(get=GetCaption,put=PutCaption))
+    _bstr_t Caption;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutCaption (
+        _bstr_t pstrCaption );
+    _bstr_t GetCaption ( );
+    long GetHasCaption ( );
+    void PutHasCaption (
+        long pVal );
+    long GetCaptionLines ( );
+    void PutCaptionLines (
+        long pVal );
+    enum Orientation GetOrientation ( );
+    void PutOrientation (
+        enum Orientation pVal );
+    IDispatchPtr GetSourceObject ( );
+    void PutRefSourceObject (
+        IDispatch * pVal );
+    _bstr_t GetSourcePath ( );
+    void PutSourcePath (
+        _bstr_t pVal );
+    _bstr_t GetSourceProperty ( );
+    void PutSourceProperty (
+        _bstr_t pVal );
+    enum CheckButtonType GetButtonType ( );
+    void PutButtonType (
+        enum CheckButtonType pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_Caption (
+        BSTR pstrCaption ) = 0;
+    virtual HRESULT __stdcall get_Caption (
+        BSTR * pstrCaption ) = 0;
+    virtual HRESULT __stdcall get_HasCaption (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_HasCaption (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_CaptionLines (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_CaptionLines (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Orientation (
+        enum Orientation * pVal ) = 0;
+    virtual HRESULT __stdcall put_Orientation (
+        enum Orientation pVal ) = 0;
+    virtual HRESULT __stdcall get_SourceObject (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall putref_SourceObject (
+        IDispatch * pVal ) = 0;
+    virtual HRESULT __stdcall get_SourcePath (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SourcePath (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SourceProperty (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SourceProperty (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_ButtonType (
+        enum CheckButtonType * pVal ) = 0;
+    virtual HRESULT __stdcall put_ButtonType (
+        enum CheckButtonType pVal ) = 0;
+};
+
+enum CheckButtonType
+{
+    RadioButton = 0,
+    PushLike = 1
+};
+
+struct __declspec(uuid("1e0217b2-35b9-4475-84d4-a3ad99535910"))
+IMipParamCtrl : IMipParameter
+{};
+
+struct __declspec(uuid("da0b0532-9251-4b55-8a31-99c0d74715c6"))
+MipParameter;
+    // [ default ] interface IMipParameter
+    // [ default, source ] dispinterface IMipParameterEvents
+
+struct __declspec(uuid("c791e5b5-9896-4b63-9226-813f5496d2c3"))
+VariantCollection;
+    // [ default ] interface IVariantCollection
+
+struct __declspec(uuid("a5d5c970-1df8-44a5-9b2a-e9e9428d17d7"))
+DisplayRawPairCollection;
+    // [ default ] interface IDisplayRawPairCollection
+
+struct __declspec(uuid("47729c0e-49ea-47c1-974f-d195328bdb7e"))
+MipParPropPage;
+    // [ default ] interface IUnknown
+
+struct __declspec(uuid("2239d112-807d-4e27-9376-25e65a63c3af"))
+MipParamMember;
+    // [ default ] interface IMipParameter
+    // [ default, source ] dispinterface IMipParameterEvents
+
+struct __declspec(uuid("dcfa1ea4-caa7-4250-91e3-88d303ef30ca"))
+MipPropListCtrl;
+    // [ default ] interface IMipPropListCtrl
+    // [ default, source ] dispinterface _IMipPropListCtrlEvents
+
+struct __declspec(uuid("a32147f2-f064-4f9b-84e4-4f844c74e1d2"))
+MipParameterCollection;
+    // [ default ] interface IMipParameterCollection
+
+struct __declspec(uuid("b66928e3-6a3f-4c03-8410-39048a3c5ed5"))
+MipPropEditCtrl;
+    // [ default ] interface IMipPropEditCtrl
+
+struct __declspec(uuid("a648aa76-ba8e-4cda-999c-26a77346d0d8"))
+MipParamEventSink;
+    // [ default ] dispinterface IMipParameterEvents
+    // interface IMipParamEventSink
+
+struct __declspec(uuid("0bce2294-c66a-474e-aae8-b4becba49af4"))
+MipPropBtnCtrl;
+    // [ default ] interface IMipPropBtnCtrl
+
+struct __declspec(uuid("c94fae8f-8c0f-462f-b228-e6ba3e554db0"))
+MipParamCtrl;
+    // [ default ] interface IMipParamCtrl
+    // [ default, source ] dispinterface IMipParameterEvents
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_MIPPARAMLib =
+    {0x3c172a85,0x6c20,0x44ac,{0xa4,0x86,0xac,0x3b,0xfe,0xca,0x93,0x71}};
+extern "C" const GUID __declspec(selectany) IID_IMipParamEventSink =
+    {0x441590f0,0x07ed,0x4e5e,{0x8a,0x60,0x5b,0x79,0xf4,0x6a,0x8e,0xec}};
+extern "C" const GUID __declspec(selectany) IID_IVariantCollection =
+    {0xf249f6e1,0xb27e,0x4f20,{0x85,0x8f,0xfe,0x36,0x2e,0x0a,0x4f,0x2a}};
+extern "C" const GUID __declspec(selectany) DIID_IMipParameterEvents =
+    {0xfcd0177c,0x2038,0x49ea,{0xa5,0x80,0x2b,0x63,0xff,0xad,0x67,0x01}};
+extern "C" const GUID __declspec(selectany) IID_IEnumDisplayRawPair =
+    {0xfcb29042,0xb575,0x4812,{0x9f,0xc9,0x35,0x41,0xb7,0xf5,0xf8,0x22}};
+extern "C" const GUID __declspec(selectany) IID_IDisplayRawPairCollection =
+    {0x7ebe373f,0xc40b,0x4833,{0xb6,0x11,0x50,0xfb,0x9b,0x74,0x7a,0x36}};
+extern "C" const GUID __declspec(selectany) IID_IMipParameter =
+    {0xd8da140b,0xec14,0x4576,{0x81,0xce,0xef,0x2c,0x93,0x39,0x16,0x8f}};
+extern "C" const GUID __declspec(selectany) IID_IEnumMipParameter =
+    {0x79c5c6c5,0x4955,0x4777,{0xb3,0x83,0x2e,0x97,0x03,0x06,0x34,0x18}};
+extern "C" const GUID __declspec(selectany) IID_IMipParameterCollection =
+    {0x40c30447,0xf1a8,0x41d1,{0x80,0x39,0xb3,0xfe,0x3c,0x37,0xe2,0x7c}};
+extern "C" const GUID __declspec(selectany) DIID__IMipPropListCtrlEvents =
+    {0x237e3d3f,0x1b83,0x42be,{0xb3,0xd8,0xfb,0xc9,0xad,0xfb,0xbb,0xcb}};
+extern "C" const GUID __declspec(selectany) IID_IMipPropListCtrl =
+    {0x83d5985a,0xe646,0x41bc,{0x9c,0xe1,0xae,0xe8,0xbe,0xdd,0x35,0xb2}};
+extern "C" const GUID __declspec(selectany) IID_IMipPropEditCtrl =
+    {0xdbf497b0,0x82a4,0x4159,{0x8d,0x6c,0xe8,0x30,0x35,0x83,0xd7,0xb8}};
+extern "C" const GUID __declspec(selectany) IID_IMipPropBtnCtrl =
+    {0x0288d404,0x15a0,0x4d64,{0x8f,0xda,0x69,0x3e,0xf5,0x2b,0x7a,0x0b}};
+extern "C" const GUID __declspec(selectany) IID_IMipParamCtrl =
+    {0x1e0217b2,0x35b9,0x4475,{0x84,0xd4,0xa3,0xad,0x99,0x53,0x59,0x10}};
+extern "C" const GUID __declspec(selectany) CLSID_MipParameter =
+    {0xda0b0532,0x9251,0x4b55,{0x8a,0x31,0x99,0xc0,0xd7,0x47,0x15,0xc6}};
+extern "C" const GUID __declspec(selectany) CLSID_VariantCollection =
+    {0xc791e5b5,0x9896,0x4b63,{0x92,0x26,0x81,0x3f,0x54,0x96,0xd2,0xc3}};
+extern "C" const GUID __declspec(selectany) CLSID_DisplayRawPairCollection =
+    {0xa5d5c970,0x1df8,0x44a5,{0x9b,0x2a,0xe9,0xe9,0x42,0x8d,0x17,0xd7}};
+extern "C" const GUID __declspec(selectany) CLSID_MipParPropPage =
+    {0x47729c0e,0x49ea,0x47c1,{0x97,0x4f,0xd1,0x95,0x32,0x8b,0xdb,0x7e}};
+extern "C" const GUID __declspec(selectany) CLSID_MipParamMember =
+    {0x2239d112,0x807d,0x4e27,{0x93,0x76,0x25,0xe6,0x5a,0x63,0xc3,0xaf}};
+extern "C" const GUID __declspec(selectany) CLSID_MipPropListCtrl =
+    {0xdcfa1ea4,0xcaa7,0x4250,{0x91,0xe3,0x88,0xd3,0x03,0xef,0x30,0xca}};
+extern "C" const GUID __declspec(selectany) CLSID_MipParameterCollection =
+    {0xa32147f2,0xf064,0x4f9b,{0x84,0xe4,0x4f,0x84,0x4c,0x74,0xe1,0xd2}};
+extern "C" const GUID __declspec(selectany) CLSID_MipPropEditCtrl =
+    {0xb66928e3,0x6a3f,0x4c03,{0x84,0x10,0x39,0x04,0x8a,0x3c,0x5e,0xd5}};
+extern "C" const GUID __declspec(selectany) CLSID_MipParamEventSink =
+    {0xa648aa76,0xba8e,0x4cda,{0x99,0x9c,0x26,0xa7,0x73,0x46,0xd0,0xd8}};
+extern "C" const GUID __declspec(selectany) CLSID_MipPropBtnCtrl =
+    {0x0bce2294,0xc66a,0x474e,{0xaa,0xe8,0xb4,0xbe,0xcb,0xa4,0x9a,0xf4}};
+extern "C" const GUID __declspec(selectany) CLSID_MipParamCtrl =
+    {0xc94fae8f,0x8c0f,0x462f,{0xb2,0x28,0xe6,0xba,0x3e,0x55,0x4d,0xb0}};
+
+//
+// Wrapper method implementations
+//
+
+#include "mipparam2.tli"
+
+#pragma pack(pop)
